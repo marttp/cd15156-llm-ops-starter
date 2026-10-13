@@ -69,6 +69,7 @@ class Settings(BaseSettings):
     generation_max_tokens: int = Field(768, ge=1, le=2048)
     retrieval_top_k: int = Field(5, ge=1, le=20)
     semantic_cache_enabled: bool = True
+    semantic_cache_threshold: float = Field(0.85, ge=0, le=1)
 
     # Guardrails — output-side
     # FactualConsistency NLI scanner's minimum entailment score.
