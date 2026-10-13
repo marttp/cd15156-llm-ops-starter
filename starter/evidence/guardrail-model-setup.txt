@@ -1,0 +1,47 @@
+# Mirrors what `src/guardrails/llm_guard/{input,output}_guards.py`
+# instantiate at module import. Anonymize is overridden to
+# `dslim/bert-base-NER` (MIT) to avoid the CC-BY-NC Ai4Privacy
+# default; keep this in sync with input_guards.py. FactualConsistency
+# is omitted on purpose — the live /query route uses the LLM judge
+# (src/guardrails/llm_judge/) and the NLI scanner is lazy-loaded only
+# when the comparison module explicitly invokes it.
+# Routes through src.guardrails.llm_guard.input_guards so the
+# ALL_SUPPORTED_LANGUAGES monkey-patch (English-only) runs before
+# Anonymize spins up Presidio's nlp_engine. Importing llm_guard
+# directly here would re-trigger the zh_core_web_sm + spacy-pkuseg
+# auto-download.
+uv run --no-project python -c "from src.guardrails.llm_guard.input_guards import _injection_scanner, _anonymize_scanner; from src.guardrails.llm_guard.output_guards import _topic_scanner"
+2026-10-14 04:24:37 [debug    ] Initialized classification model device=device(type='mps') model=Model(path='protectai/deberta-v3-base-prompt-injection-v2', subfolder='', revision='89b085cd330414d3e7d9dd787870f315957e1e9f', onnx_path='ProtectAI/deberta-v3-base-prompt-injection-v2', onnx_revision='89b085cd330414d3e7d9dd787870f315957e1e9f', onnx_subfolder='onnx', onnx_filename='model.onnx', kwargs={}, pipeline_kwargs={'batch_size': 1, 'device': device(type='mps'), 'return_token_type_ids': False, 'max_length': 512, 'truncation': True}, tokenizer_kwargs={})
+Device set to use mps
+2026-10-14 04:24:37 [debug    ] No entity types provided, using default default_entities=['CREDIT_CARD', 'CRYPTO', 'EMAIL_ADDRESS', 'IBAN_CODE', 'IP_ADDRESS', 'PERSON', 'PHONE_NUMBER', 'US_SSN', 'US_BANK_NUMBER', 'CREDIT_CARD_RE', 'UUID', 'EMAIL_ADDRESS_RE', 'US_SSN_RE']
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 8b31993b-8a47-490d-aac2-5dec51c93c1c)')' thrown while requesting HEAD https://huggingface.co/dslim/bert-base-NER/resolve/5271995b4b596a059d6efbce30031042aed67cb6/tokenizer_config.json
+Retrying in 1s [Retry 1/5].
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: f288c63b-f6a2-4a71-bb28-9165d0776e89)')' thrown while requesting HEAD https://huggingface.co/dslim/bert-base-NER/resolve/5271995b4b596a059d6efbce30031042aed67cb6/tokenizer_config.json
+Retrying in 2s [Retry 2/5].
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 84188bdd-998d-4de2-8568-902260d0ba06)')' thrown while requesting HEAD https://huggingface.co/dslim/bert-base-NER/resolve/5271995b4b596a059d6efbce30031042aed67cb6/tokenizer_config.json
+Retrying in 4s [Retry 3/5].
+Some weights of the model checkpoint at dslim/bert-base-NER were not used when initializing BertForTokenClassification: ['bert.pooler.dense.bias', 'bert.pooler.dense.weight']
+- This IS expected if you are initializing BertForTokenClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForTokenClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+2026-10-14 04:25:26 [debug    ] Initialized NER model          device=device(type='mps') model=Model(path='dslim/bert-base-NER', subfolder='', revision='5271995b4b596a059d6efbce30031042aed67cb6', onnx_path='dslim/bert-base-NER', onnx_revision='5271995b4b596a059d6efbce30031042aed67cb6', onnx_subfolder='onnx', onnx_filename='model.onnx', kwargs={}, pipeline_kwargs={'batch_size': 1, 'device': device(type='mps'), 'aggregation_strategy': 'simple'}, tokenizer_kwargs={'model_input_names': ['input_ids', 'attention_mask']})
+Device set to use mps
+2026-10-14 04:25:26 [debug    ] Loaded regex pattern           group_name=CREDIT_CARD_RE
+2026-10-14 04:25:26 [debug    ] Loaded regex pattern           group_name=UUID
+2026-10-14 04:25:26 [debug    ] Loaded regex pattern           group_name=EMAIL_ADDRESS_RE
+2026-10-14 04:25:26 [debug    ] Loaded regex pattern           group_name=US_SSN_RE
+2026-10-14 04:25:26 [debug    ] Loaded regex pattern           group_name=BTC_ADDRESS
+2026-10-14 04:25:26 [debug    ] Loaded regex pattern           group_name=URL_RE
+2026-10-14 04:25:26 [debug    ] Loaded regex pattern           group_name=CREDIT_CARD
+2026-10-14 04:25:26 [debug    ] Loaded regex pattern           group_name=EMAIL_ADDRESS_RE
+2026-10-14 04:25:26 [debug    ] Loaded regex pattern           group_name=PHONE_NUMBER_ZH
+2026-10-14 04:25:26 [debug    ] Loaded regex pattern           group_name=PHONE_NUMBER_WITH_EXT
+2026-10-14 04:25:26 [debug    ] Loaded regex pattern           group_name=DATE_RE
+2026-10-14 04:25:26 [debug    ] Loaded regex pattern           group_name=TIME_RE
+2026-10-14 04:25:26 [debug    ] Loaded regex pattern           group_name=HEX_COLOR
+2026-10-14 04:25:26 [debug    ] Loaded regex pattern           group_name=PRICE_RE
+2026-10-14 04:25:26 [debug    ] Loaded regex pattern           group_name=PO_BOX_RE
+2026-10-14 04:25:35 [debug    ] Initialized classification model device=device(type='mps') model=Model(path='MoritzLaurer/roberta-base-zeroshot-v2.0-c', subfolder='', revision='d825e740e0c59881cf0b0b1481ccf726b6d65341', onnx_path='protectai/MoritzLaurer-roberta-base-zeroshot-v2.0-c-onnx', onnx_revision='fde5343dbad32f1a5470890505c72ec656db6dbe', onnx_subfolder='', onnx_filename='model.onnx', kwargs={}, pipeline_kwargs={'batch_size': 1, 'device': device(type='mps'), 'return_token_type_ids': False, 'max_length': 512, 'truncation': True}, tokenizer_kwargs={})
+Device set to use mps
+# spaCy NER model (en_core_web_sm) is declared as a URL-pinned
+# wheel in pyproject.toml, so `uv sync` installs it directly.
+# No `python -m spacy download` needed here.

@@ -106,7 +106,7 @@ def check_hallucination(answer: str, sources: list[Source]) -> str | None:
         )
         return "hallucination: invalid_judge_response"
 
-    if verdict not in {"SUPPORTED", "NOT_SUPPORTED"}:
+    if not isinstance(verdict, str) or verdict not in {"SUPPORTED", "NOT_SUPPORTED"}:
         return "hallucination: invalid_judge_verdict"
     if verdict == "NOT_SUPPORTED":
         reason = parsed.get("reason", "judge marked answer as not supported")

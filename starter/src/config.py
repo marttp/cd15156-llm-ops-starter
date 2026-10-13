@@ -4,6 +4,7 @@ from typing import Literal
 
 from dotenv import load_dotenv
 from pydantic import field_validator
+from pydantic import Field
 from pydantic_settings import BaseSettings
 
 # Load .env into os.environ early so libraries that read environment
@@ -63,10 +64,11 @@ class Settings(BaseSettings):
 
     # Application
     cost_log_path: str = "data/cost_log.jsonl"
-    provider_timeout_s: float = 45.0
-    provider_max_retries: int = 2
-    generation_max_tokens: int = 768
-    retrieval_top_k: int = 5
+    provider_timeout_s: float = Field(45.0, gt=0, le=120)
+    provider_max_retries: int = Field(2, ge=0, le=3)
+    generation_max_tokens: int = Field(768, ge=1, le=2048)
+    retrieval_top_k: int = Field(5, ge=1, le=20)
+    semantic_cache_enabled: bool = True
 
     # Guardrails — output-side
     # FactualConsistency NLI scanner's minimum entailment score.
