@@ -1,0 +1,14 @@
+{
+  "product_id": "demo_court_shoe",
+  "name": "Baseline Court Shoe",
+  "category": "footwear",
+  "brand": "Baseline",
+  "price": 75.0,
+  "description": "A ventilated court shoe for lateral movement.",
+  "specifications": {
+    "outsole": "non-marking rubber",
+    "upper": "mesh",
+    "sizes": "US 6-12"
+  },
+  "care_instructions": "Wipe clean and air dry. Do not machine wash."
+}

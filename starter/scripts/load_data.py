@@ -11,6 +11,7 @@ from pathlib import Path
 from src.vectordb.chunker import chunk_product
 from src.vectordb.embedder import embed
 from src.vectordb.store import add
+from src.ingestion.watcher import validate_product
 
 
 def main() -> None:
@@ -22,6 +23,10 @@ def main() -> None:
 
     for path in files:
         product = json.loads(path.read_text())
+        if reason := validate_product(product):
+            raise ValueError(f"{path}: {reason}")
+        if product["product_id"] in all_ids:
+            raise ValueError(f"{path}: duplicate product_id {product['product_id']}")
         chunks = chunk_product(product)
         for chunk in chunks:
             all_texts.append(chunk["text"])

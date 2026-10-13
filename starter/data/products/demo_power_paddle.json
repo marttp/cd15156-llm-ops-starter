@@ -1,0 +1,15 @@
+{
+  "product_id": "demo_power_paddle",
+  "name": "Baseline Power Paddle",
+  "category": "paddles",
+  "brand": "Baseline",
+  "price": 149.0,
+  "description": "A heavier paddle for experienced players seeking power.",
+  "specifications": {
+    "weight": "8.3 oz",
+    "face_material": "carbon fiber",
+    "core_material": "polymer",
+    "skill_level": "advanced"
+  },
+  "care_instructions": "Wipe clean and air dry. Do not machine wash."
+}

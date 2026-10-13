@@ -1,0 +1,14 @@
+{
+  "product_id": "demo_indoor_ball",
+  "name": "Baseline Indoor Ball",
+  "category": "balls",
+  "brand": "Baseline",
+  "price": 12.0,
+  "description": "An indoor pickleball pack for smooth indoor courts.",
+  "specifications": {
+    "hole_count": 26,
+    "pack_size": 3,
+    "weight": "0.85 oz"
+  },
+  "care_instructions": "Wipe clean and air dry. Do not machine wash."
+}
