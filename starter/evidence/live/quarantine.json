@@ -1,0 +1,4 @@
+{
+  "path": "data/inbox/failed/evidence_malformed.json",
+  "error": "invalid JSON: Expecting value: line 1 column 16 (char 15)"
+}

@@ -1,0 +1,47 @@
+{
+  "question": "What is the upper material of the baseline court shoe?",
+  "method": "POST",
+  "url": "http://localhost:8080/query",
+  "response": {
+    "answer": "The upper material of the Baseline Court Shoe is mesh.",
+    "sources": [
+      {
+        "doc_id": "demo_court_shoe",
+        "chunk_text": "Baseline Court Shoe\n\nA ventilated court shoe for lateral movement.\n\nPrice: $75.00 USD\n\nSpecifications:\n  outsole: non-marking rubber\n  upper: mesh\n  sizes: US 6-12\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "similarity_score": 0.5921683398375797
+      },
+      {
+        "doc_id": "prod_022",
+        "chunk_text": "FILA Volley Zone Court Shoes\n\nThe FILA Volley Zone is a purpose-built court shoe for players who need stable lateral support and cushioned comfort. The herringbone tread pattern provides excellent grip on hard court surfaces, while the EVA midsole absorbs impact during quick direction changes.\n\nPrice: $79.99 USD\n\nSpecifications:\n  weight: 12.5 oz (men's size 10)\n  sole_type: Non-marking herringbone rubber\n  closure: Traditional lace-up\n  cushioning: EVA midsole with memory foam insole\n\nCare instructions: Wipe the outsoles with a damp cloth after play to maintain grip. Remove insoles to air dry after sweaty sessions. Do not machine wash \u2014 spot clean the upper with mild soap and water.",
+        "similarity_score": 0.47220658083531686
+      },
+      {
+        "doc_id": "prod_023",
+        "chunk_text": "K-Swiss Express Light Court Shoes\n\nThe K-Swiss Express Light is engineered for speed and agility on the court. Its lightweight mesh upper provides breathability during long matches, while the Durawrap heel counter locks in lateral stability. The Surge 7.0 midsole returns energy on every step.\n\nPrice: $99.99 USD\n\nSpecifications:\n  weight: 11.2 oz (men's size 10)\n  sole_type: Dragguard rubber outsole\n  closure: Traditional lace-up with padded tongue\n  cushioning: Surge 7.0 midsole with ortholite insole\n\nCare instructions: Allow shoes to air dry between sessions. Remove insoles periodically to prevent odor. Clean the mesh upper with a soft brush and mild soap. Replace shoes when the outsole tread shows significant wear to prevent slipping.",
+        "similarity_score": 0.4617322048533594
+      },
+      {
+        "doc_id": "prod_024",
+        "chunk_text": "ASICS Gel-Renma Court Shoes\n\nThe ASICS Gel-Renma is ASICS' first court shoe designed specifically for this sport, featuring their renowned GEL technology in the forefoot and rearfoot for superior shock absorption. The TRUSSTIC system reduces sole weight while maintaining structural integrity, and the AHAR+ outsole delivers exceptional durability.\n\nPrice: $89.99 USD\n\nSpecifications:\n  weight: 11.8 oz (men's size 10)\n  sole_type: AHAR+ high-abrasion rubber\n  closure: Traditional lace-up\n  cushioning: Forefoot and rearfoot GEL technology\n\nCare instructions: Clean with a soft cloth and mild soap solution. Air dry away from direct heat sources. The GEL cushioning system does not require special maintenance but replace the shoes after 60-80 hours of court play for optimal support.",
+        "similarity_score": 0.4567668072261988
+      },
+      {
+        "doc_id": "prod_018",
+        "chunk_text": "Engage Court Shorts\n\nThe Engage Court Shorts are built for athletic movement with a 7-inch inseam and gusseted crotch for unrestricted lateral reach. Deep side pockets hold multiple balls, and the lightweight woven fabric dries quickly after sweaty sessions. Elastic waistband with internal drawcord.\n\nPrice: $44.99 USD\n\nSpecifications:\n  material: 100% recycled polyester, DWR finish\n  sizes_available: ['S', 'M', 'L', 'XL', 'XXL']\n  color_options: ['Graphite', 'Navy', 'Black']\n\nCare instructions: Machine wash cold. The DWR (durable water repellent) finish will diminish over time \u2014 tumble dry on low heat periodically to reactivate the treatment.",
+        "similarity_score": 0.3558072397341976
+      }
+    ],
+    "confidence": 0.4677362344973305,
+    "model": "gpt-4o-mini",
+    "tokens": {
+      "prompt_tokens": 1127,
+      "completion_tokens": 12
+    },
+    "cost_usd": 0.00017624999999999997,
+    "cached": false,
+    "trace_id": "57a4f266761e6cae643efe871c6859bb",
+    "blocked_by": null
+  },
+  "latency_ms": 4889.83,
+  "classification": "simple"
+}

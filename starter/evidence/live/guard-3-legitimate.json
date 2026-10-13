@@ -1,0 +1,47 @@
+{
+  "question": "How heavy is the baseline power paddle?",
+  "method": "POST",
+  "url": "http://localhost:8080/query",
+  "response": {
+    "answer": "The Baseline Power Paddle weighs 8.3 oz.",
+    "sources": [
+      {
+        "doc_id": "demo_power_paddle",
+        "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "similarity_score": 0.6766416318313233
+      },
+      {
+        "doc_id": "demo_control_paddle",
+        "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "similarity_score": 0.5587975093012759
+      },
+      {
+        "doc_id": "prod_007",
+        "chunk_text": "Selkirk Vanguard Power Air\n\nThe Selkirk Vanguard Power Air represents the pinnacle of paddle engineering. Featuring a proprietary air-injected polypropylene core and a carbon fiber face with QuadFlex 4-layer construction, it delivers unmatched power without sacrificing spin or control. Built for tournament-level play.\n\nPrice: $249.99 USD\n\nSpecifications:\n  weight: 8.4 oz\n  grip_size: 4.25 in\n  face_material: QuadFlex 4-layer carbon fiber\n  core: Air-injected polypropylene\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a microfiber cloth dampened with water. Avoid chemical cleaners that may degrade the carbon fiber surface. The edge guard is replaceable \u2014 contact Selkirk for parts.",
+        "similarity_score": 0.4959319889749849
+      },
+      {
+        "doc_id": "prod_006",
+        "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+        "similarity_score": 0.47448186963602534
+      },
+      {
+        "doc_id": "prod_005",
+        "chunk_text": "HEAD Radical Tour\n\nThe HEAD Radical Tour brings tennis engineering expertise to the court. Featuring an Extreme Spin Texture (EST) face and an Optimized Tubular Construction (OTC) frame, this paddle delivers consistent power from edge to edge with a generous sweet spot suited to all-court players.\n\nPrice: $149.99 USD\n\nSpecifications:\n  weight: 8.1 oz\n  grip_size: 4.25 in\n  face_material: Extreme Spin Texture (EST) composite\n  core: Polypropylene honeycomb\n  shape: standard\n  length: 15.875 in\n  width: 7.875 in\n\nCare instructions: Wipe with a clean damp cloth. Inspect the edge guard periodically for cracks and replace if damaged to protect the core. Store away from moisture.",
+        "similarity_score": 0.4743395430987768
+      }
+    ],
+    "confidence": 0.5360385085684772,
+    "model": "gpt-4o-mini",
+    "tokens": {
+      "prompt_tokens": 1047,
+      "completion_tokens": 12
+    },
+    "cost_usd": 0.00016424999999999998,
+    "cached": false,
+    "trace_id": "105cdd34ba69ab512d0e5567485893ef",
+    "blocked_by": null
+  },
+  "latency_ms": 7179.96,
+  "classification": "simple"
+}

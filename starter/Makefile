@@ -36,6 +36,7 @@ WORKSPACE ?= /workspace
 # trades wall-clock time for completeness. Override with
 # `make eval EVAL_MAX_WORKERS=8` on uncontended endpoints where speed matters.
 EVAL_MAX_WORKERS ?= 1
+EVAL_ARGS ?=
 
 help: ## Show available commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
@@ -78,7 +79,7 @@ watch: ## Start file-watcher
 	uv run --no-project python scripts/start_watcher.py
 
 eval: ## Run evaluation suite (serialized by default; override with EVAL_MAX_WORKERS=N)
-	uv run --no-project python scripts/run_eval.py --max-workers=$(EVAL_MAX_WORKERS)
+	uv run --no-project python scripts/run_eval.py --max-workers=$(EVAL_MAX_WORKERS) $(EVAL_ARGS)
 
 load-data: ## Load product data into vector DB
 	uv run --no-project python scripts/load_data.py

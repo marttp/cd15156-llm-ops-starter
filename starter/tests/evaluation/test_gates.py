@@ -22,3 +22,15 @@ def test_descriptive_statistics_use_the_recorded_rows():
     assert observed["median"] == .8
     assert observed["min"] == .4
     assert observed["max"] == 1.
+
+
+def test_saved_result_gate_runs_without_a_provider_key(tmp_path):
+    import os, json, subprocess
+    from pathlib import Path
+    root = Path(__file__).resolve().parents[2]
+    scores = dict.fromkeys(METRICS, .8)
+    saved = tmp_path / 'result.json'
+    saved.write_text(json.dumps({'aggregate': scores, 'rows': [scores]}))
+    env = {**os.environ, 'OPENAI_API_KEY': '', 'PYTHONPATH': str(root)}
+    result = subprocess.run([str(root / '.venv/bin/python'), str(root / 'scripts/run_eval.py'), '--check-result', str(saved), '--faithfulness-min', '.75'], cwd=tmp_path, env=env, capture_output=True, text=True, timeout=30)
+    assert result.returncode == 0, result.stderr

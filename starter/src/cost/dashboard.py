@@ -32,6 +32,10 @@ def render_html(summary: dict) -> str:
         f"</tr>"
         for model, stats in sorted(summary["by_model"].items())
     )
+    generation_rows = "".join(
+        f"<tr><td>{html.escape(model)}</td><td>{stats['requests']}</td><td>${stats['avg_cost_usd']:.6f}</td></tr>"
+        for model, stats in sorted(summary.get("generation_by_model", {}).items())
+    )
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -47,19 +51,24 @@ def render_html(summary: dict) -> str:
 </head>
 <body>
   <h1>Cost Dashboard</h1>
-  <p>Aggregate cost data from the local JSONL request log.</p>
+  <p>Recorded billable operations. One customer query can incur classification, embedding, generation and judging costs.</p>
   <table>
-    {_row("Total requests", str(summary["total_requests"]))}
+    {_row("Billable operations", str(summary["total_requests"]))}
     {_row("Total cost (USD)", f"${summary['total_cost_usd']:.4f}")}
   </table>
   <h2>Per-model breakdown</h2>
   <table>
     <thead>
-      <tr><th>Model</th><th>Requests</th><th>Cost (USD)</th><th>Avg cost / request</th></tr>
+      <tr><th>Model</th><th>Operations</th><th>Cost (USD)</th><th>Avg cost / operation</th></tr>
     </thead>
     <tbody>
-      {by_model_rows or '<tr><td colspan="4">No requests logged yet.</td></tr>'}
+      {by_model_rows or '<tr><td colspan="4">No operations logged yet.</td></tr>'}
     </tbody>
+  </table>
+  <h2>Generation tiers</h2>
+  <table>
+    <thead><tr><th>Model</th><th>Queries</th><th>Avg generation cost / query</th></tr></thead>
+    <tbody>{generation_rows or '<tr><td colspan="3">No generation queries logged yet.</td></tr>'}</tbody>
   </table>
 </body>
 </html>
@@ -76,4 +85,8 @@ async def cost_dashboard() -> str:
     a production deployment, either query the log directly or replace
     this endpoint with a Grafana/Prometheus integration.
     """
-    return render_html(summarize(load_log()))
+    records = load_log()
+    summary = summarize(records)
+    generation = [r for r in records if r.get("operation") == "generation" or r.get("query_type") in {"simple", "complex"}]
+    summary["generation_by_model"] = summarize(generation)["by_model"]
+    return render_html(summary)

@@ -13,6 +13,7 @@ list to ``evaluate_pipeline``). Pin ``ragas`` to an exact version in
 
 import csv
 import json
+import hashlib
 from pathlib import Path
 from typing import Sequence
 
@@ -31,6 +32,7 @@ from ragas.metrics import (
 )
 
 from src.config import settings
+from src.models import QueryResponse
 from src.rag import run_pipeline
 
 DEFAULT_METRICS = [
@@ -75,9 +77,30 @@ def build_eval_dataset(golden_set: list[dict], *, top_k: int = settings.retrieva
     answers: list[str] = []
     retrieved_contexts: list[list[str]] = []
     ground_truths: list[str] = []
+    checkpoint = None
+    saved = {}
+    if settings.eval_dataset_cache_dir:
+        root = Path(__file__).resolve().parents[2]
+        fingerprint = hashlib.sha256(json.dumps(golden_set, sort_keys=True).encode())
+        fingerprint.update(f"{top_k}:{settings.model_complex}:{settings.embedding_model}:{settings.generation_max_tokens}".encode())
+        for directory, pattern in [("prompts", "*.j2"), ("data/products", "*.json"), ("data/inbox", "*.json")]:
+            for path in sorted((root / directory).glob(pattern)):
+                fingerprint.update(path.read_bytes())
+        checkpoint = Path(settings.eval_dataset_cache_dir) / f"k{top_k}-{fingerprint.hexdigest()[:20]}.json"
+        checkpoint.parent.mkdir(parents=True, exist_ok=True)
+        if checkpoint.exists():
+            saved = json.loads(checkpoint.read_text())
 
     for row in golden_set:
-        response = run_pipeline(row["question"], top_k=top_k)
+        if row["question"] in saved:
+            response = QueryResponse.model_validate(saved[row["question"]])
+        else:
+            response = run_pipeline(row["question"], top_k=top_k)
+            if checkpoint:
+                saved[row["question"]] = response.model_dump()
+                temporary = checkpoint.with_suffix(".tmp")
+                temporary.write_text(json.dumps(saved, indent=2))
+                temporary.replace(checkpoint)
         questions.append(row["question"])
         answers.append(response.answer)
         retrieved_contexts.append([s.chunk_text for s in response.sources])

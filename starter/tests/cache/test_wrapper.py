@@ -26,7 +26,7 @@ def test_cache_hit_returns_cached_response_without_calling_route_query():
          patch("src.cache.wrapper.store") as store:
         result = cached_route_query("Q", top_k=3)
 
-    lookup.assert_called_once_with("Q", threshold=0.85)
+    lookup.assert_called_once_with("Q", threshold=0.90, top_k=3)
     route.assert_not_called()
     store.assert_not_called()
     assert result is cached
@@ -41,7 +41,7 @@ def test_cache_miss_runs_route_query_and_stores_result():
         result = cached_route_query("Q", top_k=3)
 
     route.assert_called_once_with("Q", top_k=3)
-    store.assert_called_once_with("Q", fresh, ttl_s=3600)
+    store.assert_called_once_with("Q", fresh, ttl_s=3600, top_k=3)
     assert result is fresh
 
 

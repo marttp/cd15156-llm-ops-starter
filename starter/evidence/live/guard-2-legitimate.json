@@ -1,0 +1,47 @@
+{
+  "question": "How do I clean the baseline court bag?",
+  "method": "POST",
+  "url": "http://localhost:8080/query",
+  "response": {
+    "answer": "To clean the Baseline Court Bag, you should:\n\n- Wipe it clean with a damp cloth.\n- Air dry it after cleaning.\n- Do not machine wash the bag.\n\nThis will help maintain its condition and ensure longevity.",
+    "sources": [
+      {
+        "doc_id": "demo_court_bag",
+        "chunk_text": "Baseline Court Bag\n\nA compact bag for paddles and pickleballs.\n\nPrice: $39.00 USD\n\nSpecifications:\n  capacity: 2 paddles and 6 balls\n  material: polyester\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "similarity_score": 0.517175283732097
+      },
+      {
+        "doc_id": "demo_court_shoe",
+        "chunk_text": "Baseline Court Shoe\n\nA ventilated court shoe for lateral movement.\n\nPrice: $75.00 USD\n\nSpecifications:\n  outsole: non-marking rubber\n  upper: mesh\n  sizes: US 6-12\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "similarity_score": 0.40210695575547684
+      },
+      {
+        "doc_id": "demo_indoor_ball",
+        "chunk_text": "Baseline Indoor Ball\n\nAn indoor pickleball pack for smooth indoor courts.\n\nPrice: $12.00 USD\n\nSpecifications:\n  hole_count: 26\n  pack_size: 3\n  weight: 0.85 oz\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "similarity_score": 0.36035411000144024
+      },
+      {
+        "doc_id": "prod_014",
+        "chunk_text": "JOOLA Tour Elite Pro Duffel\n\nThe JOOLA Tour Elite Pro Duffel is built for the serious competitor who needs maximum organization. Fits up to 6 paddles with individual protective sleeves, has a ventilated shoe compartment, thermal-lined drink pocket, and a rigid base to keep the bag upright on the court.\n\nPrice: $119.99 USD\n\nSpecifications:\n  dimensions: 24 x 14 x 12 in\n  compartments: 8\n  material: 1200D ballistic nylon\n  capacity: 52L\n\nCare instructions: Spot clean the exterior with a damp cloth. Remove the ventilated shoe divider and wash separately. The rigid base can be wiped down with a disinfecting wipe.",
+        "similarity_score": 0.3589937164049266
+      },
+      {
+        "doc_id": "prod_013",
+        "chunk_text": "Franklin Pickleball Sling Bag\n\nA compact sling bag designed for players who travel light. The Franklin Sling Bag holds 2 paddles and essentials like balls, a water bottle, and phone. The adjustable cross-body strap and lightweight design make it easy to grab and go for casual play sessions.\n\nPrice: $39.99 USD\n\nSpecifications:\n  dimensions: 18 x 10 x 5 in\n  compartments: 3\n  material: Ripstop nylon\n  capacity: 12L\n\nCare instructions: Wipe clean with a damp cloth. The ripstop nylon is water-resistant but not waterproof \u2014 avoid leaving the bag in rain.",
+        "similarity_score": 0.336065341267175
+      }
+    ],
+    "confidence": 0.3949390814322231,
+    "model": "gpt-4o-mini",
+    "tokens": {
+      "prompt_tokens": 881,
+      "completion_tokens": 46
+    },
+    "cost_usd": 0.00015975,
+    "cached": false,
+    "trace_id": "d9a2369b862b41ba78f339a9c93f5274",
+    "blocked_by": null
+  },
+  "latency_ms": 7382.62,
+  "classification": "simple"
+}

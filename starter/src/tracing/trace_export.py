@@ -93,12 +93,14 @@ def summarize_traces(df: Any, last_n: int) -> list[dict]:
             prompt_tok = 0
             completion_tok = 0
 
+        question = root_row.get("attributes.input.value")
+        if not isinstance(question, str):
+            rag_rows = group[group["name"] == "rag_query"]
+            question = rag_rows.iloc[0].get("attributes.input.value", "unavailable") if len(rag_rows) else "blocked or unavailable"
         summaries.append(
             {
-                "trace_id": str(trace_id)[:8],
-                "question": str(
-                    root_row.get("attributes.input.value", "—")
-                )[:80],
+                "trace_id": str(trace_id),
+                "question": str(question)[:80],
                 "model": str(rag_attrs.get("model", "—")),
                 "latency_ms": round(
                     float((root_row["end_time"] - root_row["start_time"]).total_seconds() * 1000) if root_row["name"] == "faq_request" else float(rag_attrs.get("latency_ms", 0) or 0), 1

@@ -1,0 +1,47 @@
+{
+  "question": "How many paddles fit in the baseline court bag?",
+  "method": "POST",
+  "url": "http://localhost:8080/query",
+  "response": {
+    "answer": "The Baseline Court Bag can hold up to 2 paddles. It also has the capacity for 6 pickleballs.",
+    "sources": [
+      {
+        "doc_id": "demo_court_bag",
+        "chunk_text": "Baseline Court Bag\n\nA compact bag for paddles and pickleballs.\n\nPrice: $39.00 USD\n\nSpecifications:\n  capacity: 2 paddles and 6 balls\n  material: polyester\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "similarity_score": 0.6409176764286891
+      },
+      {
+        "doc_id": "prod_012",
+        "chunk_text": "Selkirk Team Backpack\n\nThe Selkirk Team Backpack holds up to 4 paddles and all your gear in a ventilated, weather-resistant design. Features a dedicated paddle compartment with fleece lining, separate shoe pocket, insulated cooler pocket, and padded laptop sleeve for players heading straight from work to the court.\n\nPrice: $89.99 USD\n\nSpecifications:\n  dimensions: 20 x 13 x 9 in\n  compartments: 6\n  material: 600D polyester with PVC backing\n  capacity: 35L\n\nCare instructions: Spot clean with mild soap and water. Air dry completely before storing to prevent mildew. Machine washing is not recommended as it can damage the PVC backing and structure.",
+        "similarity_score": 0.5227278665764078
+      },
+      {
+        "doc_id": "prod_014",
+        "chunk_text": "JOOLA Tour Elite Pro Duffel\n\nThe JOOLA Tour Elite Pro Duffel is built for the serious competitor who needs maximum organization. Fits up to 6 paddles with individual protective sleeves, has a ventilated shoe compartment, thermal-lined drink pocket, and a rigid base to keep the bag upright on the court.\n\nPrice: $119.99 USD\n\nSpecifications:\n  dimensions: 24 x 14 x 12 in\n  compartments: 8\n  material: 1200D ballistic nylon\n  capacity: 52L\n\nCare instructions: Spot clean the exterior with a damp cloth. Remove the ventilated shoe divider and wash separately. The rigid base can be wiped down with a disinfecting wipe.",
+        "similarity_score": 0.5192538533888047
+      },
+      {
+        "doc_id": "prod_013",
+        "chunk_text": "Franklin Pickleball Sling Bag\n\nA compact sling bag designed for players who travel light. The Franklin Sling Bag holds 2 paddles and essentials like balls, a water bottle, and phone. The adjustable cross-body strap and lightweight design make it easy to grab and go for casual play sessions.\n\nPrice: $39.99 USD\n\nSpecifications:\n  dimensions: 18 x 10 x 5 in\n  compartments: 3\n  material: Ripstop nylon\n  capacity: 12L\n\nCare instructions: Wipe clean with a damp cloth. The ripstop nylon is water-resistant but not waterproof \u2014 avoid leaving the bag in rain.",
+        "similarity_score": 0.4624762764898658
+      },
+      {
+        "doc_id": "demo_indoor_ball",
+        "chunk_text": "Baseline Indoor Ball\n\nAn indoor pickleball pack for smooth indoor courts.\n\nPrice: $12.00 USD\n\nSpecifications:\n  hole_count: 26\n  pack_size: 3\n  weight: 0.85 oz\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "similarity_score": 0.4228468133497134
+      }
+    ],
+    "confidence": 0.5136444972466961,
+    "model": "gpt-4o-mini",
+    "tokens": {
+      "prompt_tokens": 965,
+      "completion_tokens": 25
+    },
+    "cost_usd": 0.00015975,
+    "cached": false,
+    "trace_id": "78fd2f19023256385af6600e440adde7",
+    "blocked_by": null
+  },
+  "latency_ms": 4487.77,
+  "classification": "simple"
+}

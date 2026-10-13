@@ -1,0 +1,3 @@
+uv run --no-project python scripts/load_data.py
+Loading 30 products into Chroma...
+Done — 30 chunks upserted.

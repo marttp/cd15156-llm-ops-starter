@@ -1,0 +1,47 @@
+{
+  "question": "Compare baseline indoor balls with franklin x-40 outdoor balls.",
+  "method": "POST",
+  "url": "http://localhost:8080/query",
+  "response": {
+    "answer": "Certainly! Here's a comparison of the Baseline Indoor Balls and the Franklin X-40 Outdoor Pickleballs:\n\n**Baseline Indoor Balls:**\n- **Use:** Designed for indoor play on smooth courts.\n- **Specifications:**\n  - Hole count: 26\n  - Weight: 0.85 oz\n  - Pack size: 3\n- **Care Instructions:** Wipe clean and air dry. Do not machine wash.\n\n**Franklin X-40 Outdoor Pickleballs:**\n- **Use:** Designed for outdoor play and official ball of USA Pickleball.\n- **Specifications:**\n  - Diameter: 2.87 in\n  - Weight: 0.92 oz\n  - Hole count: 40\n  - Material: Seamless high-density polyethylene\n- **Care Instructions:** Store in a cool, dry place. Outdoor balls may crack over time with heavy use. Rotate balls to extend their lifespan and discard when cracked or misshaped.\n\n**Key Differences:**\n- **Purpose:** The Baseline Indoor Balls are for indoor use, while the Franklin X-40 are intended for outdoor conditions.\n- **Weight:** Franklin X-40 is slightly heavier (0.92 oz) compared to the Baseline Indoor Ball (0.85 oz).\n- **Hole Count:** Franklin X-40 has 40 holes for consistent outdoor play, whereas Baseline has 26 holes typical for indoor balls.\n- **Material:** Franklin X-40 is made from seamless high-density polyethylene, optimized for outdoor durability.\n\nThese differences reflect their design for performance in their respective environments (indoor vs. outdoor).",
+    "sources": [
+      {
+        "doc_id": "prod_008",
+        "chunk_text": "Franklin X-40 Outdoor Pickleballs\n\nThe Franklin X-40 is the official ball of USA Pickleball and the most widely used outdoor tournament ball. Precision-drilled 40-hole design ensures consistent flight and bounce in wind. Made from durable seamless construction that resists cracking in temperature extremes.\n\nPrice: $12.99 USD\n\nSpecifications:\n  diameter: 2.87 in\n  weight: 0.92 oz\n  hole_count: 40\n  material: Seamless high-density polyethylene\n  indoor_outdoor: outdoor\n\nCare instructions: Store in a cool, dry place. Outdoor balls will eventually crack with heavy use \u2014 this is normal wear. Rotate balls during play to extend their life. Discard balls that show visible cracks or have lost their round shape.",
+        "similarity_score": 0.7198637342464451
+      },
+      {
+        "doc_id": "prod_011",
+        "chunk_text": "Franklin X-26 Indoor Pickleballs\n\nThe Franklin X-26 offers reliable indoor performance at a budget-friendly price. The 26-hole pattern provides a slower flight speed and softer feel compared to outdoor balls, making it ideal for beginners learning the game in gym or recreation center settings. Pack of 3.\n\nPrice: $7.99 USD\n\nSpecifications:\n  diameter: 2.87 in\n  weight: 0.85 oz\n  hole_count: 26\n  material: Injection-molded plastic\n  indoor_outdoor: indoor\n\nCare instructions: Wipe with a damp cloth as needed. Indoor balls are more durable than outdoor balls but should still be replaced when they lose roundness or develop soft spots.",
+        "similarity_score": 0.6922786238206604
+      },
+      {
+        "doc_id": "prod_010",
+        "chunk_text": "Dura Fast 40 Outdoor Pickleballs\n\nThe Dura Fast 40 is a tournament-grade outdoor ball trusted by competitive players for its true bounce and predictable flight. Pack of 12 balls. The seamless one-piece rotationally molded construction delivers uniform wall thickness and exceptional roundness for consistent play.\n\nPrice: $29.99 USD\n\nSpecifications:\n  diameter: 2.87 in\n  weight: 0.92 oz\n  hole_count: 40\n  material: Rotationally molded seamless plastic\n  indoor_outdoor: outdoor\n\nCare instructions: Outdoor balls wear faster in extreme heat or cold. Store indoors between sessions. This is a 12-pack \u2014 keep spares on hand during competitive play.",
+        "similarity_score": 0.5823645844463297
+      },
+      {
+        "doc_id": "prod_009",
+        "chunk_text": "Onix Pure 2 Indoor Pickleballs\n\nThe Onix Pure 2 is engineered specifically for indoor play, featuring 26 precisely spaced holes for a softer, more controlled flight on gym and rec center surfaces. The true-flight design minimizes wobble and provides consistent bounce on smooth indoor courts.\n\nPrice: $9.99 USD\n\nSpecifications:\n  diameter: 2.87 in\n  weight: 0.86 oz\n  hole_count: 26\n  material: Durable TPU blend\n  indoor_outdoor: indoor\n\nCare instructions: Indoor balls last longer than outdoor balls. Store at room temperature. Clean with a damp cloth if they pick up dust or gym floor residue.",
+        "similarity_score": 0.5343811633588348
+      },
+      {
+        "doc_id": "demo_indoor_ball",
+        "chunk_text": "Baseline Indoor Ball\n\nAn indoor pickleball pack for smooth indoor courts.\n\nPrice: $12.00 USD\n\nSpecifications:\n  hole_count: 26\n  pack_size: 3\n  weight: 0.85 oz\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "similarity_score": 0.529434311300921
+      }
+    ],
+    "confidence": 0.6116644834346382,
+    "model": "gpt-4o",
+    "tokens": {
+      "prompt_tokens": 1079,
+      "completion_tokens": 328
+    },
+    "cost_usd": 0.0059775,
+    "cached": false,
+    "trace_id": "1a903b16abdee4a19f9930ea087fcba5",
+    "blocked_by": null
+  },
+  "latency_ms": 7582.23,
+  "classification": "complex"
+}

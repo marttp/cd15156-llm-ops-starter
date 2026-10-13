@@ -1,0 +1,47 @@
+{
+  "question": "What is the core material of the baseline control paddle?",
+  "method": "POST",
+  "url": "http://localhost:8080/query",
+  "response": {
+    "answer": "The core material of the Baseline Control Paddle is polymer.",
+    "sources": [
+      {
+        "doc_id": "demo_control_paddle",
+        "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "similarity_score": 0.6582780177289367
+      },
+      {
+        "doc_id": "demo_power_paddle",
+        "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "similarity_score": 0.5398208383830944
+      },
+      {
+        "doc_id": "prod_005",
+        "chunk_text": "HEAD Radical Tour\n\nThe HEAD Radical Tour brings tennis engineering expertise to the court. Featuring an Extreme Spin Texture (EST) face and an Optimized Tubular Construction (OTC) frame, this paddle delivers consistent power from edge to edge with a generous sweet spot suited to all-court players.\n\nPrice: $149.99 USD\n\nSpecifications:\n  weight: 8.1 oz\n  grip_size: 4.25 in\n  face_material: Extreme Spin Texture (EST) composite\n  core: Polypropylene honeycomb\n  shape: standard\n  length: 15.875 in\n  width: 7.875 in\n\nCare instructions: Wipe with a clean damp cloth. Inspect the edge guard periodically for cracks and replace if damaged to protect the core. Store away from moisture.",
+        "similarity_score": 0.45924036992133765
+      },
+      {
+        "doc_id": "prod_006",
+        "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+        "similarity_score": 0.4527725229536772
+      },
+      {
+        "doc_id": "prod_002",
+        "chunk_text": "JOOLA Hyperion CFS 16\n\nThe JOOLA Hyperion CFS 16 is a premium carbon fiber paddle designed for competitive players who demand maximum spin and power. Its Carbon Friction Surface technology creates exceptional ball grip for aggressive topspin shots, while the reactive honeycomb polymer core ensures a solid, responsive feel at the net.\n\nPrice: $199.99 USD\n\nSpecifications:\n  weight: 8.2 oz\n  grip_size: 4.0 in\n  face_material: Carbon Friction Surface (CFS)\n  core: Reactive honeycomb polymer\n  shape: elongated\n  length: 16.5 in\n  width: 7.5 in\n\nCare instructions: Clean the carbon fiber face with a microfiber cloth and mild soap solution. Do not use abrasive cleaners. Store in the included neoprene cover to protect the face texture.",
+        "similarity_score": 0.4427116492030432
+      }
+    ],
+    "confidence": 0.5105646796380178,
+    "model": "gpt-4o-mini",
+    "tokens": {
+      "prompt_tokens": 1058,
+      "completion_tokens": 12
+    },
+    "cost_usd": 0.00016589999999999997,
+    "cached": false,
+    "trace_id": "4309d833616ed74af018684e9ce7a96c",
+    "blocked_by": null
+  },
+  "latency_ms": 7485.17,
+  "classification": "simple"
+}

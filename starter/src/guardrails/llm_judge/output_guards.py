@@ -15,9 +15,8 @@ Trade-offs:
   ``query_type="hallucination_check"`` so the additional spend is
   visible in ``data/cost_log.jsonl``.
 - **Fail-closed**: any error (network, rate limit, JSON parse, missing
-  field) returns a refusal reason — the answer is withheld. The
-  alternative (false-positive on a network blip) is worse for a course
-  demo. A WARN-level log entry surfaces the failure for operators.
+  field) returns a refusal reason — the answer is withheld. This trades availability during judge outages for withholding
+  answers that have not been checked. A WARN-level log entry surfaces the failure for operators.
 
 ``is_off_topic`` is re-exported from ``src.guardrails.llm_guard`` —
 that scanner (BanTopics zero-shot) works fine and didn't need

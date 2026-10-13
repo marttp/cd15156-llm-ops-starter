@@ -19,9 +19,9 @@ Schema (per cache entry):
     embedding   — query vector (text-embedding-3-small produces 1536 dims)
     metadata    — ``{question, response (JSON), created_at (ISO), ttl_s}``
 
-Tuning hooks: ``lookup(threshold=0.85)`` controls how similar a cached
+Tuning hooks: ``lookup(threshold=0.90)`` controls how similar a cached
 query must be before it's served (lower = more hits, more false-positive
-risk; higher = fewer hits, more safety). Default chosen so natural
+risk; higher = fewer hits, more safety). Measured default selected so natural
 paraphrases like "What's the weight of X?" / "How heavy is X?" / "X
 weight please?" reliably hit each other without warming the cache first.
 ``store(ttl_s=3600)`` sets per-entry expiration; pass ``ttl_s=0`` to
@@ -86,7 +86,7 @@ def cache_namespace(top_k: int = 5) -> str:
     return digest.hexdigest()
 
 
-def lookup(question: str, *, threshold: float = 0.85, top_k: int = 5) -> QueryResponse | None:
+def lookup(question: str, *, threshold: float = 0.90, top_k: int = 5) -> QueryResponse | None:
     """Return a cached ``QueryResponse`` if a similar, fresh query exists.
 
     Lazy TTL: if the nearest match is older than its stored ``ttl_s``,

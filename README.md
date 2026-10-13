@@ -1,3 +1,12 @@
+# ThirdShotHub LLMOps capstone fork
+
+This fork implements the course project under [`starter/`](starter/). Use Python 3.12 and run its Makefile commands from that directory. The upstream starter and course licence remain below.
+
+- [Submission evidence and analysis](starter/WRITEUP.md)
+- [Rubric audit](starter/RUBRIC_AUDIT.md)
+- [Operating notes](starter/docs/RUNBOOK.md)
+- [Implementation plan and course references](starter/PROJECT_PLAN.md)
+
 # Production LLM FAQ Service — Capstone Starter
 
 > **Are you a student starting this project?** Read [`INSTRUCTIONS.md`](INSTRUCTIONS.md)

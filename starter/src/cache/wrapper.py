@@ -19,13 +19,13 @@ def cached_route_query(
     question: str,
     top_k: int = 5,
     *,
-    threshold: float = 0.85,
+    threshold: float = 0.90,
     ttl_s: int = 3600,
 ) -> QueryResponse:
     """Check the cache first; on miss, run the gateway and cache the result."""
-    if cached := lookup(question, threshold=threshold):
+    if cached := lookup(question, threshold=threshold, top_k=top_k):
         return cached
 
     response = route_query(question, top_k=top_k)
-    store(question, response, ttl_s=ttl_s)
+    store(question, response, ttl_s=ttl_s, top_k=top_k)
     return response
