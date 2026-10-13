@@ -45,7 +45,7 @@ def test_query_returns_query_response_on_clean_input():
     body = r.json()
     assert body["answer"] == "Selkirk weighs 7.8 oz."
     assert body["model"] == "gpt-4o-mini"
-    assert body["trace_id"] == "trace-abc"
+    assert body["trace_id"] is None  # No-op tracing must not reuse a prior trace.
     assert body["confidence"] == 0.91
     assert body["sources"][0]["doc_id"] == "p1"
     assert body["blocked_by"] is None

@@ -23,6 +23,7 @@ RANK: dict[str, int] = {
     "config": 0,
     "models": 0,
     "pricing": 0,
+    "telemetry": 0,
     "vectordb": 2,
     "rag": 3,
     "tracing": 4,

@@ -31,6 +31,8 @@ between writes.
 """
 
 import logging
+import hashlib
+from pathlib import Path
 import uuid
 from datetime import datetime, timezone
 
@@ -38,7 +40,7 @@ import chromadb
 from chromadb.config import Settings as ChromaSettings
 
 from src.config import settings
-from src.models import QueryResponse
+from src.models import QueryResponse, TokenUsage
 from src.vectordb import embed_query
 
 logger = logging.getLogger(__name__)
@@ -74,7 +76,17 @@ def ensure_index() -> None:
     _collection()
 
 
-def lookup(question: str, *, threshold: float = 0.85) -> QueryResponse | None:
+def cache_namespace(top_k: int = 5) -> str:
+    prompt_dir = Path(__file__).resolve().parents[2] / "prompts"
+    digest = hashlib.sha256()
+    for path in sorted(prompt_dir.glob("*.j2")):
+        digest.update(path.name.encode())
+        digest.update(path.read_bytes())
+    digest.update(f"{top_k}:{settings.model_simple}:{settings.model_complex}:{settings.embedding_model}".encode())
+    return digest.hexdigest()
+
+
+def lookup(question: str, *, threshold: float = 0.85, top_k: int = 5) -> QueryResponse | None:
     """Return a cached ``QueryResponse`` if a similar, fresh query exists.
 
     Lazy TTL: if the nearest match is older than its stored ``ttl_s``,
@@ -97,6 +109,8 @@ def lookup(question: str, *, threshold: float = 0.85) -> QueryResponse | None:
         return None
 
     metadata = results["metadatas"][0][0]
+    if metadata.get("namespace") != cache_namespace(top_k):
+        return None
     ttl_s = int(metadata.get("ttl_s", 0))
     created_at_iso = metadata.get("created_at")
     if ttl_s > 0 and created_at_iso:
@@ -108,10 +122,10 @@ def lookup(question: str, *, threshold: float = 0.85) -> QueryResponse | None:
 
     response_json = metadata["response"]
     cached = QueryResponse.model_validate_json(response_json)
-    return cached.model_copy(update={"cached": True})
+    return cached.model_copy(update={"cached": True, "trace_id": None, "cost_usd": 0.0, "tokens": TokenUsage(prompt_tokens=0, completion_tokens=0)})
 
 
-def store(question: str, response: QueryResponse, *, ttl_s: int = 3600) -> str:
+def store(question: str, response: QueryResponse, *, ttl_s: int = 3600, top_k: int = 5) -> str:
     """Cache the response under a fresh key. Returns the key written."""
     collection = _collection()
     embedding = embed_query(question)
@@ -126,6 +140,7 @@ def store(question: str, response: QueryResponse, *, ttl_s: int = 3600) -> str:
                 "response": response.model_dump_json(),
                 "created_at": datetime.now(timezone.utc).isoformat(),
                 "ttl_s": ttl_s,
+                "namespace": cache_namespace(top_k),
             }
         ],
     )

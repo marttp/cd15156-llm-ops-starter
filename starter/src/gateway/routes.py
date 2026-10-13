@@ -13,6 +13,11 @@ and for module-by-module exploration in the curriculum.
 """
 
 from fastapi import APIRouter, HTTPException
+from functools import wraps
+from uuid import uuid4
+from opentelemetry import trace
+from src.telemetry import request_id
+from src.config import settings
 from openai import APIConnectionError, APIStatusError, APITimeoutError, RateLimitError
 from pydantic import BaseModel, Field
 
@@ -59,7 +64,26 @@ def _annotate_pii(response: QueryResponse, pii_found: list[str]) -> QueryRespons
     )
 
 
+def trace_request(fn):
+    @wraps(fn)
+    def wrapped(request):
+        token = request_id.set(uuid4().hex)
+        try:
+            with trace.get_tracer(__name__).start_as_current_span("faq_request") as span:
+                span.set_attribute("request.id", request_id.get())
+                result = fn(request)
+                ctx = span.get_span_context()
+                current_id = format(ctx.trace_id, "032x") if ctx.is_valid else None
+                span.set_attribute("request.cached", result.cached)
+                span.set_attribute("rag.model", result.model)
+                return result.model_copy(update={"trace_id": current_id})
+        finally:
+            request_id.reset(token)
+    return wrapped
+
+
 @router.post("/query", response_model=QueryResponse)
+@trace_request
 def query(request: QueryRequest) -> QueryResponse:
     """Run the full guarded + cached + traced FAQ pipeline.
 
@@ -90,7 +114,7 @@ def query(request: QueryRequest) -> QueryResponse:
         return _safe_response(SAFE_BLOCKED_MESSAGE, blocked_by=reason)
     cleaned, pii_found = detect_pii(request.question)
 
-    if cached := cache_lookup(cleaned):
+    if cached := cache_lookup(cleaned, top_k=request.top_k):
         return _annotate_pii(cached, pii_found)
 
     try:
@@ -103,11 +127,11 @@ def query(request: QueryRequest) -> QueryResponse:
         raise HTTPException(status_code=502, detail="model_provider_error") from exc
 
     if reason := check_hallucination(response.answer, response.sources):
-        return _safe_response(SAFE_FILTERED_MESSAGE, blocked_by=reason)
+        return response.model_copy(update={"answer": SAFE_FILTERED_MESSAGE, "sources": [], "confidence": 0.0, "blocked_by": reason})
     if reason := is_off_topic(response.answer):
-        return _safe_response(SAFE_FILTERED_MESSAGE, blocked_by=reason)
+        return response.model_copy(update={"answer": SAFE_FILTERED_MESSAGE, "sources": [], "confidence": 0.0, "blocked_by": reason})
 
-    cache_store(cleaned, response)
+    cache_store(cleaned, response, top_k=request.top_k)
     return _annotate_pii(response, pii_found)
 
 

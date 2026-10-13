@@ -86,7 +86,7 @@ def test_decorator_creates_spans_and_returns_response_with_trace_id():
     span_names = [
         c.args[0] for c in tracer.start_as_current_span.call_args_list
     ]
-    assert span_names == ["rag_query", "rag_generation"]
+    assert span_names == ["rag_query", "response_summary"]
 
     # Root span carries the RAG-level metadata
     root_attrs = _attrs(root_span)

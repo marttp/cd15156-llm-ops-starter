@@ -32,6 +32,7 @@ from watchdog.events import FileSystemEvent, FileSystemEventHandler
 from watchdog.observers import Observer
 
 from src.vectordb import add, chunk_product, embed
+from src.cache.semantic import clear as clear_answer_cache
 
 logger = logging.getLogger(__name__)
 
@@ -162,6 +163,7 @@ def ingest_file(
     ids = [c["metadata"]["product_id"] for c in chunks]
     embeddings = embed(texts)
     add(documents=texts, embeddings=embeddings, metadatas=metadatas, ids=ids)
+    clear_answer_cache()
 
     logger.info("Ingested %s (%d chunk(s))", product["product_id"], len(chunks))
     return product["product_id"]

@@ -7,6 +7,7 @@ from typing import Literal
 
 from src.config import settings
 from src.models import TokenUsage
+from src.telemetry import record_operation
 from src.pricing import compute_cost  # re-exported for callers that prefer this entry point
 
 QueryType = Literal["simple", "complex", "hallucination_check"]
@@ -25,19 +26,7 @@ def log_request(
     path: str | Path | None = None,
 ) -> dict:
     """Append one request record to the JSONL cost log and return it."""
-    record = {
-        "timestamp": datetime.now(timezone.utc).isoformat(),
-        "model": model,
-        "prompt_tokens": usage.prompt_tokens,
-        "completion_tokens": usage.completion_tokens,
-        "cost_usd": cost_usd,
-        "query_type": query_type,
-    }
-    log_path = _resolve_path(path)
-    log_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(log_path, "a", encoding="utf-8") as f:
-        f.write(json.dumps(record) + "\n")
-    return record
+    return record_operation(model, usage, cost_usd, query_type, path=_resolve_path(path))
 
 
 def load_log(path: str | Path | None = None) -> list[dict]:

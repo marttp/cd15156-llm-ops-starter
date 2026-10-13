@@ -74,3 +74,11 @@ llm_guard.output_scanners.BanTopics = MagicMock(return_value=_bantopics_mock)
 _factuality_mock = MagicMock()
 _factuality_mock.scan = MagicMock(side_effect=_clean_scan_output)
 llm_guard.output_scanners.FactualConsistency = MagicMock(return_value=_factuality_mock)
+
+import pytest
+from src.config import settings
+
+
+@pytest.fixture(autouse=True)
+def isolated_operation_log(tmp_path, monkeypatch):
+    monkeypatch.setattr(settings, "cost_log_path", str(tmp_path / "cost.jsonl"))

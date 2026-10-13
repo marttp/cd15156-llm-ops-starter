@@ -67,6 +67,13 @@ def main(argv: list[str] | None = None) -> int:
         print("No records in cost log. Run some queries first.")
         return 0
 
+    all_records = records
+    records = [r for r in all_records if r.get("operation", "generation" if r.get("query_type") in {"simple", "complex"} else "other") == "generation"]
+    overhead = sum(r["cost_usd"] for r in all_records) - sum(r["cost_usd"] for r in records)
+    print(f"Billable operations: {len(all_records)}")
+    print(f"Operational overhead: ${overhead:.6f}")
+    print(f"Total observed spend: ${sum(r['cost_usd'] for r in all_records):.6f}")
+    print("Token-matched generation counterfactual; not a measured alternate-model run.")
     actual = sum(r["cost_usd"] for r in records)
     baseline = baseline_cost(records, args.baseline)
     savings = baseline - actual
@@ -77,14 +84,14 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Baseline ({args.baseline}): ${baseline:.4f}")
     print(f"Savings:           ${savings:.4f} ({pct:.1f}%)")
 
-    rows = per_tier_summary(records)
+    rows = per_tier_summary(all_records)
     if rows:
         width = max(len(model) for model, *_ in rows)
         print()
         print("Per-tier summary:")
         for model, count, avg, total in rows:
             print(
-                f"  {model:<{width}}  N={count:>4}  avg=${avg:.4f}/query  total=${total:.4f}"
+                f"  {model:<{width}}  N={count:>4}  avg=${avg:.4f}/operation  total=${total:.4f}"
             )
     return 0
 

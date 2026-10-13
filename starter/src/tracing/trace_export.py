@@ -44,14 +44,18 @@ def summarize_traces(df: Any, last_n: int) -> list[dict]:
 
     summaries: list[dict] = []
     for trace_id, group in df.groupby("context.trace_id"):
-        root = group[group["name"] == "rag_query"]
+        root = group[group["name"] == "faq_request"]
+        if len(root) == 0:
+            root = group[group["name"] == "rag_query"]
         if len(root) == 0:
             root = group[group["parent_id"].isna()]
         if len(root) == 0:
             continue
         root_row = root.iloc[0]
 
-        children = group[group["name"] != "rag_query"]
+        children = group[group["name"].isin(["classification", "retrieval", "generation", "output_validation"])]
+        if len(children) == 0:
+            children = group[~group["name"].isin(["rag_query", "faq_request"])]
         if len(children) > 0:
             children = children.copy()
             children["_dur_ms"] = (
@@ -78,7 +82,9 @@ def summarize_traces(df: Any, last_n: int) -> list[dict]:
         # Token counts are set on the `rag_generation` child span (see
         # src/tracing/phoenix_backend.py), not on the rag_query root.
         # Pull them from that child if present; otherwise zero.
-        gen = group[group["name"] == "rag_generation"]
+        gen = group[group["name"] == "generation"]
+        if len(gen) == 0:
+            gen = group[group["name"].isin(["rag_generation", "response_summary"])]
         if len(gen) > 0:
             gen_row = gen.iloc[0]
             prompt_tok = _safe_int(gen_row.get("attributes.llm.token_count.prompt", 0))
@@ -95,13 +101,14 @@ def summarize_traces(df: Any, last_n: int) -> list[dict]:
                 )[:80],
                 "model": str(rag_attrs.get("model", "—")),
                 "latency_ms": round(
-                    float(rag_attrs.get("latency_ms", 0) or 0), 1
+                    float((root_row["end_time"] - root_row["start_time"]).total_seconds() * 1000) if root_row["name"] == "faq_request" else float(rag_attrs.get("latency_ms", 0) or 0), 1
                 ),
                 "prompt_tokens": prompt_tok,
                 "completion_tokens": completion_tok,
                 "slowest_span": slowest_name,
                 "slowest_ms": slowest_ms,
                 "start_time": str(root_row.get("start_time", "")),
+                "spans": [{"name": row["name"], "duration_ms": round((row["end_time"] - row["start_time"]).total_seconds() * 1000, 2)} for _, row in group.iterrows()],
             }
         )
 
@@ -135,6 +142,12 @@ def render_markdown(summaries: list[dict], total: int) -> str:
             f"{s['prompt_tokens']} | {s['completion_tokens']} | "
             f"{s['slowest_span']} | {s['slowest_ms']} |"
         )
+    for s in summaries:
+        lines.extend(["", f"## Trace {s['trace_id']}", "", "| Span | Duration ms |", "| --- | ---: |"])
+        for span in s.get("spans", []):
+            lines.append(f"| {span['name']} | {span['duration_ms']} |")
+        if s["latency_ms"]:
+            lines.append(f"Slowest step consumes {100 * s['slowest_ms'] / s['latency_ms']:.1f}% of total request latency.")
     return "\n".join(lines) + "\n"
 
 

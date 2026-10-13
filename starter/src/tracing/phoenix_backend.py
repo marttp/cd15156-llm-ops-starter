@@ -7,7 +7,7 @@ signup. ``phoenix.otel.register(...)`` then registers an OpenTelemetry
 ``OpenAIInstrumentor`` auto-traces every OpenAI SDK call.
 
 The decorator emits a root ``rag_query`` span carrying RAG metadata
-(latency, confidence, cost, top_k, model) plus a child ``rag_generation``
+(latency, confidence, cost, top_k, model) plus a child ``response_summary``
 span carrying token counts and the answer text. The trace_id (32-char
 hex) is injected back into the returned ``QueryResponse``.
 
@@ -108,7 +108,7 @@ def trace_rag_query(
 
             latency_ms = (time.perf_counter() - start) * 1000
 
-            with tracer.start_as_current_span("rag_generation") as gen:
+            with tracer.start_as_current_span("response_summary") as gen:
                 gen.set_attribute("llm.model_name", response.model)
                 gen.set_attribute("input.value", question)
                 gen.set_attribute("output.value", response.answer)

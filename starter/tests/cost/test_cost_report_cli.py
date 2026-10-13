@@ -77,5 +77,5 @@ def test_cli_prints_per_tier_summary(cli_module, cost_log, capsys):
     # Counts + per-query averages appear verbatim in the per-tier block.
     assert "N=   1" in out
     assert "N=   2" in out
-    assert "avg=$0.0045/query" in out
-    assert "avg=$0.0003/query" in out
+    assert "avg=$0.0045/operation" in out
+    assert "avg=$0.0003/operation" in out

@@ -37,6 +37,7 @@ from src.cost.tracker import log_request
 from src.guardrails.llm_guard.output_guards import is_off_topic
 from src.models import Source, TokenUsage
 from src.pricing import compute_cost
+from src.telemetry import operation_span
 
 LOGGER = logging.getLogger(__name__)
 
@@ -57,6 +58,7 @@ _client = OpenAI(
 __all__ = ["check_hallucination", "is_off_topic"]
 
 
+@operation_span("output_validation")
 def check_hallucination(answer: str, sources: list[Source]) -> str | None:
     """Return a block-reason string if the LLM judge says the answer
     isn't supported by the sources. Return ``None`` to pass.
