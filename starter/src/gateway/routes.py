@@ -115,7 +115,7 @@ def query(request: QueryRequest) -> QueryResponse:
     cleaned, pii_found = detect_pii(request.question)
 
     if settings.semantic_cache_enabled:
-        if cached := cache_lookup(cleaned, top_k=request.top_k):
+        if cached := cache_lookup(cleaned, top_k=request.top_k, threshold=settings.semantic_cache_threshold):
             return _annotate_pii(cached, pii_found)
 
     try:
