@@ -25,6 +25,7 @@ from src.gateway.classifier import classify
 from src.gateway.router import select_model
 from src.guardrails.llm_guard.input_guards import detect_pii, detect_prompt_injection
 from src.guardrails.wrapper import SAFE_BLOCKED_MESSAGE, _safe_response
+from src.config import settings
 from src.models import QueryResponse
 from src.optimization.streaming import stream_completion
 from src.rag.retriever import retrieve
@@ -42,7 +43,7 @@ class StreamQueryRequest(BaseModel):
     """
 
     question: str = Field(..., min_length=1, max_length=4000)
-    top_k: int = Field(5, ge=1, le=20)
+    top_k: int = Field(settings.retrieval_top_k, ge=1, le=20)
 
 
 def _sse_event(payload: dict) -> str:

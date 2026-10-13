@@ -17,7 +17,7 @@ def select_model(query_type: QueryType) -> str:
     return settings.model_simple if query_type == "simple" else settings.model_complex
 
 
-def route_query(question: str, top_k: int = 5) -> QueryResponse:
+def route_query(question: str, top_k: int = settings.retrieval_top_k) -> QueryResponse:
     """Full request flow: classify, dispatch, trace, log."""
     query_type = classify(question)
     model = select_model(query_type)

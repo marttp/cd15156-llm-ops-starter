@@ -8,7 +8,7 @@ from opentelemetry import trace
 
 
 def run_pipeline(
-    question: str, model: str | None = None, top_k: int = 5
+    question: str, model: str | None = None, top_k: int = settings.retrieval_top_k
 ) -> QueryResponse:
     """Run the full RAG pipeline and return a structured QueryResponse."""
     chosen_model = model or settings.model_complex

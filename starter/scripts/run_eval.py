@@ -6,6 +6,8 @@ import sys
 from pathlib import Path
 
 from src.evaluation import evaluate_pipeline, load_golden_set, summarize
+from src.evaluation.gates import failures, statistics
+from src.config import settings
 
 GOLDEN_PATH = Path(__file__).resolve().parents[1] / "data" / "golden_test_set.csv"
 
@@ -41,31 +43,47 @@ def main(argv: list[str] | None = None) -> int:
             "by avoiding parallel-load timeouts that produce nan metric cells."
         ),
     )
+    parser.add_argument("--top-k", type=int, default=settings.retrieval_top_k)
+    parser.add_argument("--faithfulness-min", type=float)
+    parser.add_argument("--context-recall-min", type=float)
+    parser.add_argument("--check-result", type=Path, help="Validate saved scores without API calls")
     args = parser.parse_args(argv)
+    thresholds = {key: value for key, value in {"faithfulness": args.faithfulness_min, "context_recall": args.context_recall_min}.items() if value is not None}
+    if args.check_result:
+        payload = json.loads(args.check_result.read_text())
+        errors = failures(payload["aggregate"], payload["rows"], thresholds)
+        for error in errors:
+            print(error, file=sys.stderr)
+        return 2 if errors else 0
 
     golden = load_golden_set(args.golden)
     if args.limit is not None:
         golden = golden[: args.limit]
 
     print(f"Evaluating {len(golden)} questions...")
-    result = evaluate_pipeline(golden, max_workers=args.max_workers)
+    result = evaluate_pipeline(golden, top_k=args.top_k, max_workers=args.max_workers)
     aggregate = summarize(result)
 
     print("\nAggregate metrics:")
     for metric, score in aggregate.items():
         print(f"  {metric}: {score:.3f}")
 
+    rows = result.to_pandas().to_dict("records")
+    errors = failures(aggregate, rows, thresholds)
     if args.output:
+        args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(
             json.dumps(
-                {"aggregate": aggregate, "rows": result.to_pandas().to_dict("records")},
+                {"aggregate": aggregate, "rows": rows, "statistics": statistics(rows), "top_k": args.top_k, "model": settings.model_complex, "judge_model": settings.model_simple},
                 indent=2,
                 default=str,
             )
         )
         print(f"\nWrote per-row results to {args.output}")
 
-    return 0
+    for error in errors:
+        print(error, file=sys.stderr)
+    return 2 if errors else 0
 
 
 if __name__ == "__main__":
