@@ -1,0 +1,13 @@
+{
+  "product_id": "demo_court_bag",
+  "name": "Baseline Court Bag",
+  "category": "accessories",
+  "brand": "Baseline",
+  "price": 39.0,
+  "description": "A compact bag for paddles and pickleballs.",
+  "specifications": {
+    "capacity": "2 paddles and 6 balls",
+    "material": "polyester"
+  },
+  "care_instructions": "Wipe clean and air dry. Do not machine wash."
+}

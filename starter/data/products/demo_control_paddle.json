@@ -1,0 +1,15 @@
+{
+  "product_id": "demo_control_paddle",
+  "name": "Baseline Control Paddle",
+  "category": "paddles",
+  "brand": "Baseline",
+  "price": 89.0,
+  "description": "A lightweight paddle for beginner control practice.",
+  "specifications": {
+    "weight": "7.4 oz",
+    "face_material": "fiberglass",
+    "core_material": "polymer",
+    "skill_level": "beginner"
+  },
+  "care_instructions": "Wipe clean and air dry. Do not machine wash."
+}

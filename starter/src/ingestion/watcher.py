@@ -21,6 +21,8 @@ should produce more than one chunk.
 
 import json
 import logging
+import math
+import re
 import shutil
 import time
 from pathlib import Path
@@ -70,8 +72,17 @@ def validate_product(product: dict) -> str | None:
         return "specifications must be an object"
     for field, limit in FIELD_MAX_LENGTHS.items():
         value = product.get(field)
+        if not isinstance(value, str) or not value.strip():
+            return f"{field} must be a non-empty string"
         if isinstance(value, str) and len(value) > limit:
             return f"{field} exceeds {limit}-character limit ({len(value)} chars)"
+    if not re.fullmatch(r"[A-Za-z0-9_-]+", product["product_id"]):
+        return "product_id must contain only letters, digits, underscores or hyphens"
+    price = product["price"]
+    if isinstance(price, bool) or not isinstance(price, (int, float)) or not math.isfinite(price) or price < 0:
+        return "price must be a finite non-negative number"
+    if not product["specifications"]:
+        return "specifications must not be empty"
     return None
 
 
@@ -134,7 +145,7 @@ def ingest_file(
 
     try:
         product = json.loads(path.read_text())
-    except json.JSONDecodeError as exc:
+    except (json.JSONDecodeError, UnicodeDecodeError) as exc:
         _quarantine(path, failed_dir, f"invalid JSON: {exc}")
         return None
     except FileNotFoundError:
