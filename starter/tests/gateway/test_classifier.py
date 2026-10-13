@@ -10,6 +10,7 @@ from src.gateway import classify
 
 def _completion(content: str):
     return SimpleNamespace(
+        usage=SimpleNamespace(prompt_tokens=30, completion_tokens=5),
         choices=[SimpleNamespace(message=SimpleNamespace(content=content))]
     )
 
@@ -69,6 +70,7 @@ def test_classify_falls_back_to_complex_on_bad_response(bad_content):
 def test_classify_handles_empty_completion_content():
     with patch("src.gateway.classifier._client") as client:
         client.chat.completions.create.return_value = SimpleNamespace(
+            usage=SimpleNamespace(prompt_tokens=30, completion_tokens=5),
             choices=[SimpleNamespace(message=SimpleNamespace(content=None))]
         )
 

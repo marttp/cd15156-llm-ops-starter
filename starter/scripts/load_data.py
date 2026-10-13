@@ -12,6 +12,7 @@ from src.vectordb.chunker import chunk_product
 from src.vectordb.embedder import embed
 from src.vectordb.store import add
 from src.ingestion.watcher import validate_product
+from src.cache.semantic import clear as clear_answer_cache
 
 
 def main() -> None:
@@ -35,6 +36,7 @@ def main() -> None:
 
     embeddings = embed(all_texts)
     add(documents=all_texts, embeddings=embeddings, metadatas=all_metadatas, ids=all_ids)
+    clear_answer_cache()
 
     print(f"Done — {len(all_ids)} chunks upserted.")
 

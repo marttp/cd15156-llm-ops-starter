@@ -8,6 +8,7 @@ from src.vectordb import embed, embed_query
 
 def _embeddings_response(*vectors: list[float]):
     return SimpleNamespace(
+        usage=SimpleNamespace(prompt_tokens=5),
         data=[SimpleNamespace(embedding=v) for v in vectors]
     )
 

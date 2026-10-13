@@ -16,8 +16,12 @@ from typing import Literal
 
 from jinja2 import Environment, FileSystemLoader
 from openai import OpenAI
+from opentelemetry import trace
 
 from src.config import settings
+from src.models import TokenUsage
+from src.pricing import compute_cost
+from src.telemetry import record_operation
 
 QueryType = Literal["simple", "complex"]
 
@@ -46,12 +50,16 @@ def classify(question: str) -> QueryType:
     pay a bit more than to give a worse answer.
     """
     prompt = _env.get_template("classifier.j2").render(query=question)
-    response = _client.chat.completions.create(
-        model=settings.model_simple,
+    with trace.get_tracer(__name__).start_as_current_span("classification") as span:
+        response = _client.chat.completions.create(
+            model=settings.model_simple,
             max_tokens=256,
-        messages=[{"role": "user", "content": prompt}],
-        response_format={"type": "json_object"},
-    )
+            messages=[{"role": "user", "content": prompt}],
+            response_format={"type": "json_object"},
+        )
+        usage = TokenUsage(prompt_tokens=response.usage.prompt_tokens, completion_tokens=response.usage.completion_tokens)
+        span.set_attribute("llm.token_count.total", usage.total)
+        record_operation(settings.model_simple, usage, compute_cost(settings.model_simple, usage), "classification")
     raw = response.choices[0].message.content or "{}"
     try:
         parsed = json.loads(raw)

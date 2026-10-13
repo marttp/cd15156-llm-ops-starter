@@ -4,6 +4,7 @@ from datetime import datetime, timedelta, timezone
 from unittest.mock import MagicMock, patch
 
 from src.cache.semantic import (
+    cache_namespace,
     COLLECTION_NAME,
     KEY_PREFIX,
     clear,
@@ -52,6 +53,7 @@ def _query_result(
             [
                 {
                     "question": question,
+                    "namespace": cache_namespace(),
                     "response": response_json,
                     "created_at": created_at_iso
                     or datetime.now(timezone.utc).isoformat(),

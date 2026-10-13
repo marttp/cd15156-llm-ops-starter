@@ -3,6 +3,9 @@
 from openai import OpenAI
 
 from src.config import settings
+from src.models import TokenUsage
+from src.pricing import compute_cost
+from src.telemetry import record_operation
 
 _client = OpenAI(
     api_key=settings.openai_api_key,
@@ -17,6 +20,8 @@ def embed(texts: list[str]) -> list[list[float]]:
     response = _client.embeddings.create(
         input=texts, model=settings.embedding_model
     )
+    usage = TokenUsage(prompt_tokens=response.usage.prompt_tokens, completion_tokens=0)
+    record_operation(settings.embedding_model, usage, compute_cost(settings.embedding_model, usage), "embedding")
     return [item.embedding for item in response.data]
 
 
