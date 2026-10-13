@@ -2,7 +2,7 @@
 name = "llm-ops-project"
 version = "0.1.0"
 description = "Production LLM FAQ Service — Udacity nd907 Course 2 Capstone"
-requires-python = ">=3.11,<3.14"
+requires-python = ">=3.12,<3.13"
 dependencies = [
     "fastapi>=0.111,<1",
     "uvicorn[standard]>=0.30,<1",
