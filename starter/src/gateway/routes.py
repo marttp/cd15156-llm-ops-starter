@@ -114,8 +114,9 @@ def query(request: QueryRequest) -> QueryResponse:
         return _safe_response(SAFE_BLOCKED_MESSAGE, blocked_by=reason)
     cleaned, pii_found = detect_pii(request.question)
 
-    if cached := cache_lookup(cleaned, top_k=request.top_k):
-        return _annotate_pii(cached, pii_found)
+    if settings.semantic_cache_enabled:
+        if cached := cache_lookup(cleaned, top_k=request.top_k):
+            return _annotate_pii(cached, pii_found)
 
     try:
         response = route_query(cleaned, top_k=request.top_k)
@@ -126,12 +127,15 @@ def query(request: QueryRequest) -> QueryResponse:
     except APIStatusError as exc:
         raise HTTPException(status_code=502, detail="model_provider_error") from exc
 
+    if not response.sources:
+        return response.model_copy(update={"answer": SAFE_FILTERED_MESSAGE, "confidence": 0.0, "blocked_by": "retrieval: no_sources"})
     if reason := check_hallucination(response.answer, response.sources):
         return response.model_copy(update={"answer": SAFE_FILTERED_MESSAGE, "sources": [], "confidence": 0.0, "blocked_by": reason})
     if reason := is_off_topic(response.answer):
         return response.model_copy(update={"answer": SAFE_FILTERED_MESSAGE, "sources": [], "confidence": 0.0, "blocked_by": reason})
 
-    cache_store(cleaned, response, top_k=request.top_k)
+    if settings.semantic_cache_enabled:
+        cache_store(cleaned, response, top_k=request.top_k)
     return _annotate_pii(response, pii_found)
 
 

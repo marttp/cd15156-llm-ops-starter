@@ -63,7 +63,7 @@ def classify(question: str) -> QueryType:
     raw = response.choices[0].message.content or "{}"
     try:
         parsed = json.loads(raw)
-        label = parsed.get("classification")
+        label = parsed.get("classification") if isinstance(parsed, dict) else None
     except json.JSONDecodeError:
         label = None
 
