@@ -12,7 +12,8 @@ the LLM-Guard variant) remain available as standalone wrappers for tests
 and for module-by-module exploration in the curriculum.
 """
 
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
+from openai import APIConnectionError, APIStatusError, APITimeoutError, RateLimitError
 from pydantic import BaseModel, Field
 
 from src.cache.semantic import lookup as cache_lookup
@@ -59,7 +60,7 @@ def _annotate_pii(response: QueryResponse, pii_found: list[str]) -> QueryRespons
 
 
 @router.post("/query", response_model=QueryResponse)
-async def query(request: QueryRequest) -> QueryResponse:
+def query(request: QueryRequest) -> QueryResponse:
     """Run the full guarded + cached + traced FAQ pipeline.
 
     The handler intentionally inlines the layer composition rather than
@@ -92,7 +93,14 @@ async def query(request: QueryRequest) -> QueryResponse:
     if cached := cache_lookup(cleaned):
         return _annotate_pii(cached, pii_found)
 
-    response = route_query(cleaned, top_k=request.top_k)
+    try:
+        response = route_query(cleaned, top_k=request.top_k)
+    except (APITimeoutError, APIConnectionError) as exc:
+        raise HTTPException(status_code=503, detail="model_provider_unavailable") from exc
+    except RateLimitError as exc:
+        raise HTTPException(status_code=503, detail="model_provider_rate_limited", headers={"Retry-After": "10"}) from exc
+    except APIStatusError as exc:
+        raise HTTPException(status_code=502, detail="model_provider_error") from exc
 
     if reason := check_hallucination(response.answer, response.sources):
         return _safe_response(SAFE_FILTERED_MESSAGE, blocked_by=reason)

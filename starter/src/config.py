@@ -63,6 +63,10 @@ class Settings(BaseSettings):
 
     # Application
     cost_log_path: str = "data/cost_log.jsonl"
+    provider_timeout_s: float = 45.0
+    provider_max_retries: int = 2
+    generation_max_tokens: int = 768
+    retrieval_top_k: int = 5
 
     # Guardrails — output-side
     # FactualConsistency NLI scanner's minimum entailment score.

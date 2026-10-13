@@ -33,6 +33,8 @@ _env = Environment(
 _client = OpenAI(
     api_key=settings.openai_api_key,
     base_url=settings.openai_base_url or None,
+    timeout=settings.provider_timeout_s,
+    max_retries=settings.provider_max_retries,
 )
 
 
@@ -46,6 +48,7 @@ def classify(question: str) -> QueryType:
     prompt = _env.get_template("classifier.j2").render(query=question)
     response = _client.chat.completions.create(
         model=settings.model_simple,
+            max_tokens=256,
         messages=[{"role": "user", "content": prompt}],
         response_format={"type": "json_object"},
     )

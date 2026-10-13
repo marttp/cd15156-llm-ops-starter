@@ -7,6 +7,8 @@ from src.config import settings
 _client = OpenAI(
     api_key=settings.openai_api_key,
     base_url=settings.openai_base_url or None,
+    timeout=settings.provider_timeout_s,
+    max_retries=settings.provider_max_retries,
 )
 
 

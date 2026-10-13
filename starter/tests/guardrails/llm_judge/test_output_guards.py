@@ -62,7 +62,7 @@ def test_check_hallucination_blocks_when_judge_returns_not_supported():
     assert "12 oz" in result
 
 
-def test_check_hallucination_fails_open_on_malformed_json():
+def test_check_hallucination_refuses_on_malformed_json():
     sources = [_src("p1", "x")]
     with patch("src.guardrails.llm_judge.output_guards._client") as client, \
          patch("src.guardrails.llm_judge.output_guards.log_request") as logger, \
@@ -70,13 +70,13 @@ def test_check_hallucination_fails_open_on_malformed_json():
         client.chat.completions.create.return_value = _fake_response("not json at all")
         result = check_hallucination("any", sources)
 
-    assert result is None
-    # Cost not logged on parse error — the return-early branch sits above the log call
-    logger.assert_not_called()
+    assert result.startswith("hallucination:")
+    # Malformed verdicts still consumed billed tokens.
+    logger.assert_called_once()
     scanner_logger.warning.assert_called_once()
 
 
-def test_check_hallucination_fails_open_on_missing_verdict_field():
+def test_check_hallucination_refuses_on_missing_verdict_field():
     sources = [_src("p1", "x")]
     payload = json.dumps({"reason": "no verdict key here"})
     with patch("src.guardrails.llm_judge.output_guards._client") as client, \
@@ -85,12 +85,12 @@ def test_check_hallucination_fails_open_on_missing_verdict_field():
         client.chat.completions.create.return_value = _fake_response(payload)
         result = check_hallucination("any", sources)
 
-    assert result is None
-    logger.assert_not_called()
+    assert result.startswith("hallucination:")
+    logger.assert_called_once()
     scanner_logger.warning.assert_called_once()
 
 
-def test_check_hallucination_fails_open_on_openai_exception():
+def test_check_hallucination_refuses_on_openai_exception():
     sources = [_src("p1", "x")]
     with patch("src.guardrails.llm_judge.output_guards._client") as client, \
          patch("src.guardrails.llm_judge.output_guards.log_request") as logger, \
@@ -98,6 +98,6 @@ def test_check_hallucination_fails_open_on_openai_exception():
         client.chat.completions.create.side_effect = RuntimeError("network down")
         result = check_hallucination("any", sources)
 
-    assert result is None
+    assert result.startswith("hallucination:")
     logger.assert_not_called()
     scanner_logger.warning.assert_called_once()

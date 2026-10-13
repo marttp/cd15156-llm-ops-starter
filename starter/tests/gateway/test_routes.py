@@ -35,6 +35,7 @@ def test_health_returns_ok():
 
 def test_query_returns_query_response_on_clean_input():
     with patch("src.gateway.routes.cache_lookup", return_value=None), \
+         patch("src.gateway.routes.check_hallucination", return_value=None), \
          patch("src.gateway.routes.cache_store") as store, \
          patch("src.gateway.routes.route_query", return_value=_response()) as route:
         client = TestClient(create_app())
@@ -89,6 +90,7 @@ def test_query_returns_cached_response_on_second_call():
     """F-01 verification: identical clean question hits the cache the second time."""
     cached = _response().model_copy(update={"cached": True})
     with patch("src.gateway.routes.cache_lookup", side_effect=[None, cached]) as lookup, \
+         patch("src.gateway.routes.check_hallucination", return_value=None), \
          patch("src.gateway.routes.cache_store") as store, \
          patch("src.gateway.routes.route_query", return_value=_response()) as route:
         client = TestClient(create_app())
@@ -109,6 +111,7 @@ def test_query_redacts_pii_before_routing_and_caching():
         "src.gateway.routes.detect_pii",
         return_value=(redacted, ["email"]),
     ), patch("src.gateway.routes.cache_lookup", return_value=None), \
+         patch("src.gateway.routes.check_hallucination", return_value=None), \
          patch("src.gateway.routes.cache_store") as store, \
          patch("src.gateway.routes.route_query", return_value=_response()) as route:
         client = TestClient(create_app())

@@ -14,8 +14,8 @@ Trade-offs:
 - Cost-log gets a second entry per request with
   ``query_type="hallucination_check"`` so the additional spend is
   visible in ``data/cost_log.jsonl``.
-- **Fail-open**: any error (network, rate limit, JSON parse, missing
-  field) returns ``None`` — the answer flows through unblocked. The
+- **Fail-closed**: any error (network, rate limit, JSON parse, missing
+  field) returns a refusal reason — the answer is withheld. The
   alternative (false-positive on a network blip) is worse for a course
   demo. A WARN-level log entry surfaces the failure for operators.
 
@@ -50,6 +50,8 @@ _env = Environment(
 _client = OpenAI(
     api_key=settings.openai_api_key,
     base_url=settings.openai_base_url or None,
+    timeout=settings.provider_timeout_s,
+    max_retries=settings.provider_max_retries,
 )
 
 __all__ = ["check_hallucination", "is_off_topic"]
@@ -61,8 +63,7 @@ def check_hallucination(answer: str, sources: list[Source]) -> str | None:
 
     Empty ``sources`` is not the scanner's concern — the upstream
     confidence check handles unretrieved queries — so we mirror the
-    behaviour of the NLI variant and return ``None``. Any error inside
-    the judge call is logged at WARN and treated as a pass (fail-open).
+    behaviour of the NLI variant and return ``None``. Any judge error is logged and returns a safe refusal marker.
     """
     if not sources:
         return None
@@ -75,24 +76,13 @@ def check_hallucination(answer: str, sources: list[Source]) -> str | None:
     try:
         response = _client.chat.completions.create(
             model=settings.model_simple,
+            max_tokens=256,
             messages=[{"role": "user", "content": prompt}],
             response_format={"type": "json_object"},
         )
     except Exception as exc:
-        LOGGER.warning("LLM judge call failed; failing open: %s", exc)
-        return None
-
-    raw = response.choices[0].message.content or "{}"
-    try:
-        parsed = json.loads(raw)
-        verdict = parsed["verdict"]
-    except (json.JSONDecodeError, KeyError, TypeError) as exc:
-        LOGGER.warning(
-            "LLM judge returned unparseable response %r; failing open: %s",
-            raw[:200],
-            exc,
-        )
-        return None
+        LOGGER.warning("LLM judge call failed; refusing unverifiable output: %s", exc)
+        return "hallucination: judge_unavailable"
 
     # Log the cost regardless of verdict — we paid for the call.
     usage = TokenUsage(
@@ -102,6 +92,20 @@ def check_hallucination(answer: str, sources: list[Source]) -> str | None:
     cost = compute_cost(settings.model_simple, usage)
     log_request(settings.model_simple, usage, cost, "hallucination_check")
 
+    raw = response.choices[0].message.content or "{}"
+    try:
+        parsed = json.loads(raw)
+        verdict = parsed["verdict"]
+    except (json.JSONDecodeError, KeyError, TypeError) as exc:
+        LOGGER.warning(
+            "LLM judge returned unparseable response %r; refusing unverifiable output: %s",
+            raw[:200],
+            exc,
+        )
+        return "hallucination: invalid_judge_response"
+
+    if verdict not in {"SUPPORTED", "NOT_SUPPORTED"}:
+        return "hallucination: invalid_judge_verdict"
     if verdict == "NOT_SUPPORTED":
         reason = parsed.get("reason", "judge marked answer as not supported")
         return f"hallucination: {reason}"
