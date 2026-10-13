@@ -18,10 +18,12 @@ Usage:
 """
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
 from src.evaluation import evaluate_pipeline, load_golden_set, summarize
+from src.evaluation.gates import failures, statistics
 
 GOLDEN_PATH = Path(__file__).resolve().parents[1] / "data" / "golden_test_set.csv"
 DEFAULT_TOPKS = (3, 5, 10)
@@ -72,7 +74,9 @@ def main(argv: list[str] | None = None) -> int:
             "by avoiding parallel-load timeouts that produce nan metric cells."
         ),
     )
+    parser.add_argument("--output-dir", type=Path, default=Path("evidence/evaluation/sweep"))
     args = parser.parse_args(argv)
+    args.output_dir.mkdir(parents=True, exist_ok=True)
 
     golden = load_golden_set(args.golden)
     if args.limit is not None:
@@ -82,10 +86,19 @@ def main(argv: list[str] | None = None) -> int:
     for top_k in args.topks:
         print(f"==> Sweeping top_k={top_k} over {len(golden)} questions ...", file=sys.stderr)
         result = evaluate_pipeline(golden, top_k=top_k, max_workers=args.max_workers)
-        rows.append((top_k, summarize(result)))
+        aggregate = summarize(result)
+        scored_rows = result.to_pandas().to_dict("records")
+        (args.output_dir / f"top_k_{top_k}.json").write_text(json.dumps({"aggregate": aggregate, "rows": scored_rows, "statistics": statistics(scored_rows), "top_k": top_k}, indent=2, default=str))
+        errors = failures(aggregate, scored_rows)
+        if errors:
+            print("\n".join(errors), file=sys.stderr)
+            return 2
+        rows.append((top_k, aggregate))
 
     print()
-    print(_render_markdown(rows))
+    table = _render_markdown(rows)
+    (args.output_dir / "comparison.md").write_text(table + "\n")
+    print(table)
     return 0
 
 

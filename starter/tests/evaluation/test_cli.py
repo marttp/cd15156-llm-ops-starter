@@ -43,6 +43,8 @@ def _fake_result(rows: int):
             "ground_truth": [f"GT{i}" for i in range(rows)],
             "faithfulness": [0.8] * rows,
             "answer_relevancy": [0.9] * rows,
+            "context_recall": [0.85] * rows,
+            "context_precision": [0.88] * rows,
         }
     )
     return result

@@ -47,7 +47,7 @@ class QueryRequest(BaseModel):
     """
 
     question: str = Field(..., min_length=1, max_length=4000)
-    top_k: int = Field(5, ge=1, le=20)
+    top_k: int = Field(settings.retrieval_top_k, ge=1, le=20)
 
 
 def _annotate_pii(response: QueryResponse, pii_found: list[str]) -> QueryResponse:

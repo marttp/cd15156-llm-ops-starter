@@ -63,7 +63,7 @@ def load_golden_set(path: str | Path) -> list[dict]:
     return rows
 
 
-def build_eval_dataset(golden_set: list[dict], *, top_k: int = 5) -> Dataset:
+def build_eval_dataset(golden_set: list[dict], *, top_k: int = settings.retrieval_top_k) -> Dataset:
     """Run the RAG pipeline for each row and collect the outputs RAGAS needs.
 
     ``top_k`` is forwarded to ``run_pipeline`` so callers can sweep
@@ -164,7 +164,7 @@ def evaluate_pipeline(
     golden_set: list[dict],
     metrics: Sequence | None = None,
     *,
-    top_k: int = 5,
+    top_k: int = settings.retrieval_top_k,
     max_workers: int | None = None,
 ):
     """Run the pipeline against the golden set and score with RAGAS.
