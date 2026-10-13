@@ -30,6 +30,8 @@ _env = Environment(
 _client = OpenAI(
     api_key=settings.openai_api_key,
     base_url=settings.openai_base_url or None,
+    timeout=settings.provider_timeout_s,
+    max_retries=settings.provider_max_retries,
 )
 
 
@@ -49,6 +51,7 @@ def generate(
     system_prompt = render_system_prompt(sources)
     response = _client.chat.completions.create(
         model=model,
+        max_tokens=settings.generation_max_tokens,
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": question},

@@ -15,6 +15,9 @@ To add a new injection pattern, append a ``re.compile(...)`` to
 import re
 
 INJECTION_PATTERNS: list[re.Pattern] = [
+    re.compile(r"\breveal\s+(?:the\s+)?(?:hidden\s+)?system\s+prompt\b", re.IGNORECASE),
+    re.compile(r"\bdisable\s+(?:all\s+)?(?:safety|security)\s+(?:filters|checks|guardrails)\b", re.IGNORECASE),
+    re.compile(r"\b(?:developer|admin)\s+override\s*:\s*bypass\b", re.IGNORECASE),
     re.compile(r"\bignore\s+(all\s+)?(previous|prior|above)\s+instructions?\b", re.IGNORECASE),
     re.compile(r"\bdisregard\s+(all\s+)?(previous|prior|above)\s+instructions?\b", re.IGNORECASE),
     re.compile(r"\byou\s+are\s+now\s+", re.IGNORECASE),
