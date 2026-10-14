@@ -1,0 +1,9 @@
+uv run --no-project python scripts/run_eval.py --max-workers=1 --check-result=evidence/evaluation/final.json --faithfulness-min=.90
+Saved aggregate metrics (no new model calls):
+  faithfulness: 0.950
+  answer_relevancy: 0.889
+  context_recall: 0.871
+  context_precision: 0.757
+
+make exit=0
+python exit=0

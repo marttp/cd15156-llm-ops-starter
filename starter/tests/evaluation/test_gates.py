@@ -34,3 +34,8 @@ def test_saved_result_gate_runs_without_a_provider_key(tmp_path):
     env = {**os.environ, 'OPENAI_API_KEY': '', 'PYTHONPATH': str(root)}
     result = subprocess.run([str(root / '.venv/bin/python'), str(root / 'scripts/run_eval.py'), '--check-result', str(saved), '--faithfulness-min', '.75'], cwd=tmp_path, env=env, capture_output=True, text=True, timeout=30)
     assert result.returncode == 0, result.stderr
+
+
+def test_nan_threshold_cannot_disable_the_gate():
+    scores = dict.fromkeys(METRICS, .8)
+    assert 'threshold must be finite' in failures(scores, [scores], {'faithfulness': float('nan')})[0]

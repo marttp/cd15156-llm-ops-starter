@@ -1,8 +1,8 @@
 uv run --no-project pytest tests/ -q
 ........................................................................ [ 27%]
 ........................................................................ [ 54%]
-........................................................................ [ 82%]
-...............................................                          [100%]
+........................................................................ [ 81%]
+................................................                         [100%]
 =============================== warnings summary ===============================
 src/evaluation/run_eval.py:27
 src/evaluation/run_eval.py:27
@@ -61,4 +61,4 @@ tests/evaluation/test_run_eval.py::test_default_metrics_are_the_four_stable_ones
     from ragas.metrics import (
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-263 passed, 26 warnings in 2.22s
+264 passed, 26 warnings in 2.26s

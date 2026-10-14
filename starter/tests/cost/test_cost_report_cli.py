@@ -54,7 +54,7 @@ def test_cli_reports_savings_vs_baseline(cli_module, cost_log, capsys):
     # Baseline: 3 * 0.004500 = 0.013500
     assert "Baseline (gpt-4o): $0.0135" in out
     # Savings: 0.013500 - 0.005040 = 0.008460, % = 0.00846/0.0135 * 100 = 62.67%
-    assert "Savings:           $0.0085" in out
+    assert "Savings:           $0.008460" in out
     assert "62.7%" in out
 
 
@@ -77,5 +77,5 @@ def test_cli_prints_per_tier_summary(cli_module, cost_log, capsys):
     # Counts + per-query averages appear verbatim in the per-tier block.
     assert "N=   1" in out
     assert "N=   2" in out
-    assert "avg=$0.0045/operation" in out
-    assert "avg=$0.0003/operation" in out
+    assert "avg=$0.004500/operation" in out
+    assert "avg=$0.000270/operation" in out

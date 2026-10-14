@@ -65,6 +65,9 @@ def main(argv: list[str] | None = None) -> int:
     thresholds = {key: value for key, value in {"faithfulness": args.faithfulness_min, "context_recall": args.context_recall_min}.items() if value is not None}
     if args.check_result:
         payload = json.loads(args.check_result.read_text())
+        print("Saved aggregate metrics (no new model calls):")
+        for metric, score in payload["aggregate"].items():
+            print(f"  {metric}: {score:.3f}")
         errors = failures(payload["aggregate"], payload["rows"], thresholds)
         for error in errors:
             print(error, file=sys.stderr)

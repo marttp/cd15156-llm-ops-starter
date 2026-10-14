@@ -17,3 +17,9 @@ jobs:
       - run: uv sync --locked
       - run: make test
       - run: make verify
+      - name: Validate saved quality evidence
+        if: ${{ hashFiles('starter/evidence/evaluation/final.json') != '' }}
+        run: make eval EVAL_ARGS='--check-result=evidence/evaluation/final.json --faithfulness-min=0.90'
+      - name: Audit rubric evidence
+        if: ${{ hashFiles('starter/WRITEUP.md') != '' }}
+        run: uv run --no-project python scripts/audit_submission.py

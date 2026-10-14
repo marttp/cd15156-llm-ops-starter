@@ -1,0 +1,26 @@
+{
+  "3": {
+    "question_count": 35,
+    "generation_model": "gpt-4o",
+    "mean_prompt_tokens": 810.1714285714286,
+    "mean_completion_tokens": 61.2,
+    "mean_generation_cost_usd": 0.0026374285714285714,
+    "scope": "Observed generation usage from the same sweep answers; excludes classification, embedding and scoring overhead."
+  },
+  "5": {
+    "question_count": 35,
+    "generation_model": "gpt-4o",
+    "mean_prompt_tokens": 1096.857142857143,
+    "mean_completion_tokens": 66.94285714285714,
+    "mean_generation_cost_usd": 0.0034115714285714283,
+    "scope": "Observed generation usage from the same sweep answers; excludes classification, embedding and scoring overhead."
+  },
+  "10": {
+    "question_count": 35,
+    "generation_model": "gpt-4o",
+    "mean_prompt_tokens": 1838.2857142857142,
+    "mean_completion_tokens": 73.45714285714286,
+    "mean_generation_cost_usd": 0.0053302857142857145,
+    "scope": "Observed generation usage from the same sweep answers; excludes classification, embedding and scoring overhead."
+  }
+}

@@ -83,7 +83,7 @@ def build_eval_dataset(golden_set: list[dict], *, top_k: int = settings.retrieva
         root = Path(__file__).resolve().parents[2]
         fingerprint = hashlib.sha256(json.dumps(golden_set, sort_keys=True).encode())
         fingerprint.update(f"{top_k}:{settings.model_complex}:{settings.embedding_model}:{settings.generation_max_tokens}".encode())
-        for directory, pattern in [("prompts", "*.j2"), ("data/products", "*.json"), ("data/inbox", "*.json")]:
+        for directory, pattern in [("prompts", "*.j2"), ("data/products", "*.json"), ("data/inbox", "*.json"), ("src/rag", "*.py"), ("src/vectordb", "*.py")]:
             for path in sorted((root / directory).glob(pattern)):
                 fingerprint.update(path.read_bytes())
         checkpoint = Path(settings.eval_dataset_cache_dir) / f"k{top_k}-{fingerprint.hexdigest()[:20]}.json"

@@ -1,3 +1,5 @@
+Project: `llm-ops-capstone`
+
 # Phoenix Trace Export
 
 12 trace(s) captured. Showing the most recent 10.

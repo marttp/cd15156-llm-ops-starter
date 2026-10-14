@@ -4,7 +4,7 @@ Planning baseline: 2026-10-14, starter commit `1290dd1f9a054a6ec8692032e7d06d942
 Fork: https://github.com/marttp/cd15156-llm-ops-starter
 Upstream: https://github.com/udacity/cd15156-llm-ops-starter
 
-Status: fork created and local remotes configured. Implementation and live evidence have not started. No rubric row is marked passed.
+Execution status: phases were delivered through PRs 1–9 in the fork. The final nine-row evidence map is [RUBRIC_AUDIT.md](RUBRIC_AUDIT.md), and observed outcomes and tradeoffs are in [WRITEUP.md](WRITEUP.md). The original plan below is retained to connect each implementation step to the learning resources.
 
 ## Scope and completion rule
 

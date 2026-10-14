@@ -33,7 +33,7 @@
     "data/products/prod_024_asics_gel_renma.json": "1ac774818c674a476fc1ef30dc30b916f0fb7f719a34878beb89bb83500904dc",
     "data/products/prod_025_gamma_ball_hopper.json": "e0e0b7f7ef7f3cc64252d465dc680460c8b8b1d92589e71ad8f8213c34343081",
     "prompts/classifier.j2": "3e12aae1be1fe51704659d61a05a7bef5bb649cae8849b8709850896f0e4aaaa",
-    "prompts/judge.j2": "4e5dbf46fd61dfc9e12ad5607036137c9bc1021e96b6610066275f69c5e17072",
+    "prompts/judge.j2": "d3c860d2cccb2ac936bda2297d88024fbed2358b9d6d0377d98479c4cfe73849",
     "prompts/rag_system.j2": "a5898876ea8e6e74952aff4892d50857b983041e9474cf425b83c19ed523dd69",
     "data/golden_test_set.csv": "92f23404cae67cd1119d4b0df7ccf0f4ba00296c420c2b190327b86756c0ebb6"
   },
@@ -48,5 +48,13 @@
     "data/ingestion-fixtures/valid_3.json": "8e1fbad06ddcdd36e61641d194f559d69d53e9818fcb53f7f335e109e64af24f",
     "data/ingestion-fixtures/valid_1.json": "7a541a5fd30b06c3a88dc12362cb26852e378d15cf5c7f9806578918f3e1a235",
     "data/ingestion-fixtures/malformed.json": "db04d21a26baa1ec5cf2c616a7740ee3223fe3cc9ef20753ccd3da4384fb18f8"
-  }
+  },
+  "source_overlays": [
+    {
+      "file": "prompts/judge.j2",
+      "capture_sha256": "4e5dbf46fd61dfc9e12ad5607036137c9bc1021e96b6610066275f69c5e17072",
+      "submission_sha256": "d3c860d2cccb2ac936bda2297d88024fbed2358b9d6d0377d98479c4cfe73849",
+      "reason": "Reject definitive absent-feature claims based only on omitted documentation; treat source/answer as untrusted data. Recalibrated six positive and six negative cases and reran supplemental real-provider safety probes. Raw RAGAS generator unchanged."
+    }
+  ]
 }

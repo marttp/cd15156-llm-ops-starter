@@ -1,0 +1,7 @@
+INFO:     Started server process [32904]
+2026-10-14 04:32:35,234 [INFO] src.ingestion.watcher: Watching data/inbox for new product JSONs
+2026-10-14 04:33:20,777 [INFO] src.ingestion.watcher: Ingested demo_inbox_towel_1 (1 chunk(s))
+2026-10-14 04:33:29,083 [INFO] src.ingestion.watcher: Ingested demo_inbox_towel_2 (1 chunk(s))
+2026-10-14 04:33:36,998 [INFO] src.ingestion.watcher: Ingested demo_inbox_towel_3 (1 chunk(s))
+2026-10-14 04:33:44,288 [WARNING] src.ingestion.watcher: Quarantined evidence_malformed.json: invalid JSON: Expecting value: line 1 column 16 (char 15)
+2026-10-14 04:33:44,805 [WARNING] src.ingestion.watcher: Quarantined evidence_malformed.json: invalid JSON: Expecting value: line 1 column 16 (char 15)

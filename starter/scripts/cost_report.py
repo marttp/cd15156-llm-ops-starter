@@ -80,9 +80,9 @@ def main(argv: list[str] | None = None) -> int:
     pct = (savings / baseline * 100) if baseline > 0 else 0.0
 
     print(f"Records:           {len(records)}")
-    print(f"Actual cost:       ${actual:.4f}")
-    print(f"Baseline ({args.baseline}): ${baseline:.4f}")
-    print(f"Savings:           ${savings:.4f} ({pct:.1f}%)")
+    print(f"Actual cost:       ${actual:.6f}")
+    print(f"Baseline ({args.baseline}): ${baseline:.6f}")
+    print(f"Savings:           ${savings:.6f} ({pct:.1f}%)")
 
     rows = per_tier_summary(all_records)
     if rows:
@@ -91,7 +91,7 @@ def main(argv: list[str] | None = None) -> int:
         print("Per-tier summary:")
         for model, count, avg, total in rows:
             print(
-                f"  {model:<{width}}  N={count:>4}  avg=${avg:.4f}/operation  total=${total:.4f}"
+                f"  {model:<{width}}  N={count:>4}  avg=${avg:.6f}/operation  total=${total:.6f}"
             )
     return 0
 

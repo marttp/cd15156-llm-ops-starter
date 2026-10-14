@@ -3,9 +3,9 @@ uv run --no-project python scripts/verify_capstone.py
 Capstone verification — automated checks
 ======================================================================
 [+] unit-tests-pass
-    Unit tests: 263 passed, 26 warnings in 2.24s
+    Unit tests: 264 passed, 26 warnings in 2.25s
 [+] dependency-graph-forward-only
-    Forward-dependency graph: 4 passed in 0.04s
+    Forward-dependency graph: 4 passed in 0.03s
 [+] query-response-schema-complete
     QueryResponse schema: 5 passed in 0.14s
 [+] end-to-end-wiring

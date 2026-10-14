@@ -9,10 +9,10 @@ This fork implements the course project under [`starter/`](starter/). Use Python
 
 # Production LLM FAQ Service — Capstone Starter
 
-> **Are you a student starting this project?** Read [`INSTRUCTIONS.md`](INSTRUCTIONS.md)
+> **Are you a student starting this project?** Read [`INSTRUCTIONS.md`](starter/INSTRUCTIONS.md)
 > first. It walks through the graded deliverables, the workspace setup,
 > and the submission requirements. The rubric is at
-> [`rubric.md`](rubric.md).
+> [`rubric.md`](starter/rubric.md).
 
 You are building a production-ready FAQ service for **ThirdShotHub**, a pickleball e-commerce company. The service uses retrieval-augmented generation (RAG) to answer customer questions from product data, with the full LLM Ops stack: tracing, evaluation, guardrails, semantic caching, cost monitoring, file-based ingestion, and streaming.
 

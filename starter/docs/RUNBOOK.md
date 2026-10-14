@@ -4,6 +4,8 @@
 
 Run all commands from `starter/`. Python 3.12 and the tracked uv lock define the environment. `make setup` installs locally; `make load-data` embeds thirty static catalog products. The API's lifespan owns the inbox observer. Use `make serve` locally and `make serve-proxy` only in the course proxy workspace. Phoenix is local; AWS resources are not required by this deployment.
 
+`/health` is liveness only; it does not prove provider access or a populated corpus. Live query checks establish those outcomes.
+
 For local access bind Phoenix to `127.0.0.1`. Store Vocareum credentials only in the ignored `.env`; its endpoint is `https://openai.vocareum.com/v1`. The sample key is not a working credential. Keep configuration changes out of committed evidence. Restart the API after changing environment settings.
 
 ## API contracts
