@@ -8,9 +8,8 @@ way it mounts the cost dashboard — that's the documented exception.
 
 Input guards run before the stream is opened: prompt-injection blocks
 return a single ``data:`` event with ``blocked_by`` set, and PII in the
-question is redacted before retrieval and generation. Output guards over
-streamed tokens are intentionally deferred — applying them on a partial
-answer is a follow-up exercise in the optimization or guardrails module.
+question is redacted before retrieval and generation. Output tokens are buffered until grounding and topic checks pass.
+This preserves safety at the cost of the first-token latency benefit.
 """
 
 import json
@@ -25,6 +24,8 @@ from src.gateway.classifier import classify
 from src.gateway.router import select_model
 from src.guardrails.llm_guard.input_guards import detect_pii, detect_prompt_injection
 from src.guardrails.wrapper import SAFE_BLOCKED_MESSAGE, _safe_response
+from src.guardrails.wrapper import SAFE_FILTERED_MESSAGE
+from src.guardrails.llm_judge.output_guards import check_hallucination, is_off_topic
 from src.config import settings
 from src.models import QueryResponse
 from src.optimization.streaming import stream_completion
@@ -73,12 +74,13 @@ def _stream(question: str, top_k: int, pii_found: list[str]) -> Iterator[str]:
     answer = ""
     usage = None
     cost = 0.0
+    buffered = []
 
     for piece in stream_completion(question, sources, model):
         if isinstance(piece, tuple):
             answer, usage, cost = piece
             break
-        yield _sse_event({"type": "token", "content": piece})
+        buffered.append(piece)
 
     response = QueryResponse(
         answer=answer,
@@ -92,18 +94,22 @@ def _stream(question: str, top_k: int, pii_found: list[str]) -> Iterator[str]:
         ),
     )
     log_request(model, usage, cost, query_type)
+    reason = "retrieval: no_sources" if not sources else check_hallucination(answer, sources) or is_off_topic(answer)
+    if reason:
+        response = response.model_copy(update={"answer": SAFE_FILTERED_MESSAGE, "sources": [], "confidence": 0.0, "blocked_by": reason})
+    else:
+        for piece in buffered:
+            yield _sse_event({"type": "token", "content": piece})
     yield _sse_event({"type": "done", "response": json.loads(response.model_dump_json())})
 
 
 @router.post("/query/stream")
-async def query_stream(request: StreamQueryRequest) -> StreamingResponse:
+def query_stream(request: StreamQueryRequest) -> StreamingResponse:
     """Stream a FAQ answer token-by-token via Server-Sent Events.
 
     Input guards run before any token is emitted (injection short-circuits
-    to a single ``done`` event; PII is redacted in-place). Output guards
-    over a partial token stream are intentionally deferred — applying NLI
-    or banned-topics checks across an in-flight stream is a follow-up
-    exercise in the optimization module.
+    to a single ``done`` event; PII is redacted in-place). Output tokens are buffered until the complete answer passes the same
+    grounding and topic checks as the normal endpoint.
     """
     if reason := detect_prompt_injection(request.question):
         blocked = _safe_response(SAFE_BLOCKED_MESSAGE, blocked_by=reason)

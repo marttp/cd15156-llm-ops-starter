@@ -1,0 +1,47 @@
+{
+  "question": "How much does the baseline court bag cost?",
+  "method": "POST",
+  "url": "http://localhost:8080/query",
+  "response": {
+    "answer": "The Baseline Court Bag costs $39.00 USD.",
+    "sources": [
+      {
+        "doc_id": "demo_court_bag",
+        "chunk_text": "Baseline Court Bag\n\nA compact bag for paddles and pickleballs.\n\nPrice: $39.00 USD\n\nSpecifications:\n  capacity: 2 paddles and 6 balls\n  material: polyester\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "similarity_score": 0.5678518197067772
+      },
+      {
+        "doc_id": "demo_court_shoe",
+        "chunk_text": "Baseline Court Shoe\n\nA ventilated court shoe for lateral movement.\n\nPrice: $75.00 USD\n\nSpecifications:\n  outsole: non-marking rubber\n  upper: mesh\n  sizes: US 6-12\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "similarity_score": 0.41734421088518237
+      },
+      {
+        "doc_id": "prod_014",
+        "chunk_text": "JOOLA Tour Elite Pro Duffel\n\nThe JOOLA Tour Elite Pro Duffel is built for the serious competitor who needs maximum organization. Fits up to 6 paddles with individual protective sleeves, has a ventilated shoe compartment, thermal-lined drink pocket, and a rigid base to keep the bag upright on the court.\n\nPrice: $119.99 USD\n\nSpecifications:\n  dimensions: 24 x 14 x 12 in\n  compartments: 8\n  material: 1200D ballistic nylon\n  capacity: 52L\n\nCare instructions: Spot clean the exterior with a damp cloth. Remove the ventilated shoe divider and wash separately. The rigid base can be wiped down with a disinfecting wipe.",
+        "similarity_score": 0.3781092153004495
+      },
+      {
+        "doc_id": "prod_012",
+        "chunk_text": "Selkirk Team Backpack\n\nThe Selkirk Team Backpack holds up to 4 paddles and all your gear in a ventilated, weather-resistant design. Features a dedicated paddle compartment with fleece lining, separate shoe pocket, insulated cooler pocket, and padded laptop sleeve for players heading straight from work to the court.\n\nPrice: $89.99 USD\n\nSpecifications:\n  dimensions: 20 x 13 x 9 in\n  compartments: 6\n  material: 600D polyester with PVC backing\n  capacity: 35L\n\nCare instructions: Spot clean with mild soap and water. Air dry completely before storing to prevent mildew. Machine washing is not recommended as it can damage the PVC backing and structure.",
+        "similarity_score": 0.36378647990663016
+      },
+      {
+        "doc_id": "prod_018",
+        "chunk_text": "Engage Court Shorts\n\nThe Engage Court Shorts are built for athletic movement with a 7-inch inseam and gusseted crotch for unrestricted lateral reach. Deep side pockets hold multiple balls, and the lightweight woven fabric dries quickly after sweaty sessions. Elastic waistband with internal drawcord.\n\nPrice: $44.99 USD\n\nSpecifications:\n  material: 100% recycled polyester, DWR finish\n  sizes_available: ['S', 'M', 'L', 'XL', 'XXL']\n  color_options: ['Graphite', 'Navy', 'Black']\n\nCare instructions: Machine wash cold. The DWR (durable water repellent) finish will diminish over time \u2014 tumble dry on low heat periodically to reactivate the treatment.",
+        "similarity_score": 0.3546518929948743
+      }
+    ],
+    "confidence": 0.4163487237587827,
+    "model": "gpt-4o-mini",
+    "tokens": {
+      "prompt_tokens": 980,
+      "completion_tokens": 12
+    },
+    "cost_usd": 0.00015419999999999998,
+    "cached": false,
+    "trace_id": "fd944567513bf5b835b66e8d2bdb4783",
+    "blocked_by": null
+  },
+  "latency_ms": 7302.43,
+  "classification": "simple"
+}

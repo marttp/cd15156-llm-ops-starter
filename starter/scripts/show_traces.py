@@ -103,6 +103,7 @@ def main(argv: list[str] | None = None) -> int:
         render_json(summaries) if args.json else render_markdown(summaries, total)
     )
 
+    output = f"Project: `{settings.phoenix_project_name}`\n\n" + output
     if args.output:
         Path(args.output).write_text(output)
         print(f"Wrote {args.output}", file=sys.stderr)

@@ -1,0 +1,131 @@
+Dependency setup: uv sync --locked --python Python 3.12.8; exit 0.
+Fresh local Git clone at source commit 43a3fa6; Python 3.12.8; uv sync --locked completed. No .env or provider credentials.
+
+Running: ['make', 'test']
+uv run --no-project pytest tests/ -q
+........................................................................ [ 27%]
+........................................................................ [ 54%]
+........................................................................ [ 81%]
+................................................                         [100%]
+=============================== warnings summary ===============================
+.venv/lib/python3.12/site-packages/llm_guard/util.py:226
+  /private/tmp/llmops-submission-clean-43a3fa6/starter/.venv/lib/python3.12/site-packages/llm_guard/util.py:226: SyntaxWarning: invalid escape sequence '\*'
+    if "([^\*]+)" in pattern:
+
+src/evaluation/run_eval.py:27
+src/evaluation/run_eval.py:27
+  /private/tmp/llmops-submission-clean-43a3fa6/starter/src/evaluation/run_eval.py:27: DeprecationWarning: Importing answer_relevancy from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import answer_relevancy
+    from ragas.metrics import (
+
+src/evaluation/run_eval.py:27
+src/evaluation/run_eval.py:27
+  /private/tmp/llmops-submission-clean-43a3fa6/starter/src/evaluation/run_eval.py:27: DeprecationWarning: Importing context_precision from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import context_precision
+    from ragas.metrics import (
+
+src/evaluation/run_eval.py:27
+src/evaluation/run_eval.py:27
+  /private/tmp/llmops-submission-clean-43a3fa6/starter/src/evaluation/run_eval.py:27: DeprecationWarning: Importing context_recall from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import context_recall
+    from ragas.metrics import (
+
+src/evaluation/run_eval.py:27
+src/evaluation/run_eval.py:27
+  /private/tmp/llmops-submission-clean-43a3fa6/starter/src/evaluation/run_eval.py:27: DeprecationWarning: Importing faithfulness from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import faithfulness
+    from ragas.metrics import (
+
+tests/evaluation/test_run_eval.py::test_evaluate_pipeline_calls_ragas_with_default_metrics
+tests/evaluation/test_run_eval.py::test_evaluate_pipeline_threads_top_k_to_build_eval_dataset
+tests/evaluation/test_run_eval.py::test_evaluate_pipeline_accepts_custom_metrics
+tests/evaluation/test_run_eval.py::test_evaluate_pipeline_omits_run_config_when_max_workers_is_none
+tests/evaluation/test_run_eval.py::test_evaluate_pipeline_passes_max_workers_via_run_config
+  /private/tmp/llmops-submission-clean-43a3fa6/starter/src/evaluation/run_eval.py:150: DeprecationWarning: LangchainLLMWrapper is deprecated and will be removed in a future version. Use llm_factory instead: from openai import OpenAI; from ragas.llms import llm_factory; llm = llm_factory('gpt-4o-mini', client=OpenAI(api_key='...'))
+    return LangchainLLMWrapper(
+
+tests/evaluation/test_run_eval.py::test_evaluate_pipeline_calls_ragas_with_default_metrics
+tests/evaluation/test_run_eval.py::test_evaluate_pipeline_threads_top_k_to_build_eval_dataset
+tests/evaluation/test_run_eval.py::test_evaluate_pipeline_accepts_custom_metrics
+tests/evaluation/test_run_eval.py::test_evaluate_pipeline_omits_run_config_when_max_workers_is_none
+tests/evaluation/test_run_eval.py::test_evaluate_pipeline_passes_max_workers_via_run_config
+  /private/tmp/llmops-submission-clean-43a3fa6/starter/.venv/lib/python3.12/site-packages/ragas/utils.py:113: DeprecationWarning: LangchainLLMWrapper is deprecated and will be removed in a future version. Use llm_factory instead: from openai import OpenAI; from ragas.llms import llm_factory; client = OpenAI(api_key='...'); llm = llm_factory('gpt-4o-mini', client=client)
+    return self.new_target(*args, **kwargs)
+
+tests/evaluation/test_run_eval.py::test_default_metrics_are_the_four_stable_ones
+tests/evaluation/test_run_eval.py::test_default_metrics_are_the_four_stable_ones
+  /private/tmp/llmops-submission-clean-43a3fa6/starter/tests/evaluation/test_run_eval.py:185: DeprecationWarning: Importing answer_relevancy from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import answer_relevancy
+    from ragas.metrics import (
+
+tests/evaluation/test_run_eval.py::test_default_metrics_are_the_four_stable_ones
+tests/evaluation/test_run_eval.py::test_default_metrics_are_the_four_stable_ones
+  /private/tmp/llmops-submission-clean-43a3fa6/starter/tests/evaluation/test_run_eval.py:185: DeprecationWarning: Importing context_precision from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import context_precision
+    from ragas.metrics import (
+
+tests/evaluation/test_run_eval.py::test_default_metrics_are_the_four_stable_ones
+tests/evaluation/test_run_eval.py::test_default_metrics_are_the_four_stable_ones
+  /private/tmp/llmops-submission-clean-43a3fa6/starter/tests/evaluation/test_run_eval.py:185: DeprecationWarning: Importing context_recall from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import context_recall
+    from ragas.metrics import (
+
+tests/evaluation/test_run_eval.py::test_default_metrics_are_the_four_stable_ones
+tests/evaluation/test_run_eval.py::test_default_metrics_are_the_four_stable_ones
+  /private/tmp/llmops-submission-clean-43a3fa6/starter/tests/evaluation/test_run_eval.py:185: DeprecationWarning: Importing faithfulness from 'ragas.metrics' is deprecated and will be removed in v1.0. Please use 'ragas.metrics.collections' instead. Example: from ragas.metrics.collections import faithfulness
+    from ragas.metrics import (
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+264 passed, 27 warnings in 5.88s
+Exit: 0
+
+Running: ['make', 'verify']
+uv run --no-project python scripts/verify_capstone.py
+======================================================================
+Capstone verification — automated checks
+======================================================================
+[+] unit-tests-pass
+    Unit tests: 264 passed, 26 warnings in 2.23s
+[+] dependency-graph-forward-only
+    Forward-dependency graph: 4 passed in 0.04s
+[+] query-response-schema-complete
+    QueryResponse schema: 5 passed in 0.14s
+[+] end-to-end-wiring
+    Cross-package end-to-end: 6 passed in 0.14s
+
+======================================================================
+Manual verification (requires running services + credentials)
+======================================================================
+[ ] make load-data — data/chroma/ is populated; PersistentClient.get_or_create_collection('products').count() returns >0
+[ ] POST /query (simple) — returns response via gpt-4o-mini (check `model` field)
+[ ] POST /query (complex) — returns response via gpt-4o (check `model` field)
+[ ] data/cost_log.jsonl — appended after each query
+[ ] Phoenix tracing dashboard at http://localhost:6006 — trace appears for the request (check trace_id in response). If port 6006 isn't reachable, run `make show-traces` for a markdown export of the same trace data.
+[ ] make eval — RAGAS prints faithfulness/answer_relevancy/context_recall/context_precision
+[ ] Drop a malformed JSON in data/inbox/ — quarantined to data/inbox/failed/ with .error.txt
+[ ] Drop a valid product JSON in data/inbox/ — appears in Chroma within seconds
+[ ] POST /query/stream — receives SSE token events then a 'done' event
+[ ] make install-guardrails-models — DeBERTa + Presidio + zero-shot + NLI models cached
+[ ] guarded_route_query (or _llmguard) — injection input returns blocked_by; clean input passes
+[ ] cached_route_query — repeat query within TTL returns cached=true (verify entries via `chromadb.PersistentClient(path='data/chroma').get_or_create_collection('cache').count()`)
+
+======================================================================
+Automated: 4 passed, 0 failed
+Manual: 12 items to verify in a real environment
+======================================================================
+Exit: 0
+
+Running: ['make', 'eval', 'EVAL_ARGS=--check-result=evidence/evaluation/final.json --faithfulness-min=0.90']
+uv run --no-project python scripts/run_eval.py --max-workers=1 --check-result=evidence/evaluation/final.json --faithfulness-min=0.90
+Saved aggregate metrics (no new model calls):
+  faithfulness: 0.950
+  answer_relevancy: 0.889
+  context_recall: 0.871
+  context_precision: 0.757
+Exit: 0
+
+Running: ['.venv/bin/python', 'scripts/audit_submission.py']
+PASS 1: five catalog additions and literal curl retrieval
+PASS 2: complete response, twelve sweep values and justified retrieval depth
+PASS 3: simple and complex classifications across configured model tiers
+PASS 4: three live ingests, source-linked curl and quarantine
+PASS 5: complete independent evaluation and demonstrated quality gate
+PASS 6: three paired new-pattern HTTP demonstrations and output safety calibration
+PASS 7: ten requests and matching labeled Phoenix operation traces
+PASS 8: real same-log cost evidence, dashboard and named baseline savings
+PASS 9: ordered writeup, test/verify evidence, source provenance and secret-free repository
+Rubric evidence audit: 9 passed, 0 failed
+Exit: 0

@@ -5,9 +5,23 @@ import json
 import sys
 from pathlib import Path
 
-from src.evaluation import evaluate_pipeline, load_golden_set, summarize
 from src.evaluation.gates import failures, statistics
 from src.config import settings
+
+def evaluate_pipeline(*args, **kwargs):
+    from src.evaluation import evaluate_pipeline as run
+    return run(*args, **kwargs)
+
+
+def load_golden_set(path):
+    from src.evaluation import load_golden_set as load
+    return load(path)
+
+
+def summarize(result):
+    from src.evaluation import summarize as summary
+    return summary(result)
+
 
 GOLDEN_PATH = Path(__file__).resolve().parents[1] / "data" / "golden_test_set.csv"
 
@@ -51,6 +65,9 @@ def main(argv: list[str] | None = None) -> int:
     thresholds = {key: value for key, value in {"faithfulness": args.faithfulness_min, "context_recall": args.context_recall_min}.items() if value is not None}
     if args.check_result:
         payload = json.loads(args.check_result.read_text())
+        print("Saved aggregate metrics (no new model calls):")
+        for metric, score in payload["aggregate"].items():
+            print(f"  {metric}: {score:.3f}")
         errors = failures(payload["aggregate"], payload["rows"], thresholds)
         for error in errors:
             print(error, file=sys.stderr)

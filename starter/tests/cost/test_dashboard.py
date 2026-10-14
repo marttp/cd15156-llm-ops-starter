@@ -21,14 +21,14 @@ def test_render_html_includes_aggregate_and_per_model():
     html = render_html(summary)
 
     assert "<title>Cost Dashboard</title>" in html
-    assert "Total requests" in html and ">5<" in html
+    assert "Billable operations" in html and ">5<" in html
     assert "$0.1234" in html
     assert "gpt-4o" in html and "gpt-4o-mini" in html
 
 
 def test_render_html_handles_empty_log():
     html = render_html({"total_requests": 0, "total_cost_usd": 0.0, "by_model": {}})
-    assert "No requests logged yet." in html
+    assert "No operations logged yet." in html
 
 
 def test_router_endpoint_returns_html():

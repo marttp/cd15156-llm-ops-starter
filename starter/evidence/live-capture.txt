@@ -1,0 +1,19 @@
+new-product: model=gpt-4o-mini, cached=False, guard=None
+routing-1: model=gpt-4o-mini, cached=False, guard=None
+routing-2: model=gpt-4o, cached=False, guard=None
+routing-3: model=gpt-4o-mini, cached=False, guard=None
+ingestion-1: model=gpt-4o-mini, cached=False, guard=None
+ingestion-2: model=gpt-4o-mini, cached=False, guard=None
+ingestion-3: model=gpt-4o-mini, cached=False, guard=None
+guard-1-blocked: model=, cached=False, guard=prompt_injection: matched pattern '\\breveal\\s+(?:the\\s+)?(?:hidden\\s+)?system\\s+prompt\\b'
+guard-1-legitimate: model=gpt-4o-mini, cached=False, guard=None
+guard-2-blocked: model=, cached=False, guard=prompt_injection: matched pattern '\\bdisable\\s+(?:all\\s+)?(?:safety|security)\\s+(?:filters|checks|guardrails)\\b'
+guard-2-legitimate: model=gpt-4o-mini, cached=False, guard=None
+guard-3-blocked: model=, cached=False, guard=prompt_injection: matched pattern '\\b(?:developer|admin)\\s+override\\s*:\\s*bypass\\b'
+guard-3-legitimate: model=gpt-4o-mini, cached=False, guard=None
+cost-query-1: model=gpt-4o-mini, cached=False, guard=None
+cost-query-2: model=gpt-4o-mini, cached=False, guard=None
+cost-query-3: model=gpt-4o-mini, cached=False, guard=None
+cost-query-4: model=gpt-4o-mini, cached=False, guard=None
+cost-query-5: model=gpt-4o, cached=False, guard=None
+HTTP evidence captured. Still required: Phoenix export, dashboard screenshot, RAGAS runs and writeup analysis.

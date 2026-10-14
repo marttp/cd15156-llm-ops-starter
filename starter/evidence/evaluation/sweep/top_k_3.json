@@ -1,0 +1,527 @@
+{
+  "aggregate": {
+    "faithfulness": 0.8887085268890165,
+    "answer_relevancy": 0.8686273713293687,
+    "context_recall": 0.8333333333333334,
+    "context_precision": 0.7619047618364285
+  },
+  "rows": [
+    {
+      "user_input": "What is the weight of the Selkirk AMPED S2?",
+      "retrieved_contexts": [
+        "Selkirk AMPED S2\n\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\n\nPrice: $129.99 USD\n\nSpecifications:\n  weight: 7.8 oz\n  grip_size: 4.25 in\n  face_material: FiberFlex fiberglass\n  core: X5 polypropylene honeycomb\n  shape: widebody\n  length: 15.75 in\n  width: 8.0 in\n\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.",
+        "Selkirk Vanguard Power Air\n\nThe Selkirk Vanguard Power Air represents the pinnacle of paddle engineering. Featuring a proprietary air-injected polypropylene core and a carbon fiber face with QuadFlex 4-layer construction, it delivers unmatched power without sacrificing spin or control. Built for tournament-level play.\n\nPrice: $249.99 USD\n\nSpecifications:\n  weight: 8.4 oz\n  grip_size: 4.25 in\n  face_material: QuadFlex 4-layer carbon fiber\n  core: Air-injected polypropylene\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a microfiber cloth dampened with water. Avoid chemical cleaners that may degrade the carbon fiber surface. The edge guard is replaceable \u2014 contact Selkirk for parts.",
+        "Selkirk Team Backpack\n\nThe Selkirk Team Backpack holds up to 4 paddles and all your gear in a ventilated, weather-resistant design. Features a dedicated paddle compartment with fleece lining, separate shoe pocket, insulated cooler pocket, and padded laptop sleeve for players heading straight from work to the court.\n\nPrice: $89.99 USD\n\nSpecifications:\n  dimensions: 20 x 13 x 9 in\n  compartments: 6\n  material: 600D polyester with PVC backing\n  capacity: 35L\n\nCare instructions: Spot clean with mild soap and water. Air dry completely before storing to prevent mildew. Machine washing is not recommended as it can damage the PVC backing and structure."
+      ],
+      "response": "The Selkirk AMPED S2 weighs 7.8 oz.",
+      "reference": "The Selkirk AMPED S2 weighs 7.8 oz.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9999996045543522,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "How much does the JOOLA Hyperion CFS 16 cost?",
+      "retrieved_contexts": [
+        "JOOLA Hyperion CFS 16\n\nThe JOOLA Hyperion CFS 16 is a premium carbon fiber paddle designed for competitive players who demand maximum spin and power. Its Carbon Friction Surface technology creates exceptional ball grip for aggressive topspin shots, while the reactive honeycomb polymer core ensures a solid, responsive feel at the net.\n\nPrice: $199.99 USD\n\nSpecifications:\n  weight: 8.2 oz\n  grip_size: 4.0 in\n  face_material: Carbon Friction Surface (CFS)\n  core: Reactive honeycomb polymer\n  shape: elongated\n  length: 16.5 in\n  width: 7.5 in\n\nCare instructions: Clean the carbon fiber face with a microfiber cloth and mild soap solution. Do not use abrasive cleaners. Store in the included neoprene cover to protect the face texture.",
+        "JOOLA Tour Elite Pro Duffel\n\nThe JOOLA Tour Elite Pro Duffel is built for the serious competitor who needs maximum organization. Fits up to 6 paddles with individual protective sleeves, has a ventilated shoe compartment, thermal-lined drink pocket, and a rigid base to keep the bag upright on the court.\n\nPrice: $119.99 USD\n\nSpecifications:\n  dimensions: 24 x 14 x 12 in\n  compartments: 8\n  material: 1200D ballistic nylon\n  capacity: 52L\n\nCare instructions: Spot clean the exterior with a damp cloth. Remove the ventilated shoe divider and wash separately. The rigid base can be wiped down with a disinfecting wipe.",
+        "HEAD Radical Tour\n\nThe HEAD Radical Tour brings tennis engineering expertise to the court. Featuring an Extreme Spin Texture (EST) face and an Optimized Tubular Construction (OTC) frame, this paddle delivers consistent power from edge to edge with a generous sweet spot suited to all-court players.\n\nPrice: $149.99 USD\n\nSpecifications:\n  weight: 8.1 oz\n  grip_size: 4.25 in\n  face_material: Extreme Spin Texture (EST) composite\n  core: Polypropylene honeycomb\n  shape: standard\n  length: 15.875 in\n  width: 7.875 in\n\nCare instructions: Wipe with a clean damp cloth. Inspect the edge guard periodically for cracks and replace if damaged to protect the core. Store away from moisture."
+      ],
+      "response": "The JOOLA Hyperion CFS 16 costs $199.99 USD.",
+      "reference": "The JOOLA Hyperion CFS 16 costs $199.99.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9738316230883645,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "Which paddle is lighter the Selkirk AMPED S2 or the JOOLA Hyperion CFS 16?",
+      "retrieved_contexts": [
+        "Selkirk AMPED S2\n\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\n\nPrice: $129.99 USD\n\nSpecifications:\n  weight: 7.8 oz\n  grip_size: 4.25 in\n  face_material: FiberFlex fiberglass\n  core: X5 polypropylene honeycomb\n  shape: widebody\n  length: 15.75 in\n  width: 8.0 in\n\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.",
+        "JOOLA Hyperion CFS 16\n\nThe JOOLA Hyperion CFS 16 is a premium carbon fiber paddle designed for competitive players who demand maximum spin and power. Its Carbon Friction Surface technology creates exceptional ball grip for aggressive topspin shots, while the reactive honeycomb polymer core ensures a solid, responsive feel at the net.\n\nPrice: $199.99 USD\n\nSpecifications:\n  weight: 8.2 oz\n  grip_size: 4.0 in\n  face_material: Carbon Friction Surface (CFS)\n  core: Reactive honeycomb polymer\n  shape: elongated\n  length: 16.5 in\n  width: 7.5 in\n\nCare instructions: Clean the carbon fiber face with a microfiber cloth and mild soap solution. Do not use abrasive cleaners. Store in the included neoprene cover to protect the face texture.",
+        "Selkirk Vanguard Power Air\n\nThe Selkirk Vanguard Power Air represents the pinnacle of paddle engineering. Featuring a proprietary air-injected polypropylene core and a carbon fiber face with QuadFlex 4-layer construction, it delivers unmatched power without sacrificing spin or control. Built for tournament-level play.\n\nPrice: $249.99 USD\n\nSpecifications:\n  weight: 8.4 oz\n  grip_size: 4.25 in\n  face_material: QuadFlex 4-layer carbon fiber\n  core: Air-injected polypropylene\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a microfiber cloth dampened with water. Avoid chemical cleaners that may degrade the carbon fiber surface. The edge guard is replaceable \u2014 contact Selkirk for parts."
+      ],
+      "response": "The Selkirk AMPED S2 is lighter, weighing 7.8 oz, compared to the JOOLA Hyperion CFS 16, which weighs 8.2 oz.",
+      "reference": "The Selkirk AMPED S2 is lighter at 7.8 oz compared to the JOOLA Hyperion CFS 16 at 8.2 oz.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.851082196082319,
+      "context_recall": 1.0,
+      "context_precision": 0.0
+    },
+    {
+      "user_input": "What core material does the Engage Pursuit MX use?",
+      "retrieved_contexts": [
+        "Engage Pursuit MX\n\nThe Engage Pursuit MX features a proprietary ControlPro polymer core that delivers unmatched touch and feel for dinking and soft game strategies. The textured fiberglass face adds spin capability without sacrificing control, making it a favorite among players who prioritize finesse over raw power.\n\nPrice: $159.99 USD\n\nSpecifications:\n  weight: 7.5 oz\n  grip_size: 4.25 in\n  face_material: Textured fiberglass\n  core: ControlPro polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.125 in\n\nCare instructions: Wipe down with a damp cloth after each session. The textured face can collect debris \u2014 use a soft brush for deeper cleaning. Avoid exposing the paddle to temperatures above 120\u00b0F.",
+        "Engage Court Shorts\n\nThe Engage Court Shorts are built for athletic movement with a 7-inch inseam and gusseted crotch for unrestricted lateral reach. Deep side pockets hold multiple balls, and the lightweight woven fabric dries quickly after sweaty sessions. Elastic waistband with internal drawcord.\n\nPrice: $44.99 USD\n\nSpecifications:\n  material: 100% recycled polyester, DWR finish\n  sizes_available: ['S', 'M', 'L', 'XL', 'XXL']\n  color_options: ['Graphite', 'Navy', 'Black']\n\nCare instructions: Machine wash cold. The DWR (durable water repellent) finish will diminish over time \u2014 tumble dry on low heat periodically to reactivate the treatment.",
+        "HEAD Radical Tour\n\nThe HEAD Radical Tour brings tennis engineering expertise to the court. Featuring an Extreme Spin Texture (EST) face and an Optimized Tubular Construction (OTC) frame, this paddle delivers consistent power from edge to edge with a generous sweet spot suited to all-court players.\n\nPrice: $149.99 USD\n\nSpecifications:\n  weight: 8.1 oz\n  grip_size: 4.25 in\n  face_material: Extreme Spin Texture (EST) composite\n  core: Polypropylene honeycomb\n  shape: standard\n  length: 15.875 in\n  width: 7.875 in\n\nCare instructions: Wipe with a clean damp cloth. Inspect the edge guard periodically for cracks and replace if damaged to protect the core. Store away from moisture."
+      ],
+      "response": "The Engage Pursuit MX uses a proprietary ControlPro polymer core.",
+      "reference": "The Engage Pursuit MX uses a ControlPro polymer core.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.921923927056885,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "What is a good paddle for beginners?",
+      "retrieved_contexts": [
+        "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+        "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash."
+      ],
+      "response": "For beginners, the \"Paddletek Bantam TS-5\" and the \"Baseline Control Paddle\" are both great options:\n\n- **Paddletek Bantam TS-5**\n  - Price: $114.99 USD\n  - Weight: 7.3 oz\n  - Grip Size: 4.0 in\n  - Face Material: Fiberglass composite\n  - Core: Smart Response Technology polymer\n  - Features: Lightweight with a forgiving sweet spot, easy maneuverability to reduce arm fatigue.\n  \n- **Baseline Control Paddle**\n  - Price: $89.00 USD\n  - Weight: 7.4 oz\n  - Face Material: Fiberglass\n  - Core Material: Polymer\n  - Skill Level: Beginner\n  - Features: Lightweight design for control practice.\n\nBoth paddles offer excellent entry-level features for new players focusing on control and comfort.",
+      "reference": "The Paddletek Bantam TS-5 ($114.99) is designed for beginners and recreational players. It has a lightweight polymer core and fiberglass composite face that offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9321393791067786,
+      "context_recall": 1.0,
+      "context_precision": 0.49999999995
+    },
+    {
+      "user_input": "What shoes do you carry?",
+      "retrieved_contexts": [
+        "Baseline Court Shoe\n\nA ventilated court shoe for lateral movement.\n\nPrice: $75.00 USD\n\nSpecifications:\n  outsole: non-marking rubber\n  upper: mesh\n  sizes: US 6-12\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "K-Swiss Express Light Court Shoes\n\nThe K-Swiss Express Light is engineered for speed and agility on the court. Its lightweight mesh upper provides breathability during long matches, while the Durawrap heel counter locks in lateral stability. The Surge 7.0 midsole returns energy on every step.\n\nPrice: $99.99 USD\n\nSpecifications:\n  weight: 11.2 oz (men's size 10)\n  sole_type: Dragguard rubber outsole\n  closure: Traditional lace-up with padded tongue\n  cushioning: Surge 7.0 midsole with ortholite insole\n\nCare instructions: Allow shoes to air dry between sessions. Remove insoles periodically to prevent odor. Clean the mesh upper with a soft brush and mild soap. Replace shoes when the outsole tread shows significant wear to prevent slipping.",
+        "FILA Volley Zone Court Shoes\n\nThe FILA Volley Zone is a purpose-built court shoe for players who need stable lateral support and cushioned comfort. The herringbone tread pattern provides excellent grip on hard court surfaces, while the EVA midsole absorbs impact during quick direction changes.\n\nPrice: $79.99 USD\n\nSpecifications:\n  weight: 12.5 oz (men's size 10)\n  sole_type: Non-marking herringbone rubber\n  closure: Traditional lace-up\n  cushioning: EVA midsole with memory foam insole\n\nCare instructions: Wipe the outsoles with a damp cloth after play to maintain grip. Remove insoles to air dry after sweaty sessions. Do not machine wash \u2014 spot clean the upper with mild soap and water."
+      ],
+      "response": "Based on our catalog, we carry the following court shoes:\n\n1. **Baseline Court Shoe**\n   - Price: $75.00 USD\n   - Features: Ventilated mesh upper, non-marking rubber outsole\n   - Sizes: US 6-12\n\n2. **K-Swiss Express Light Court Shoes**\n   - Price: $99.99 USD\n   - Features: Lightweight mesh upper, Dragguard rubber outsole, Surge 7.0 midsole for energy return\n   - Weight: 11.2 oz (men's size 10)\n\n3. **FILA Volley Zone Court Shoes**\n   - Price: $79.99 USD\n   - Features: Non-marking herringbone rubber sole, EVA midsole with memory foam insole\n   - Weight: 12.5 oz (men's size 10)\n\nIf you need additional details about any specific shoe, feel free to ask!",
+      "reference": "We carry court shoe options including: the FILA Volley Zone ($79.99), the K-Swiss Express Light ($99.99), and the ASICS Gel-Renma ($89.99). We also carry the Baseline Court Shoe ($75.00).",
+      "faithfulness": 0.9285714285714286,
+      "answer_relevancy": 0.6829407920518383,
+      "context_recall": 0.5,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "Which paddles have a fiberglass face?",
+      "retrieved_contexts": [
+        "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+        "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash."
+      ],
+      "response": "The paddles with a fiberglass face are:\n\n- **Paddletek Bantam TS-5**: It features a fiberglass composite face and is priced at $114.99 USD.\n- **Baseline Control Paddle**: This paddle also has a fiberglass face and is priced at $89.00 USD.",
+      "reference": "Four paddles feature fiberglass faces: the Selkirk AMPED S2 (FiberFlex fiberglass), the Engage Pursuit MX (textured fiberglass), and the Paddletek Bantam TS-5 (fiberglass composite). The Baseline Control Paddle also has a fiberglass face.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9040670452696858,
+      "context_recall": 0.5,
+      "context_precision": 0.99999999995
+    },
+    {
+      "user_input": "How do I clean my paddle?",
+      "retrieved_contexts": [
+        "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather."
+      ],
+      "response": "To clean your paddle:\n\n- For the **Baseline Control Paddle** and **Baseline Power Paddle**, wipe it clean and air dry. Do not machine wash.\n- For the **Paddletek Bantam TS-5**, clean it with a damp cloth. Make sure to store it indoors to protect the edge guard from cracking in cold weather.",
+      "reference": "Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. For carbon fiber paddles, use a microfiber cloth and mild soap solution \u2014 do not use abrasive cleaners.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9809301197156836,
+      "context_recall": 0.3333333333333333,
+      "context_precision": 0.9999999999666667
+    },
+    {
+      "user_input": "What is the difference between indoor and outdoor balls?",
+      "retrieved_contexts": [
+        "Baseline Indoor Ball\n\nAn indoor pickleball pack for smooth indoor courts.\n\nPrice: $12.00 USD\n\nSpecifications:\n  hole_count: 26\n  pack_size: 3\n  weight: 0.85 oz\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "Dura Fast 40 Outdoor Pickleballs\n\nThe Dura Fast 40 is a tournament-grade outdoor ball trusted by competitive players for its true bounce and predictable flight. Pack of 12 balls. The seamless one-piece rotationally molded construction delivers uniform wall thickness and exceptional roundness for consistent play.\n\nPrice: $29.99 USD\n\nSpecifications:\n  diameter: 2.87 in\n  weight: 0.92 oz\n  hole_count: 40\n  material: Rotationally molded seamless plastic\n  indoor_outdoor: outdoor\n\nCare instructions: Outdoor balls wear faster in extreme heat or cold. Store indoors between sessions. This is a 12-pack \u2014 keep spares on hand during competitive play.",
+        "Onix Pure 2 Indoor Pickleballs\n\nThe Onix Pure 2 is engineered specifically for indoor play, featuring 26 precisely spaced holes for a softer, more controlled flight on gym and rec center surfaces. The true-flight design minimizes wobble and provides consistent bounce on smooth indoor courts.\n\nPrice: $9.99 USD\n\nSpecifications:\n  diameter: 2.87 in\n  weight: 0.86 oz\n  hole_count: 26\n  material: Durable TPU blend\n  indoor_outdoor: indoor\n\nCare instructions: Indoor balls last longer than outdoor balls. Store at room temperature. Clean with a damp cloth if they pick up dust or gym floor residue."
+      ],
+      "response": "The main differences between indoor and outdoor pickleballs are related to their construction, design, and specifications:\n\n1. **Hole Count**:\n   - Indoor balls, like the Onix Pure 2 Indoor Pickleballs and Baseline Indoor Ball, typically have 26 holes. This design provides a softer, more controlled flight and minimizes wobble on smooth indoor surfaces.\n   - Outdoor balls, such as the Dura Fast 40 Outdoor Pickleballs, usually have more holes, with a count of 40. This ensures they can handle wind and other outdoor conditions for a more consistent play.\n\n2. **Material and Construction**:\n   - Indoor balls are often constructed from materials like a durable TPU blend, which helps maintain control and bounce on indoor surfaces.\n   - Outdoor balls are generally made from rotationally molded seamless plastic, which offers uniform wall thickness and durability to withstand outdoor environment variables.\n\n3. **Weight**:\n   - Indoor balls, like the Baseline Indoor Ball (0.85 oz) and the Onix Pure 2 (0.86 oz), are slightly lighter compared to outdoor balls.\n   - The Dura Fast 40 Outdoor Pickleballs weigh slightly more at 0.92 oz.\n\nThese differences cater to the specific demands of indoor and outdoor play, ensuring optimal performance for each environment.",
+      "reference": "Indoor balls like the Onix Pure 2 have 26 holes and weigh around 0.85-0.86 oz for a softer, more controlled flight. Outdoor balls like the Franklin X-40 have 40 holes, weigh around 0.92 oz, and are made of harder material to withstand wind and rough court surfaces.",
+      "faithfulness": 0.5882352941176471,
+      "answer_relevancy": 0.8265905712682402,
+      "context_recall": 0.5,
+      "context_precision": 0.3333333333
+    },
+    {
+      "user_input": "How much does the Franklin Sling Bag cost?",
+      "retrieved_contexts": [
+        "Franklin Pickleball Sling Bag\n\nA compact sling bag designed for players who travel light. The Franklin Sling Bag holds 2 paddles and essentials like balls, a water bottle, and phone. The adjustable cross-body strap and lightweight design make it easy to grab and go for casual play sessions.\n\nPrice: $39.99 USD\n\nSpecifications:\n  dimensions: 18 x 10 x 5 in\n  compartments: 3\n  material: Ripstop nylon\n  capacity: 12L\n\nCare instructions: Wipe clean with a damp cloth. The ripstop nylon is water-resistant but not waterproof \u2014 avoid leaving the bag in rain.",
+        "Franklin Ben Johns Signature\n\nDesigned in collaboration with pro player Ben Johns, the Franklin Signature paddle combines a MaxGrit textured surface with a polypropylene honeycomb core for exceptional spin generation and shot control. The elongated shape extends reach without adding excessive weight, ideal for singles play.\n\nPrice: $179.99 USD\n\nSpecifications:\n  weight: 8.0 oz\n  grip_size: 4.125 in\n  face_material: MaxGrit carbon fiber\n  core: Polypropylene honeycomb\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a damp microfiber cloth. The MaxGrit surface is durable but avoid scraping against rough surfaces. Replace the grip wrap every 3-6 months depending on play frequency.",
+        "Franklin X-26 Indoor Pickleballs\n\nThe Franklin X-26 offers reliable indoor performance at a budget-friendly price. The 26-hole pattern provides a slower flight speed and softer feel compared to outdoor balls, making it ideal for beginners learning the game in gym or recreation center settings. Pack of 3.\n\nPrice: $7.99 USD\n\nSpecifications:\n  diameter: 2.87 in\n  weight: 0.85 oz\n  hole_count: 26\n  material: Injection-molded plastic\n  indoor_outdoor: indoor\n\nCare instructions: Wipe with a damp cloth as needed. Indoor balls are more durable than outdoor balls but should still be replaced when they lose roundness or develop soft spots."
+      ],
+      "response": "The Franklin Pickleball Sling Bag costs $39.99 USD.",
+      "reference": "The Franklin Sling Bag costs $39.99.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8326490095796881,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "What is the most expensive paddle you sell?",
+      "retrieved_contexts": [
+        "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "Selkirk Vanguard Power Air\n\nThe Selkirk Vanguard Power Air represents the pinnacle of paddle engineering. Featuring a proprietary air-injected polypropylene core and a carbon fiber face with QuadFlex 4-layer construction, it delivers unmatched power without sacrificing spin or control. Built for tournament-level play.\n\nPrice: $249.99 USD\n\nSpecifications:\n  weight: 8.4 oz\n  grip_size: 4.25 in\n  face_material: QuadFlex 4-layer carbon fiber\n  core: Air-injected polypropylene\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a microfiber cloth dampened with water. Avoid chemical cleaners that may degrade the carbon fiber surface. The edge guard is replaceable \u2014 contact Selkirk for parts.",
+        "JOOLA Hyperion CFS 16\n\nThe JOOLA Hyperion CFS 16 is a premium carbon fiber paddle designed for competitive players who demand maximum spin and power. Its Carbon Friction Surface technology creates exceptional ball grip for aggressive topspin shots, while the reactive honeycomb polymer core ensures a solid, responsive feel at the net.\n\nPrice: $199.99 USD\n\nSpecifications:\n  weight: 8.2 oz\n  grip_size: 4.0 in\n  face_material: Carbon Friction Surface (CFS)\n  core: Reactive honeycomb polymer\n  shape: elongated\n  length: 16.5 in\n  width: 7.5 in\n\nCare instructions: Clean the carbon fiber face with a microfiber cloth and mild soap solution. Do not use abrasive cleaners. Store in the included neoprene cover to protect the face texture."
+      ],
+      "response": "The most expensive paddle listed in our catalog is the \"Selkirk Vanguard Power Air,\" which is priced at $249.99 USD.",
+      "reference": "The most expensive paddle is the Selkirk Vanguard Power Air at $249.99.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8463824818536393,
+      "context_recall": 1.0,
+      "context_precision": 0.49999999995
+    },
+    {
+      "user_input": "How many paddles can the JOOLA Tour Elite Pro Duffel hold?",
+      "retrieved_contexts": [
+        "JOOLA Tour Elite Pro Duffel\n\nThe JOOLA Tour Elite Pro Duffel is built for the serious competitor who needs maximum organization. Fits up to 6 paddles with individual protective sleeves, has a ventilated shoe compartment, thermal-lined drink pocket, and a rigid base to keep the bag upright on the court.\n\nPrice: $119.99 USD\n\nSpecifications:\n  dimensions: 24 x 14 x 12 in\n  compartments: 8\n  material: 1200D ballistic nylon\n  capacity: 52L\n\nCare instructions: Spot clean the exterior with a damp cloth. Remove the ventilated shoe divider and wash separately. The rigid base can be wiped down with a disinfecting wipe.",
+        "Selkirk Team Backpack\n\nThe Selkirk Team Backpack holds up to 4 paddles and all your gear in a ventilated, weather-resistant design. Features a dedicated paddle compartment with fleece lining, separate shoe pocket, insulated cooler pocket, and padded laptop sleeve for players heading straight from work to the court.\n\nPrice: $89.99 USD\n\nSpecifications:\n  dimensions: 20 x 13 x 9 in\n  compartments: 6\n  material: 600D polyester with PVC backing\n  capacity: 35L\n\nCare instructions: Spot clean with mild soap and water. Air dry completely before storing to prevent mildew. Machine washing is not recommended as it can damage the PVC backing and structure.",
+        "JOOLA Hyperion CFS 16\n\nThe JOOLA Hyperion CFS 16 is a premium carbon fiber paddle designed for competitive players who demand maximum spin and power. Its Carbon Friction Surface technology creates exceptional ball grip for aggressive topspin shots, while the reactive honeycomb polymer core ensures a solid, responsive feel at the net.\n\nPrice: $199.99 USD\n\nSpecifications:\n  weight: 8.2 oz\n  grip_size: 4.0 in\n  face_material: Carbon Friction Surface (CFS)\n  core: Reactive honeycomb polymer\n  shape: elongated\n  length: 16.5 in\n  width: 7.5 in\n\nCare instructions: Clean the carbon fiber face with a microfiber cloth and mild soap solution. Do not use abrasive cleaners. Store in the included neoprene cover to protect the face texture."
+      ],
+      "response": "The JOOLA Tour Elite Pro Duffel can hold up to 6 paddles. It features individual protective sleeves for each paddle.",
+      "reference": "The JOOLA Tour Elite Pro Duffel fits up to 6 paddles with individual protective sleeves.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "What is the grip size of the Franklin Ben Johns Signature paddle?",
+      "retrieved_contexts": [
+        "Franklin Ben Johns Signature\n\nDesigned in collaboration with pro player Ben Johns, the Franklin Signature paddle combines a MaxGrit textured surface with a polypropylene honeycomb core for exceptional spin generation and shot control. The elongated shape extends reach without adding excessive weight, ideal for singles play.\n\nPrice: $179.99 USD\n\nSpecifications:\n  weight: 8.0 oz\n  grip_size: 4.125 in\n  face_material: MaxGrit carbon fiber\n  core: Polypropylene honeycomb\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a damp microfiber cloth. The MaxGrit surface is durable but avoid scraping against rough surfaces. Replace the grip wrap every 3-6 months depending on play frequency.",
+        "Franklin Pickleball Sling Bag\n\nA compact sling bag designed for players who travel light. The Franklin Sling Bag holds 2 paddles and essentials like balls, a water bottle, and phone. The adjustable cross-body strap and lightweight design make it easy to grab and go for casual play sessions.\n\nPrice: $39.99 USD\n\nSpecifications:\n  dimensions: 18 x 10 x 5 in\n  compartments: 3\n  material: Ripstop nylon\n  capacity: 12L\n\nCare instructions: Wipe clean with a damp cloth. The ripstop nylon is water-resistant but not waterproof \u2014 avoid leaving the bag in rain.",
+        "Engage Pursuit MX\n\nThe Engage Pursuit MX features a proprietary ControlPro polymer core that delivers unmatched touch and feel for dinking and soft game strategies. The textured fiberglass face adds spin capability without sacrificing control, making it a favorite among players who prioritize finesse over raw power.\n\nPrice: $159.99 USD\n\nSpecifications:\n  weight: 7.5 oz\n  grip_size: 4.25 in\n  face_material: Textured fiberglass\n  core: ControlPro polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.125 in\n\nCare instructions: Wipe down with a damp cloth after each session. The textured face can collect debris \u2014 use a soft brush for deeper cleaning. Avoid exposing the paddle to temperatures above 120\u00b0F."
+      ],
+      "response": "The grip size of the Franklin Ben Johns Signature paddle is 4.125 inches.",
+      "reference": "The Franklin Ben Johns Signature paddle has a grip size of 4.125 inches.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.999999700236517,
+      "context_recall": 1.0,
+      "context_precision": 0.8333333332916666
+    },
+    {
+      "user_input": "What material are the Engage Court Shorts made of?",
+      "retrieved_contexts": [
+        "Engage Court Shorts\n\nThe Engage Court Shorts are built for athletic movement with a 7-inch inseam and gusseted crotch for unrestricted lateral reach. Deep side pockets hold multiple balls, and the lightweight woven fabric dries quickly after sweaty sessions. Elastic waistband with internal drawcord.\n\nPrice: $44.99 USD\n\nSpecifications:\n  material: 100% recycled polyester, DWR finish\n  sizes_available: ['S', 'M', 'L', 'XL', 'XXL']\n  color_options: ['Graphite', 'Navy', 'Black']\n\nCare instructions: Machine wash cold. The DWR (durable water repellent) finish will diminish over time \u2014 tumble dry on low heat periodically to reactivate the treatment.",
+        "Engage Pursuit MX\n\nThe Engage Pursuit MX features a proprietary ControlPro polymer core that delivers unmatched touch and feel for dinking and soft game strategies. The textured fiberglass face adds spin capability without sacrificing control, making it a favorite among players who prioritize finesse over raw power.\n\nPrice: $159.99 USD\n\nSpecifications:\n  weight: 7.5 oz\n  grip_size: 4.25 in\n  face_material: Textured fiberglass\n  core: ControlPro polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.125 in\n\nCare instructions: Wipe down with a damp cloth after each session. The textured face can collect debris \u2014 use a soft brush for deeper cleaning. Avoid exposing the paddle to temperatures above 120\u00b0F.",
+        "Lija Rally Skort\n\nThe Lija Rally Skort combines style and function with a flattering A-line silhouette and built-in compression shorts with a ball pocket. The UPF 50+ fabric provides sun protection during outdoor play, while the four-way stretch material moves with you through every shot.\n\nPrice: $68.99 USD\n\nSpecifications:\n  material: 86% polyester / 14% spandex, UPF 50+\n  sizes_available: ['XS', 'S', 'M', 'L', 'XL']\n  color_options: ['Black', 'White', 'Ocean Blue', 'Sunset Pink']\n\nCare instructions: Machine wash cold, gentle cycle. Do not bleach. Lay flat to dry to maintain shape and UPF protection. Do not iron."
+      ],
+      "response": "The Engage Court Shorts are made of 100% recycled polyester with a DWR (durable water repellent) finish.",
+      "reference": "The Engage Court Shorts are made of 100% recycled polyester with a DWR (durable water repellent) finish.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9891597974044765,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "How long does the Gamma Supreme Overgrip last?",
+      "retrieved_contexts": [
+        "Gamma Supreme Overgrip 3-Pack\n\nThe Gamma Supreme Overgrip provides a tacky, moisture-absorbing surface that keeps your paddle secure in sweaty conditions. This 3-pack of thin overgrips wraps easily over your existing grip without adding bulk, and each grip lasts approximately 10-15 hours of play.\n\nPrice: $8.99 USD\n\nSpecifications:\n  material: Tacky polyurethane\n  dimensions: 30 in x 1.1 in x 0.5 mm\n  features: ['Self-adhesive backing', 'Perforated for moisture absorption', 'Tapered end for clean finish']\n\nCare instructions: Overgrips are consumable \u2014 replace when tackiness fades or the grip becomes slippery. Store unused grips in the sealed packaging to preserve tackiness.",
+        "Gamma Hi-Rise Ball Hopper\n\nThe Gamma Hi-Rise Ball Hopper holds up to 75 balls and doubles as a convenient ball dispenser during drills and practice sessions. The hi-rise design means no bending to pick up balls \u2014 just press the basket over a ball to scoop it. Folds flat for easy storage.\n\nPrice: $34.99 USD\n\nSpecifications:\n  material: Powder-coated steel wire\n  dimensions: 19 x 16 x 33 in (standing), folds to 4 in flat\n  features: ['Holds 75 balls', 'Press-to-pick-up design', 'Rubber feet prevent scratching', 'Folds flat']\n\nCare instructions: Wipe with a dry cloth to prevent rust. Store indoors to protect the powder coating from weather damage. The rubber feet are replaceable if they wear down.",
+        "Franklin Ben Johns Signature\n\nDesigned in collaboration with pro player Ben Johns, the Franklin Signature paddle combines a MaxGrit textured surface with a polypropylene honeycomb core for exceptional spin generation and shot control. The elongated shape extends reach without adding excessive weight, ideal for singles play.\n\nPrice: $179.99 USD\n\nSpecifications:\n  weight: 8.0 oz\n  grip_size: 4.125 in\n  face_material: MaxGrit carbon fiber\n  core: Polypropylene honeycomb\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a damp microfiber cloth. The MaxGrit surface is durable but avoid scraping against rough surfaces. Replace the grip wrap every 3-6 months depending on play frequency."
+      ],
+      "response": "The Gamma Supreme Overgrip lasts approximately 10-15 hours of play.",
+      "reference": "Each Gamma Supreme Overgrip lasts approximately 10-15 hours of play.",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.969722787481357,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "What sizes does the Lija Rally Skort come in?",
+      "retrieved_contexts": [
+        "Lija Rally Skort\n\nThe Lija Rally Skort combines style and function with a flattering A-line silhouette and built-in compression shorts with a ball pocket. The UPF 50+ fabric provides sun protection during outdoor play, while the four-way stretch material moves with you through every shot.\n\nPrice: $68.99 USD\n\nSpecifications:\n  material: 86% polyester / 14% spandex, UPF 50+\n  sizes_available: ['XS', 'S', 'M', 'L', 'XL']\n  color_options: ['Black', 'White', 'Ocean Blue', 'Sunset Pink']\n\nCare instructions: Machine wash cold, gentle cycle. Do not bleach. Lay flat to dry to maintain shape and UPF protection. Do not iron.",
+        "Baseline Rally Towel 3\n\nA course demo towel with unique catalog code RALLY-3.\n\nPrice: $13.00 USD\n\nSpecifications:\n  material: microfiber\n  dimensions: 33 x 60 cm\n\nCare instructions: Machine wash cold and air dry.",
+        "Baseline Rally Towel 2\n\nA course demo towel with unique catalog code RALLY-2.\n\nPrice: $12.00 USD\n\nSpecifications:\n  material: microfiber\n  dimensions: 32 x 60 cm\n\nCare instructions: Machine wash cold and air dry."
+      ],
+      "response": "The Lija Rally Skort is available in the following sizes: XS, S, M, L, and XL.",
+      "reference": "The Lija Rally Skort is available in XS S M L and XL.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.979481854692526,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "Which bag has the most compartments?",
+      "retrieved_contexts": [
+        "JOOLA Tour Elite Pro Duffel\n\nThe JOOLA Tour Elite Pro Duffel is built for the serious competitor who needs maximum organization. Fits up to 6 paddles with individual protective sleeves, has a ventilated shoe compartment, thermal-lined drink pocket, and a rigid base to keep the bag upright on the court.\n\nPrice: $119.99 USD\n\nSpecifications:\n  dimensions: 24 x 14 x 12 in\n  compartments: 8\n  material: 1200D ballistic nylon\n  capacity: 52L\n\nCare instructions: Spot clean the exterior with a damp cloth. Remove the ventilated shoe divider and wash separately. The rigid base can be wiped down with a disinfecting wipe.",
+        "Baseline Court Bag\n\nA compact bag for paddles and pickleballs.\n\nPrice: $39.00 USD\n\nSpecifications:\n  capacity: 2 paddles and 6 balls\n  material: polyester\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "Selkirk Team Backpack\n\nThe Selkirk Team Backpack holds up to 4 paddles and all your gear in a ventilated, weather-resistant design. Features a dedicated paddle compartment with fleece lining, separate shoe pocket, insulated cooler pocket, and padded laptop sleeve for players heading straight from work to the court.\n\nPrice: $89.99 USD\n\nSpecifications:\n  dimensions: 20 x 13 x 9 in\n  compartments: 6\n  material: 600D polyester with PVC backing\n  capacity: 35L\n\nCare instructions: Spot clean with mild soap and water. Air dry completely before storing to prevent mildew. Machine washing is not recommended as it can damage the PVC backing and structure."
+      ],
+      "response": "The JOOLA Tour Elite Pro Duffel has the most compartments, featuring a total of 8 compartments.",
+      "reference": "The JOOLA Tour Elite Pro Duffel has the most compartments with 8.",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.532421050325848,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "What is the Franklin X-40 used for?",
+      "retrieved_contexts": [
+        "Franklin X-40 Outdoor Pickleballs\n\nThe Franklin X-40 is the official ball of USA Pickleball and the most widely used outdoor tournament ball. Precision-drilled 40-hole design ensures consistent flight and bounce in wind. Made from durable seamless construction that resists cracking in temperature extremes.\n\nPrice: $12.99 USD\n\nSpecifications:\n  diameter: 2.87 in\n  weight: 0.92 oz\n  hole_count: 40\n  material: Seamless high-density polyethylene\n  indoor_outdoor: outdoor\n\nCare instructions: Store in a cool, dry place. Outdoor balls will eventually crack with heavy use \u2014 this is normal wear. Rotate balls during play to extend their life. Discard balls that show visible cracks or have lost their round shape.",
+        "Franklin Ben Johns Signature\n\nDesigned in collaboration with pro player Ben Johns, the Franklin Signature paddle combines a MaxGrit textured surface with a polypropylene honeycomb core for exceptional spin generation and shot control. The elongated shape extends reach without adding excessive weight, ideal for singles play.\n\nPrice: $179.99 USD\n\nSpecifications:\n  weight: 8.0 oz\n  grip_size: 4.125 in\n  face_material: MaxGrit carbon fiber\n  core: Polypropylene honeycomb\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a damp microfiber cloth. The MaxGrit surface is durable but avoid scraping against rough surfaces. Replace the grip wrap every 3-6 months depending on play frequency.",
+        "Franklin X-26 Indoor Pickleballs\n\nThe Franklin X-26 offers reliable indoor performance at a budget-friendly price. The 26-hole pattern provides a slower flight speed and softer feel compared to outdoor balls, making it ideal for beginners learning the game in gym or recreation center settings. Pack of 3.\n\nPrice: $7.99 USD\n\nSpecifications:\n  diameter: 2.87 in\n  weight: 0.85 oz\n  hole_count: 26\n  material: Injection-molded plastic\n  indoor_outdoor: indoor\n\nCare instructions: Wipe with a damp cloth as needed. Indoor balls are more durable than outdoor balls but should still be replaced when they lose roundness or develop soft spots."
+      ],
+      "response": "The Franklin X-40 is the official ball of USA Pickleball and is primarily used for outdoor pickleball tournaments. It features a precision-drilled 40-hole design for consistent flight and bounce, and is made with durable seamless construction to withstand temperature extremes.",
+      "reference": "The Franklin X-40 is an outdoor ball and the official ball of USA Pickleball. It is the most widely used outdoor tournament ball.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9024236903738195,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "How quickly does the PBPro Portable Net System set up?",
+      "retrieved_contexts": [
+        "PBPro Portable Net System\n\nThe PBPro Portable Net System sets up regulation-height play on any flat surface in under 5 minutes. The powder-coated steel frame with center post support keeps the net taut at 34 inches center height, and the whole system packs into an included carry bag weighing just 22 lbs.\n\nPrice: $159.99 USD\n\nSpecifications:\n  material: Powder-coated steel frame, polyester net\n  dimensions: 22 ft wide x 36 in tall (regulation)\n  features: ['Center post height adjustment', 'Weighted base plates', 'Carry bag included', '5-minute setup']\n\nCare instructions: After outdoor use, wipe down the steel frame to prevent rust. Store the net dry to prevent mildew. Check the center post tension mechanism periodically and lubricate with WD-40 if it becomes stiff.",
+        "Gamma Hi-Rise Ball Hopper\n\nThe Gamma Hi-Rise Ball Hopper holds up to 75 balls and doubles as a convenient ball dispenser during drills and practice sessions. The hi-rise design means no bending to pick up balls \u2014 just press the basket over a ball to scoop it. Folds flat for easy storage.\n\nPrice: $34.99 USD\n\nSpecifications:\n  material: Powder-coated steel wire\n  dimensions: 19 x 16 x 33 in (standing), folds to 4 in flat\n  features: ['Holds 75 balls', 'Press-to-pick-up design', 'Rubber feet prevent scratching', 'Folds flat']\n\nCare instructions: Wipe with a dry cloth to prevent rust. Store indoors to protect the powder coating from weather damage. The rubber feet are replaceable if they wear down.",
+        "Baseline Court Bag\n\nA compact bag for paddles and pickleballs.\n\nPrice: $39.00 USD\n\nSpecifications:\n  capacity: 2 paddles and 6 balls\n  material: polyester\n\nCare instructions: Wipe clean and air dry. Do not machine wash."
+      ],
+      "response": "The PBPro Portable Net System sets up in under 5 minutes. [PBPro Portable Net System]",
+      "reference": "The PBPro Portable Net System sets up in under 5 minutes.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9508523099276504,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "What paddle would you recommend for someone who plays singles?",
+      "retrieved_contexts": [
+        "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+        "Selkirk AMPED S2\n\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\n\nPrice: $129.99 USD\n\nSpecifications:\n  weight: 7.8 oz\n  grip_size: 4.25 in\n  face_material: FiberFlex fiberglass\n  core: X5 polypropylene honeycomb\n  shape: widebody\n  length: 15.75 in\n  width: 8.0 in\n\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use."
+      ],
+      "response": "Based on the products in our catalog, if you are playing singles and seek power in your game, you might consider the **Baseline Power Paddle**:\n\n- It is designed for advanced players, offering a heavier weight of 8.3 oz which can provide more power in your shots.\n- Made with a carbon fiber face and a polymer core for durability and performance.\n- Price: $149.00 USD.\n\nIf you are more at the beginner level and prefer easy maneuverability, the **Paddletek Bantam TS-5** is a lighter option:\n\n- Weighs 7.3 oz, reducing arm fatigue during longer sessions.\n- Offers a forgiving sweet spot with a fiberglass composite face and Smart Response Technology polymer core.\n- Price: $114.99 USD.\n\nFor a balanced blend of power and control for intermediate play, the **Selkirk AMPED S2** is an option:\n\n- It weighs 7.8 oz and features a FiberFlex fiberglass face and X5 polypropylene honeycomb core.\n- Provides a responsive feel with consistent ball placement.\n- Price: $129.99 USD.\n\nChoose based on your skill level and preference for weight and control.",
+      "reference": "The Franklin Ben Johns Signature paddle ($179.99) has an elongated shape that extends reach without adding excessive weight, making it ideal for singles play.",
+      "faithfulness": 0.8260869565217391,
+      "answer_relevancy": 0.0,
+      "context_recall": 0.0,
+      "context_precision": 0.0
+    },
+    {
+      "user_input": "What cushioning technology do the ASICS Gel-Renma shoes use?",
+      "retrieved_contexts": [
+        "ASICS Gel-Renma Court Shoes\n\nThe ASICS Gel-Renma is ASICS' first court shoe designed specifically for this sport, featuring their renowned GEL technology in the forefoot and rearfoot for superior shock absorption. The TRUSSTIC system reduces sole weight while maintaining structural integrity, and the AHAR+ outsole delivers exceptional durability.\n\nPrice: $89.99 USD\n\nSpecifications:\n  weight: 11.8 oz (men's size 10)\n  sole_type: AHAR+ high-abrasion rubber\n  closure: Traditional lace-up\n  cushioning: Forefoot and rearfoot GEL technology\n\nCare instructions: Clean with a soft cloth and mild soap solution. Air dry away from direct heat sources. The GEL cushioning system does not require special maintenance but replace the shoes after 60-80 hours of court play for optimal support.",
+        "FILA Volley Zone Court Shoes\n\nThe FILA Volley Zone is a purpose-built court shoe for players who need stable lateral support and cushioned comfort. The herringbone tread pattern provides excellent grip on hard court surfaces, while the EVA midsole absorbs impact during quick direction changes.\n\nPrice: $79.99 USD\n\nSpecifications:\n  weight: 12.5 oz (men's size 10)\n  sole_type: Non-marking herringbone rubber\n  closure: Traditional lace-up\n  cushioning: EVA midsole with memory foam insole\n\nCare instructions: Wipe the outsoles with a damp cloth after play to maintain grip. Remove insoles to air dry after sweaty sessions. Do not machine wash \u2014 spot clean the upper with mild soap and water.",
+        "K-Swiss Express Light Court Shoes\n\nThe K-Swiss Express Light is engineered for speed and agility on the court. Its lightweight mesh upper provides breathability during long matches, while the Durawrap heel counter locks in lateral stability. The Surge 7.0 midsole returns energy on every step.\n\nPrice: $99.99 USD\n\nSpecifications:\n  weight: 11.2 oz (men's size 10)\n  sole_type: Dragguard rubber outsole\n  closure: Traditional lace-up with padded tongue\n  cushioning: Surge 7.0 midsole with ortholite insole\n\nCare instructions: Allow shoes to air dry between sessions. Remove insoles periodically to prevent odor. Clean the mesh upper with a soft brush and mild soap. Replace shoes when the outsole tread shows significant wear to prevent slipping."
+      ],
+      "response": "The ASICS Gel-Renma Court Shoes use GEL technology for cushioning in both the forefoot and rearfoot. This design provides superior shock absorption.",
+      "reference": "The ASICS Gel-Renma shoes use GEL technology in both the forefoot and rearfoot for superior shock absorption.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9018082315270862,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "Compare the Selkirk Team Backpack and Franklin Sling Bag.",
+      "retrieved_contexts": [
+        "Franklin Pickleball Sling Bag\n\nA compact sling bag designed for players who travel light. The Franklin Sling Bag holds 2 paddles and essentials like balls, a water bottle, and phone. The adjustable cross-body strap and lightweight design make it easy to grab and go for casual play sessions.\n\nPrice: $39.99 USD\n\nSpecifications:\n  dimensions: 18 x 10 x 5 in\n  compartments: 3\n  material: Ripstop nylon\n  capacity: 12L\n\nCare instructions: Wipe clean with a damp cloth. The ripstop nylon is water-resistant but not waterproof \u2014 avoid leaving the bag in rain.",
+        "Selkirk Team Backpack\n\nThe Selkirk Team Backpack holds up to 4 paddles and all your gear in a ventilated, weather-resistant design. Features a dedicated paddle compartment with fleece lining, separate shoe pocket, insulated cooler pocket, and padded laptop sleeve for players heading straight from work to the court.\n\nPrice: $89.99 USD\n\nSpecifications:\n  dimensions: 20 x 13 x 9 in\n  compartments: 6\n  material: 600D polyester with PVC backing\n  capacity: 35L\n\nCare instructions: Spot clean with mild soap and water. Air dry completely before storing to prevent mildew. Machine washing is not recommended as it can damage the PVC backing and structure.",
+        "Baseline Court Bag\n\nA compact bag for paddles and pickleballs.\n\nPrice: $39.00 USD\n\nSpecifications:\n  capacity: 2 paddles and 6 balls\n  material: polyester\n\nCare instructions: Wipe clean and air dry. Do not machine wash."
+      ],
+      "response": "Here's a comparison between the Selkirk Team Backpack and the Franklin Sling Bag:\n\n**Selkirk Team Backpack:**\n- **Capacity:** Holds up to 4 paddles, with a total capacity of 35L.\n- **Compartments:** 6 compartments, including a dedicated paddle compartment with fleece lining, a separate shoe pocket, an insulated cooler pocket, and a padded laptop sleeve.\n- **Material:** Made from 600D polyester with PVC backing.\n- **Dimensions:** 20 x 13 x 9 inches.\n- **Special Features:** Ventilated and weather-resistant design, suitable for players going from work to the courts.\n- **Price:** $89.99 USD.\n- **Care Instructions:** Spot clean with mild soap and water; air dry completely. Avoid machine washing.\n\n**Franklin Sling Bag:**\n- **Capacity:** Holds 2 paddles with a total capacity of 12L.\n- **Compartments:** 3 compartments for essentials like balls, a water bottle, and phone.\n- **Material:** Ripstop nylon, which is water-resistant.\n- **Dimensions:** 18 x 10 x 5 inches.\n- **Special Features:** Lightweight, adjustable cross-body strap for easy carrying, ideal for casual play sessions.\n- **Price:** $39.99 USD.\n- **Care Instructions:** Wipe clean with a damp cloth. Avoid exposure to rain as it is water-resistant but not waterproof.\n\n**Summary:**\n- The Selkirk Team Backpack offers more capacity and additional features such as a fleece-lined paddle compartment and a laptop sleeve, making it suitable for more serious players or those combining work and play.\n- The Franklin Sling Bag is more compact and lightweight, designed for players who prefer to travel light during casual games.\n\nBoth bags cater to different needs, so your choice would depend on whether you prioritize capacity and features or portability and simplicity.",
+      "reference": "The Selkirk Team Backpack ($89.99) is larger at 35L with 6 compartments and holds up to 4 paddles. It also has a laptop sleeve, shoe pocket, and cooler pocket. The Franklin Sling Bag ($39.99) is more compact at 12L with 3 compartments and holds 2 paddles \u2014 designed for players who travel light.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9348755133225201,
+      "context_recall": 1.0,
+      "context_precision": 0.0
+    },
+    {
+      "user_input": "What is the lightest shoe you carry?",
+      "retrieved_contexts": [
+        "K-Swiss Express Light Court Shoes\n\nThe K-Swiss Express Light is engineered for speed and agility on the court. Its lightweight mesh upper provides breathability during long matches, while the Durawrap heel counter locks in lateral stability. The Surge 7.0 midsole returns energy on every step.\n\nPrice: $99.99 USD\n\nSpecifications:\n  weight: 11.2 oz (men's size 10)\n  sole_type: Dragguard rubber outsole\n  closure: Traditional lace-up with padded tongue\n  cushioning: Surge 7.0 midsole with ortholite insole\n\nCare instructions: Allow shoes to air dry between sessions. Remove insoles periodically to prevent odor. Clean the mesh upper with a soft brush and mild soap. Replace shoes when the outsole tread shows significant wear to prevent slipping.",
+        "Baseline Court Shoe\n\nA ventilated court shoe for lateral movement.\n\nPrice: $75.00 USD\n\nSpecifications:\n  outsole: non-marking rubber\n  upper: mesh\n  sizes: US 6-12\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "Franklin Pickleball Sling Bag\n\nA compact sling bag designed for players who travel light. The Franklin Sling Bag holds 2 paddles and essentials like balls, a water bottle, and phone. The adjustable cross-body strap and lightweight design make it easy to grab and go for casual play sessions.\n\nPrice: $39.99 USD\n\nSpecifications:\n  dimensions: 18 x 10 x 5 in\n  compartments: 3\n  material: Ripstop nylon\n  capacity: 12L\n\nCare instructions: Wipe clean with a damp cloth. The ripstop nylon is water-resistant but not waterproof \u2014 avoid leaving the bag in rain."
+      ],
+      "response": "Based on the products in our catalog, the K-Swiss Express Light Court Shoes are the lightest option, with a weight of 11.2 oz for a men's size 10.",
+      "reference": "The K-Swiss Express Light is the lightest shoe at 11.2 oz (men's size 10).",
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.8080717842815835,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "Does the Lija Rally Skort have sun protection?",
+      "retrieved_contexts": [
+        "Lija Rally Skort\n\nThe Lija Rally Skort combines style and function with a flattering A-line silhouette and built-in compression shorts with a ball pocket. The UPF 50+ fabric provides sun protection during outdoor play, while the four-way stretch material moves with you through every shot.\n\nPrice: $68.99 USD\n\nSpecifications:\n  material: 86% polyester / 14% spandex, UPF 50+\n  sizes_available: ['XS', 'S', 'M', 'L', 'XL']\n  color_options: ['Black', 'White', 'Ocean Blue', 'Sunset Pink']\n\nCare instructions: Machine wash cold, gentle cycle. Do not bleach. Lay flat to dry to maintain shape and UPF protection. Do not iron.",
+        "Diadem Warrior Performance Tee\n\nThe Diadem Warrior Performance Tee uses moisture-wicking polyester blend fabric to keep you cool and dry during intense rallies. Features flatlock seams to reduce chafing, a tagless collar for comfort, and a reflective logo for low-light visibility on evening courts.\n\nPrice: $34.99 USD\n\nSpecifications:\n  material: 92% polyester / 8% spandex\n  sizes_available: ['XS', 'S', 'M', 'L', 'XL', 'XXL']\n  color_options: ['Navy', 'Black', 'White', 'Coral']\n\nCare instructions: Machine wash cold with like colors. Do not use fabric softener as it reduces moisture-wicking performance. Hang dry or tumble dry low.",
+        "HEAD Performance Visor\n\nThe HEAD Performance Visor keeps the sun out of your eyes without trapping heat. Features a moisture-absorbing terrycloth sweatband, adjustable hook-and-loop closure for a custom fit, and a pre-curved brim that won't interfere with your serve motion.\n\nPrice: $24.99 USD\n\nSpecifications:\n  material: 100% polyester with terrycloth sweatband\n  sizes_available: ['One size fits most']\n  color_options: ['White', 'Black', 'Navy', 'Red']\n\nCare instructions: Hand wash with mild detergent and air dry. The terrycloth sweatband can be spot-cleaned between washes. Do not machine wash or the brim may lose its shape."
+      ],
+      "response": "Yes, the Lija Rally Skort provides sun protection with its UPF 50+ fabric.",
+      "reference": "Yes, the Lija Rally Skort has UPF 50+ fabric that provides sun protection during outdoor play.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.985985000719278,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "How much lead tape do I need to add per strip for the Tourna Lead Tape?",
+      "retrieved_contexts": [
+        "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+        "Gamma Supreme Overgrip 3-Pack\n\nThe Gamma Supreme Overgrip provides a tacky, moisture-absorbing surface that keeps your paddle secure in sweaty conditions. This 3-pack of thin overgrips wraps easily over your existing grip without adding bulk, and each grip lasts approximately 10-15 hours of play.\n\nPrice: $8.99 USD\n\nSpecifications:\n  material: Tacky polyurethane\n  dimensions: 30 in x 1.1 in x 0.5 mm\n  features: ['Self-adhesive backing', 'Perforated for moisture absorption', 'Tapered end for clean finish']\n\nCare instructions: Overgrips are consumable \u2014 replace when tackiness fades or the grip becomes slippery. Store unused grips in the sealed packaging to preserve tackiness.",
+        "HEAD Radical Tour\n\nThe HEAD Radical Tour brings tennis engineering expertise to the court. Featuring an Extreme Spin Texture (EST) face and an Optimized Tubular Construction (OTC) frame, this paddle delivers consistent power from edge to edge with a generous sweet spot suited to all-court players.\n\nPrice: $149.99 USD\n\nSpecifications:\n  weight: 8.1 oz\n  grip_size: 4.25 in\n  face_material: Extreme Spin Texture (EST) composite\n  core: Polypropylene honeycomb\n  shape: standard\n  length: 15.875 in\n  width: 7.875 in\n\nCare instructions: Wipe with a clean damp cloth. Inspect the edge guard periodically for cracks and replace if damaged to protect the core. Store away from moisture."
+      ],
+      "response": "Each 6-inch strip of the Tourna Lead Tape weighs 0.25 oz. You can cut and apply these strips as needed to customize your paddle's weight and balance. Make sure to apply the tape to a clean, dry paddle surface for the best adhesion.",
+      "reference": "Each 6-inch strip of Tourna Lead Tape adds 0.25 oz of weight.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8015940684739123,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "What color options does the HEAD Performance Visor come in?",
+      "retrieved_contexts": [
+        "HEAD Performance Visor\n\nThe HEAD Performance Visor keeps the sun out of your eyes without trapping heat. Features a moisture-absorbing terrycloth sweatband, adjustable hook-and-loop closure for a custom fit, and a pre-curved brim that won't interfere with your serve motion.\n\nPrice: $24.99 USD\n\nSpecifications:\n  material: 100% polyester with terrycloth sweatband\n  sizes_available: ['One size fits most']\n  color_options: ['White', 'Black', 'Navy', 'Red']\n\nCare instructions: Hand wash with mild detergent and air dry. The terrycloth sweatband can be spot-cleaned between washes. Do not machine wash or the brim may lose its shape.",
+        "Diadem Warrior Performance Tee\n\nThe Diadem Warrior Performance Tee uses moisture-wicking polyester blend fabric to keep you cool and dry during intense rallies. Features flatlock seams to reduce chafing, a tagless collar for comfort, and a reflective logo for low-light visibility on evening courts.\n\nPrice: $34.99 USD\n\nSpecifications:\n  material: 92% polyester / 8% spandex\n  sizes_available: ['XS', 'S', 'M', 'L', 'XL', 'XXL']\n  color_options: ['Navy', 'Black', 'White', 'Coral']\n\nCare instructions: Machine wash cold with like colors. Do not use fabric softener as it reduces moisture-wicking performance. Hang dry or tumble dry low.",
+        "HEAD Radical Tour\n\nThe HEAD Radical Tour brings tennis engineering expertise to the court. Featuring an Extreme Spin Texture (EST) face and an Optimized Tubular Construction (OTC) frame, this paddle delivers consistent power from edge to edge with a generous sweet spot suited to all-court players.\n\nPrice: $149.99 USD\n\nSpecifications:\n  weight: 8.1 oz\n  grip_size: 4.25 in\n  face_material: Extreme Spin Texture (EST) composite\n  core: Polypropylene honeycomb\n  shape: standard\n  length: 15.875 in\n  width: 7.875 in\n\nCare instructions: Wipe with a clean damp cloth. Inspect the edge guard periodically for cracks and replace if damaged to protect the core. Store away from moisture."
+      ],
+      "response": "The HEAD Performance Visor is available in the following color options:\n\n- White\n- Black\n- Navy\n- Red",
+      "reference": "The HEAD Performance Visor comes in White, Black, Navy, and Red.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9851630287033833,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "Which paddle has the widest body?",
+      "retrieved_contexts": [
+        "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "Selkirk Vanguard Power Air\n\nThe Selkirk Vanguard Power Air represents the pinnacle of paddle engineering. Featuring a proprietary air-injected polypropylene core and a carbon fiber face with QuadFlex 4-layer construction, it delivers unmatched power without sacrificing spin or control. Built for tournament-level play.\n\nPrice: $249.99 USD\n\nSpecifications:\n  weight: 8.4 oz\n  grip_size: 4.25 in\n  face_material: QuadFlex 4-layer carbon fiber\n  core: Air-injected polypropylene\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a microfiber cloth dampened with water. Avoid chemical cleaners that may degrade the carbon fiber surface. The edge guard is replaceable \u2014 contact Selkirk for parts.",
+        "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash."
+      ],
+      "response": "Based on the products in our catalog, the paddle with the widest body is the \"Selkirk Vanguard Power Air,\" which has a width of 7.375 inches.",
+      "reference": "The Engage Pursuit MX has the widest body at 8.125 inches.",
+      "faithfulness": 0.3333333333333333,
+      "answer_relevancy": 0.9093150476867992,
+      "context_recall": 0.0,
+      "context_precision": 0.0
+    },
+    {
+      "user_input": "How many balls come in the Dura Fast 40 pack?",
+      "retrieved_contexts": [
+        "Dura Fast 40 Outdoor Pickleballs\n\nThe Dura Fast 40 is a tournament-grade outdoor ball trusted by competitive players for its true bounce and predictable flight. Pack of 12 balls. The seamless one-piece rotationally molded construction delivers uniform wall thickness and exceptional roundness for consistent play.\n\nPrice: $29.99 USD\n\nSpecifications:\n  diameter: 2.87 in\n  weight: 0.92 oz\n  hole_count: 40\n  material: Rotationally molded seamless plastic\n  indoor_outdoor: outdoor\n\nCare instructions: Outdoor balls wear faster in extreme heat or cold. Store indoors between sessions. This is a 12-pack \u2014 keep spares on hand during competitive play.",
+        "Franklin X-40 Outdoor Pickleballs\n\nThe Franklin X-40 is the official ball of USA Pickleball and the most widely used outdoor tournament ball. Precision-drilled 40-hole design ensures consistent flight and bounce in wind. Made from durable seamless construction that resists cracking in temperature extremes.\n\nPrice: $12.99 USD\n\nSpecifications:\n  diameter: 2.87 in\n  weight: 0.92 oz\n  hole_count: 40\n  material: Seamless high-density polyethylene\n  indoor_outdoor: outdoor\n\nCare instructions: Store in a cool, dry place. Outdoor balls will eventually crack with heavy use \u2014 this is normal wear. Rotate balls during play to extend their life. Discard balls that show visible cracks or have lost their round shape.",
+        "Baseline Indoor Ball\n\nAn indoor pickleball pack for smooth indoor courts.\n\nPrice: $12.00 USD\n\nSpecifications:\n  hole_count: 26\n  pack_size: 3\n  weight: 0.85 oz\n\nCare instructions: Wipe clean and air dry. Do not machine wash."
+      ],
+      "response": "The Dura Fast 40 Outdoor Pickleballs come in a pack of 12 balls.",
+      "reference": "The Dura Fast 40 comes in a pack of 12 balls for $29.99.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.858251938923123,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "What is the cheapest product you sell?",
+      "retrieved_contexts": [
+        "Franklin Pickleball Sling Bag\n\nA compact sling bag designed for players who travel light. The Franklin Sling Bag holds 2 paddles and essentials like balls, a water bottle, and phone. The adjustable cross-body strap and lightweight design make it easy to grab and go for casual play sessions.\n\nPrice: $39.99 USD\n\nSpecifications:\n  dimensions: 18 x 10 x 5 in\n  compartments: 3\n  material: Ripstop nylon\n  capacity: 12L\n\nCare instructions: Wipe clean with a damp cloth. The ripstop nylon is water-resistant but not waterproof \u2014 avoid leaving the bag in rain.",
+        "Franklin X-26 Indoor Pickleballs\n\nThe Franklin X-26 offers reliable indoor performance at a budget-friendly price. The 26-hole pattern provides a slower flight speed and softer feel compared to outdoor balls, making it ideal for beginners learning the game in gym or recreation center settings. Pack of 3.\n\nPrice: $7.99 USD\n\nSpecifications:\n  diameter: 2.87 in\n  weight: 0.85 oz\n  hole_count: 26\n  material: Injection-molded plastic\n  indoor_outdoor: indoor\n\nCare instructions: Wipe with a damp cloth as needed. Indoor balls are more durable than outdoor balls but should still be replaced when they lose roundness or develop soft spots.",
+        "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather."
+      ],
+      "response": "Based on the products provided in the context, the cheapest product is the \"Franklin X-26 Indoor Pickleballs,\" which come in a pack of 3 for $7.99 USD.",
+      "reference": "The cheapest product is the Tourna Lead Tape Roll at $6.99.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6696378093196853,
+      "context_recall": 0.0,
+      "context_precision": 0.0
+    },
+    {
+      "user_input": "What paddle features are best for spin?",
+      "retrieved_contexts": [
+        "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "HEAD Radical Tour\n\nThe HEAD Radical Tour brings tennis engineering expertise to the court. Featuring an Extreme Spin Texture (EST) face and an Optimized Tubular Construction (OTC) frame, this paddle delivers consistent power from edge to edge with a generous sweet spot suited to all-court players.\n\nPrice: $149.99 USD\n\nSpecifications:\n  weight: 8.1 oz\n  grip_size: 4.25 in\n  face_material: Extreme Spin Texture (EST) composite\n  core: Polypropylene honeycomb\n  shape: standard\n  length: 15.875 in\n  width: 7.875 in\n\nCare instructions: Wipe with a clean damp cloth. Inspect the edge guard periodically for cracks and replace if damaged to protect the core. Store away from moisture.",
+        "Selkirk Vanguard Power Air\n\nThe Selkirk Vanguard Power Air represents the pinnacle of paddle engineering. Featuring a proprietary air-injected polypropylene core and a carbon fiber face with QuadFlex 4-layer construction, it delivers unmatched power without sacrificing spin or control. Built for tournament-level play.\n\nPrice: $249.99 USD\n\nSpecifications:\n  weight: 8.4 oz\n  grip_size: 4.25 in\n  face_material: QuadFlex 4-layer carbon fiber\n  core: Air-injected polypropylene\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a microfiber cloth dampened with water. Avoid chemical cleaners that may degrade the carbon fiber surface. The edge guard is replaceable \u2014 contact Selkirk for parts."
+      ],
+      "response": "From the products in our catalog, the features that can enhance spin include:\n\n- **Face Material:** The HEAD Radical Tour uses an Extreme Spin Texture (EST) composite face, specifically designed to enhance spin. Similarly, the Selkirk Vanguard Power Air features a QuadFlex 4-layer carbon fiber face, providing spin in addition to power and control.\n\nThese specialized textures and materials are designed to grip the ball better, facilitating greater spin potential.",
+      "reference": "For maximum spin, look at paddles with textured faces: the JOOLA Hyperion CFS 16 has a Carbon Friction Surface for aggressive topspin, the Franklin Ben Johns Signature uses a MaxGrit carbon fiber face for spin generation, and the HEAD Radical Tour features an Extreme Spin Texture (EST) composite.",
+      "faithfulness": 0.42857142857142855,
+      "answer_relevancy": 0.5816417488963125,
+      "context_recall": 0.3333333333333333,
+      "context_precision": 0.49999999995
+    },
+    {
+      "user_input": "What is the weight of the Baseline Control Paddle?",
+      "retrieved_contexts": [
+        "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather."
+      ],
+      "response": "The weight of the Baseline Control Paddle is 7.4 oz.",
+      "reference": "The Baseline Control Paddle weighs 7.4 oz.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9999997338177179,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "How much does the Baseline Court Bag cost?",
+      "retrieved_contexts": [
+        "Baseline Court Bag\n\nA compact bag for paddles and pickleballs.\n\nPrice: $39.00 USD\n\nSpecifications:\n  capacity: 2 paddles and 6 balls\n  material: polyester\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "Baseline Court Shoe\n\nA ventilated court shoe for lateral movement.\n\nPrice: $75.00 USD\n\nSpecifications:\n  outsole: non-marking rubber\n  upper: mesh\n  sizes: US 6-12\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "Selkirk Team Backpack\n\nThe Selkirk Team Backpack holds up to 4 paddles and all your gear in a ventilated, weather-resistant design. Features a dedicated paddle compartment with fleece lining, separate shoe pocket, insulated cooler pocket, and padded laptop sleeve for players heading straight from work to the court.\n\nPrice: $89.99 USD\n\nSpecifications:\n  dimensions: 20 x 13 x 9 in\n  compartments: 6\n  material: 600D polyester with PVC backing\n  capacity: 35L\n\nCare instructions: Spot clean with mild soap and water. Air dry completely before storing to prevent mildew. Machine washing is not recommended as it can damage the PVC backing and structure."
+      ],
+      "response": "The Baseline Court Bag costs $39.00 USD.",
+      "reference": "The Baseline Court Bag costs $39.00.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9999995828306397,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999
+    },
+    {
+      "user_input": "How many holes does the Baseline Indoor Ball have?",
+      "retrieved_contexts": [
+        "Baseline Indoor Ball\n\nAn indoor pickleball pack for smooth indoor courts.\n\nPrice: $12.00 USD\n\nSpecifications:\n  hole_count: 26\n  pack_size: 3\n  weight: 0.85 oz\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "Onix Pure 2 Indoor Pickleballs\n\nThe Onix Pure 2 is engineered specifically for indoor play, featuring 26 precisely spaced holes for a softer, more controlled flight on gym and rec center surfaces. The true-flight design minimizes wobble and provides consistent bounce on smooth indoor courts.\n\nPrice: $9.99 USD\n\nSpecifications:\n  diameter: 2.87 in\n  weight: 0.86 oz\n  hole_count: 26\n  material: Durable TPU blend\n  indoor_outdoor: indoor\n\nCare instructions: Indoor balls last longer than outdoor balls. Store at room temperature. Clean with a damp cloth if they pick up dust or gym floor residue.",
+        "Franklin X-26 Indoor Pickleballs\n\nThe Franklin X-26 offers reliable indoor performance at a budget-friendly price. The 26-hole pattern provides a slower flight speed and softer feel compared to outdoor balls, making it ideal for beginners learning the game in gym or recreation center settings. Pack of 3.\n\nPrice: $7.99 USD\n\nSpecifications:\n  diameter: 2.87 in\n  weight: 0.85 oz\n  hole_count: 26\n  material: Injection-molded plastic\n  indoor_outdoor: indoor\n\nCare instructions: Wipe with a damp cloth as needed. Indoor balls are more durable than outdoor balls but should still be replaced when they lose roundness or develop soft spots."
+      ],
+      "response": "The Baseline Indoor Ball has 26 holes.",
+      "reference": "The Baseline Indoor Ball has 26 holes.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.999999651580366,
+      "context_recall": 1.0,
+      "context_precision": 0.9999999999666667
+    },
+    {
+      "user_input": "What is the outsole of the Baseline Court Shoe made of?",
+      "retrieved_contexts": [
+        "Baseline Court Shoe\n\nA ventilated court shoe for lateral movement.\n\nPrice: $75.00 USD\n\nSpecifications:\n  outsole: non-marking rubber\n  upper: mesh\n  sizes: US 6-12\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "FILA Volley Zone Court Shoes\n\nThe FILA Volley Zone is a purpose-built court shoe for players who need stable lateral support and cushioned comfort. The herringbone tread pattern provides excellent grip on hard court surfaces, while the EVA midsole absorbs impact during quick direction changes.\n\nPrice: $79.99 USD\n\nSpecifications:\n  weight: 12.5 oz (men's size 10)\n  sole_type: Non-marking herringbone rubber\n  closure: Traditional lace-up\n  cushioning: EVA midsole with memory foam insole\n\nCare instructions: Wipe the outsoles with a damp cloth after play to maintain grip. Remove insoles to air dry after sweaty sessions. Do not machine wash \u2014 spot clean the upper with mild soap and water.",
+        "K-Swiss Express Light Court Shoes\n\nThe K-Swiss Express Light is engineered for speed and agility on the court. Its lightweight mesh upper provides breathability during long matches, while the Durawrap heel counter locks in lateral stability. The Surge 7.0 midsole returns energy on every step.\n\nPrice: $99.99 USD\n\nSpecifications:\n  weight: 11.2 oz (men's size 10)\n  sole_type: Dragguard rubber outsole\n  closure: Traditional lace-up with padded tongue\n  cushioning: Surge 7.0 midsole with ortholite insole\n\nCare instructions: Allow shoes to air dry between sessions. Remove insoles periodically to prevent odor. Clean the mesh upper with a soft brush and mild soap. Replace shoes when the outsole tread shows significant wear to prevent slipping."
+      ],
+      "response": "The outsole of the Baseline Court Shoe is made of non-marking rubber.",
+      "reference": "The outsole is non-marking rubber.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9765722701778426,
+      "context_recall": 1.0,
+      "context_precision": 0.99999999995
+    },
+    {
+      "user_input": "Which weighs more, the Baseline Control Paddle or the Baseline Power Paddle?",
+      "retrieved_contexts": [
+        "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "Selkirk Vanguard Power Air\n\nThe Selkirk Vanguard Power Air represents the pinnacle of paddle engineering. Featuring a proprietary air-injected polypropylene core and a carbon fiber face with QuadFlex 4-layer construction, it delivers unmatched power without sacrificing spin or control. Built for tournament-level play.\n\nPrice: $249.99 USD\n\nSpecifications:\n  weight: 8.4 oz\n  grip_size: 4.25 in\n  face_material: QuadFlex 4-layer carbon fiber\n  core: Air-injected polypropylene\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a microfiber cloth dampened with water. Avoid chemical cleaners that may degrade the carbon fiber surface. The edge guard is replaceable \u2014 contact Selkirk for parts."
+      ],
+      "response": "The Baseline Power Paddle weighs more. It weighs 8.3 oz, whereas the Baseline Control Paddle weighs 7.4 oz.",
+      "reference": "The Baseline Power Paddle weighs more: 8.3 oz versus 7.4 oz for the Control Paddle.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9124446461979817,
+      "context_recall": 1.0,
+      "context_precision": 0.0
+    }
+  ],
+  "statistics": {
+    "faithfulness": {
+      "median": 1.0,
+      "p10": 0.5,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "answer_relevancy": {
+      "median": 0.921923927056885,
+      "p10": 0.6749590024125465,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "context_recall": {
+      "median": 1.0,
+      "p10": 0.3333333333333333,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "context_precision": {
+      "median": 0.9999999999,
+      "p10": 0.0,
+      "min": 0.0,
+      "max": 0.9999999999666667
+    }
+  },
+  "top_k": 3
+}

@@ -30,6 +30,7 @@ def stream_completion(
     system_prompt = render_system_prompt(sources)
     stream = _client.chat.completions.create(
         model=model,
+        max_tokens=settings.generation_max_tokens,
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": question},
@@ -67,9 +68,9 @@ def measure_ttft_streaming(
 ) -> dict:
     """Run one streaming generation; return ``{ttft_ms, total_ms, total_tokens}``."""
     chosen_model = model or settings.model_complex
+    start = time.perf_counter()
     sources = retrieve(question, top_k=top_k)
 
-    start = time.perf_counter()
     ttft_ms: float | None = None
     final: tuple[str, TokenUsage, float] | None = None
 

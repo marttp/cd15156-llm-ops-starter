@@ -2,7 +2,7 @@
 
 The baseline and phase test transcripts are observed local results using Python 3.12. External services are mocked by the supplied test fixtures. Input guard calibration uses the actual locally downloaded ML scanners, but it is not HTTP rubric evidence.
 
-Live provider evidence has not been captured. No rubric row is claimed complete until the final audit links all required artifacts and the writeup contains their analysis.
+Real provider evidence is retained under `live/`, `evaluation/`, `cache/` and `latency/`. The nine-section `WRITEUP.md` connects the required artifacts to observed results and limitations. `scripts/audit_submission.py` checks evidence completeness without credentials; its final transcript is `rubric-audit.txt`. External grading remains separate.
 
 ## Capture workflow
 
@@ -28,3 +28,9 @@ For a repository-only submission, restore the tracked snapshot to the rubric pat
 Stop the API before `PYTHONPATH=. uv run --no-project python scripts/measure_cache.py` so one process owns Chroma. The benchmark runs the guarded query function, sweeps 0.85/0.90/0.95, records six paraphrases and checks a wrong-product weight probe. It saves actual hit counts and collection metadata, and fails if no threshold yields at least three hits. Select the deployed threshold from the observed false-positive and hit-rate results.
 
 After the HTTP workload capture, `PYTHONPATH=. uv run --no-project python scripts/project_costs.py` projects that workload at 10,000 HTTP queries/day. Bootstrap costs are excluded explicitly; classification, embeddings, generation and judging for those requests remain included. Discuss provider rate limits, cache pressure, evaluation cadence and daily spend ceilings in the writeup.
+
+## Measurement provenance
+
+The fixed 35-question evaluation corpus is scored at k=3, 5 and 10. A separate k=5 generation run supplies the independent quality result. Generated-answer checkpoints prevent repeated generation after interruption. Missing scores are retried only against the same saved answer/context, with a before-retry artifact and retry provenance retained. No missing value is replaced with zero. Raw RAGAS evaluations exclude routing and output guards. The output judge was subsequently tightened to reject definitive feature absence inferred from missing documentation, then recalibrated with real provider calls.
+
+The frozen API cost workload has 30 HTTP requests and 112 billable operations. Additional evaluation, cache, latency and safety calls write isolated logs. Initial and pre-fix evidence files are diagnostic records, not accepted final outcomes. The cache default 0.90 was selected from the measured false-match/hit-rate tradeoff. Guarded SSE waits for output validation; raw generator TTFT does not imply earlier safe display.

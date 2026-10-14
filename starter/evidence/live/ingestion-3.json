@@ -1,0 +1,47 @@
+{
+  "question": "What are the dimensions of baseline rally towel 3?",
+  "method": "POST",
+  "url": "http://localhost:8080/query",
+  "response": {
+    "answer": "The dimensions of the Baseline Rally Towel 3 are 33 x 60 cm.",
+    "sources": [
+      {
+        "doc_id": "demo_inbox_towel_3",
+        "chunk_text": "Baseline Rally Towel 3\n\nA course demo towel with unique catalog code RALLY-3.\n\nPrice: $13.00 USD\n\nSpecifications:\n  material: microfiber\n  dimensions: 33 x 60 cm\n\nCare instructions: Machine wash cold and air dry.",
+        "similarity_score": 0.6998403680891649
+      },
+      {
+        "doc_id": "demo_inbox_towel_2",
+        "chunk_text": "Baseline Rally Towel 2\n\nA course demo towel with unique catalog code RALLY-2.\n\nPrice: $12.00 USD\n\nSpecifications:\n  material: microfiber\n  dimensions: 32 x 60 cm\n\nCare instructions: Machine wash cold and air dry.",
+        "similarity_score": 0.6659953384454597
+      },
+      {
+        "doc_id": "demo_inbox_towel_1",
+        "chunk_text": "Baseline Rally Towel 1\n\nA course demo towel with unique catalog code RALLY-1.\n\nPrice: $11.00 USD\n\nSpecifications:\n  material: microfiber\n  dimensions: 31 x 60 cm\n\nCare instructions: Machine wash cold and air dry.",
+        "similarity_score": 0.6635725476733908
+      },
+      {
+        "doc_id": "prod_016",
+        "chunk_text": "Lija Rally Skort\n\nThe Lija Rally Skort combines style and function with a flattering A-line silhouette and built-in compression shorts with a ball pocket. The UPF 50+ fabric provides sun protection during outdoor play, while the four-way stretch material moves with you through every shot.\n\nPrice: $68.99 USD\n\nSpecifications:\n  material: 86% polyester / 14% spandex, UPF 50+\n  sizes_available: ['XS', 'S', 'M', 'L', 'XL']\n  color_options: ['Black', 'White', 'Ocean Blue', 'Sunset Pink']\n\nCare instructions: Machine wash cold, gentle cycle. Do not bleach. Lay flat to dry to maintain shape and UPF protection. Do not iron.",
+        "similarity_score": 0.39505135994278984
+      },
+      {
+        "doc_id": "demo_court_bag",
+        "chunk_text": "Baseline Court Bag\n\nA compact bag for paddles and pickleballs.\n\nPrice: $39.00 USD\n\nSpecifications:\n  capacity: 2 paddles and 6 balls\n  material: polyester\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "similarity_score": 0.38255983132461535
+      }
+    ],
+    "confidence": 0.5614038890950841,
+    "model": "gpt-4o-mini",
+    "tokens": {
+      "prompt_tokens": 816,
+      "completion_tokens": 19
+    },
+    "cost_usd": 0.00013379999999999997,
+    "cached": false,
+    "trace_id": "52f9064c523169727015f99793be4ee3",
+    "blocked_by": null
+  },
+  "latency_ms": 5992.37,
+  "classification": "simple"
+}

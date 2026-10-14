@@ -1,0 +1,93 @@
+2026-10-14 04:41:30 [debug    ] Initialized classification model device=device(type='mps') model=Model(path='protectai/deberta-v3-base-prompt-injection-v2', subfolder='', revision='89b085cd330414d3e7d9dd787870f315957e1e9f', onnx_path='ProtectAI/deberta-v3-base-prompt-injection-v2', onnx_revision='89b085cd330414d3e7d9dd787870f315957e1e9f', onnx_subfolder='onnx', onnx_filename='model.onnx', kwargs={}, pipeline_kwargs={'batch_size': 1, 'device': device(type='mps'), 'return_token_type_ids': False, 'max_length': 512, 'truncation': True}, tokenizer_kwargs={})
+Device set to use mps
+2026-10-14 04:41:30 [debug    ] No entity types provided, using default default_entities=['CREDIT_CARD', 'CRYPTO', 'EMAIL_ADDRESS', 'IBAN_CODE', 'IP_ADDRESS', 'PERSON', 'PHONE_NUMBER', 'US_SSN', 'US_BANK_NUMBER', 'CREDIT_CARD_RE', 'UUID', 'EMAIL_ADDRESS_RE', 'US_SSN_RE']
+Some weights of the model checkpoint at dslim/bert-base-NER were not used when initializing BertForTokenClassification: ['bert.pooler.dense.bias', 'bert.pooler.dense.weight']
+- This IS expected if you are initializing BertForTokenClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForTokenClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+2026-10-14 04:41:30 [debug    ] Initialized NER model          device=device(type='mps') model=Model(path='dslim/bert-base-NER', subfolder='', revision='5271995b4b596a059d6efbce30031042aed67cb6', onnx_path='dslim/bert-base-NER', onnx_revision='5271995b4b596a059d6efbce30031042aed67cb6', onnx_subfolder='onnx', onnx_filename='model.onnx', kwargs={}, pipeline_kwargs={'batch_size': 1, 'device': device(type='mps'), 'aggregation_strategy': 'simple'}, tokenizer_kwargs={'model_input_names': ['input_ids', 'attention_mask']})
+Device set to use mps
+2026-10-14 04:41:30 [debug    ] Loaded regex pattern           group_name=CREDIT_CARD_RE
+2026-10-14 04:41:30 [debug    ] Loaded regex pattern           group_name=UUID
+2026-10-14 04:41:30 [debug    ] Loaded regex pattern           group_name=EMAIL_ADDRESS_RE
+2026-10-14 04:41:30 [debug    ] Loaded regex pattern           group_name=US_SSN_RE
+2026-10-14 04:41:30 [debug    ] Loaded regex pattern           group_name=BTC_ADDRESS
+2026-10-14 04:41:30 [debug    ] Loaded regex pattern           group_name=URL_RE
+2026-10-14 04:41:30 [debug    ] Loaded regex pattern           group_name=CREDIT_CARD
+2026-10-14 04:41:30 [debug    ] Loaded regex pattern           group_name=EMAIL_ADDRESS_RE
+2026-10-14 04:41:30 [debug    ] Loaded regex pattern           group_name=PHONE_NUMBER_ZH
+2026-10-14 04:41:30 [debug    ] Loaded regex pattern           group_name=PHONE_NUMBER_WITH_EXT
+2026-10-14 04:41:30 [debug    ] Loaded regex pattern           group_name=DATE_RE
+2026-10-14 04:41:30 [debug    ] Loaded regex pattern           group_name=TIME_RE
+2026-10-14 04:41:30 [debug    ] Loaded regex pattern           group_name=HEX_COLOR
+2026-10-14 04:41:30 [debug    ] Loaded regex pattern           group_name=PRICE_RE
+2026-10-14 04:41:30 [debug    ] Loaded regex pattern           group_name=PO_BOX_RE
+2026-10-14 04:41:31 [debug    ] Initialized classification model device=device(type='mps') model=Model(path='MoritzLaurer/roberta-base-zeroshot-v2.0-c', subfolder='', revision='d825e740e0c59881cf0b0b1481ccf726b6d65341', onnx_path='protectai/MoritzLaurer-roberta-base-zeroshot-v2.0-c-onnx', onnx_revision='fde5343dbad32f1a5470890505c72ec656db6dbe', onnx_subfolder='', onnx_filename='model.onnx', kwargs={}, pipeline_kwargs={'batch_size': 1, 'device': device(type='mps'), 'return_token_type_ids': False, 'max_length': 512, 'truncation': True}, tokenizer_kwargs={})
+Device set to use mps
+2026-10-14 04:41:31 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:41:31 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:41:38 [debug    ] No banned topics detected      scores={'adult content': 0.560498833656311, 'illegal activity': 0.13943912088871002, 'medical advice': 0.08025048673152924, 'religion': 0.05827287584543228, 'legal advice': 0.053047530353069305, 'violence': 0.05193892866373062, 'financial advice': 0.031208517029881477, 'politics': 0.02534378506243229}
+2026-10-14 04:41:39 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:41:39 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:41:40 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:41:40 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:41:40 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:41:40 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:41:42 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:41:42 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:41:42 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:41:42 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:41:43 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:41:43 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:41:44 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:41:44 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:41:50 [debug    ] No banned topics detected      scores={'adult content': 0.516743004322052, 'illegal activity': 0.1673058271408081, 'medical advice': 0.07622469216585159, 'religion': 0.06210270896553993, 'violence': 0.06072813645005226, 'legal advice': 0.05320156365633011, 'financial advice': 0.0353655070066452, 'politics': 0.028328558430075645}
+2026-10-14 04:41:51 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:41:51 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:41:51 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:41:51 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:41:52 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:41:52 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:41:53 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:41:53 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:41:59 [debug    ] No banned topics detected      scores={'adult content': 0.560498833656311, 'illegal activity': 0.13943912088871002, 'medical advice': 0.08025048673152924, 'religion': 0.05827287584543228, 'legal advice': 0.053047530353069305, 'violence': 0.05193892866373062, 'financial advice': 0.031208517029881477, 'politics': 0.02534378506243229}
+2026-10-14 04:42:00 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:42:00 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:42:01 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:42:01 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:44:10 [debug    ] No banned topics detected      scores={'adult content': 0.5760205984115601, 'illegal activity': 0.1459703892469406, 'medical advice': 0.06336957961320877, 'religion': 0.05912408605217934, 'violence': 0.053071796894073486, 'legal advice': 0.04785330221056938, 'financial advice': 0.03146176040172577, 'politics': 0.023128541186451912}
+2026-10-14 04:44:10 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:44:10 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:44:16 [debug    ] No banned topics detected      scores={'adult content': 0.560498833656311, 'illegal activity': 0.13943912088871002, 'medical advice': 0.08025048673152924, 'religion': 0.05827287584543228, 'legal advice': 0.053047530353069305, 'violence': 0.05193892866373062, 'financial advice': 0.031208517029881477, 'politics': 0.02534378506243229}
+2026-10-14 04:44:17 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:44:17 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:44:24 [debug    ] No banned topics detected      scores={'adult content': 0.560498833656311, 'illegal activity': 0.13943912088871002, 'medical advice': 0.08025048673152924, 'religion': 0.05827287584543228, 'legal advice': 0.053047530353069305, 'violence': 0.05193892866373062, 'financial advice': 0.031208517029881477, 'politics': 0.02534378506243229}
+2026-10-14 04:44:24 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:44:24 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:44:25 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:44:25 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:44:26 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:44:26 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:44:34 [debug    ] No banned topics detected      scores={'adult content': 0.560498833656311, 'illegal activity': 0.13943912088871002, 'medical advice': 0.08025048673152924, 'religion': 0.05827287584543228, 'legal advice': 0.053047530353069305, 'violence': 0.05193892866373062, 'financial advice': 0.031208517029881477, 'politics': 0.02534378506243229}
+2026-10-14 04:44:34 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:44:34 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:44:42 [debug    ] No banned topics detected      scores={'adult content': 0.560498833656311, 'illegal activity': 0.13943912088871002, 'medical advice': 0.08025048673152924, 'religion': 0.05827287584543228, 'legal advice': 0.053047530353069305, 'violence': 0.05193892866373062, 'financial advice': 0.031208517029881477, 'politics': 0.02534378506243229}
+2026-10-14 04:46:44 [debug    ] No prompt injection detected   highest_score=0.0
+2026-10-14 04:46:44 [debug    ] Prompt does not have sensitive data to replace risk_score=0.0
+2026-10-14 04:46:52 [debug    ] No banned topics detected      scores={'adult content': 0.5760205984115601, 'illegal activity': 0.1459703892469406, 'medical advice': 0.06336957961320877, 'religion': 0.05912408605217934, 'violence': 0.053071796894073486, 'legal advice': 0.04785330221056938, 'financial advice': 0.03146176040172577, 'politics': 0.023128541186451912}
+[
+  {
+    "threshold": 0.85,
+    "hits": 5,
+    "false_positive": true
+  },
+  {
+    "threshold": 0.9,
+    "hits": 4,
+    "false_positive": false
+  },
+  {
+    "threshold": 0.95,
+    "hits": 2,
+    "false_positive": false
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "product_id": "demo_inbox_towel_3",
+  "name": "Baseline Rally Towel 3",
+  "category": "accessories",
+  "brand": "Baseline",
+  "price": 13.0,
+  "description": "A course demo towel with unique catalog code RALLY-3.",
+  "specifications": {
+    "material": "microfiber",
+    "dimensions": "33 x 60 cm"
+  },
+  "care_instructions": "Machine wash cold and air dry."
+}

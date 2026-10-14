@@ -1,0 +1,10 @@
+PASS 1: five catalog additions and literal curl retrieval
+PASS 2: complete response, twelve sweep values and justified retrieval depth
+PASS 3: simple and complex classifications across configured model tiers
+PASS 4: three live ingests, source-linked curl and quarantine
+PASS 5: complete independent evaluation and demonstrated quality gate
+PASS 6: three paired new-pattern HTTP demonstrations and output safety calibration
+PASS 7: ten requests and matching labeled Phoenix operation traces
+PASS 8: real same-log cost evidence, dashboard and named baseline savings
+PASS 9: ordered writeup, test/verify evidence, source provenance and secret-free repository
+Rubric evidence audit: 9 passed, 0 failed

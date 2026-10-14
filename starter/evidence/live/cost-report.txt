@@ -1,0 +1,14 @@
+uv run --no-project python scripts/cost_report.py
+Billable operations: 112
+Operational overhead: $0.005098
+Total observed spend: $0.019341
+Token-matched generation counterfactual; not a measured alternate-model run.
+Records:           27
+Actual cost:       $0.014243
+Baseline (gpt-4o): $0.077857
+Savings:           $0.063614 (81.7%)
+
+Per-tier summary:
+  gpt-4o                  N=   2  avg=$0.005091/operation  total=$0.010183
+  gpt-4o-mini             N=  79  avg=$0.000115/operation  total=$0.009063
+  text-embedding-3-small  N=  31  avg=$0.000003/operation  total=$0.000096

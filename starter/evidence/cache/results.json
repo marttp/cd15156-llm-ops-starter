@@ -1,0 +1,1055 @@
+[
+  {
+    "threshold": 0.85,
+    "hits": 5,
+    "rows": [
+      {
+        "question": "What is the weight of the baseline control paddle?",
+        "response": {
+          "answer": "The Baseline Control Paddle weighs 7.4 oz.",
+          "sources": [
+            {
+              "doc_id": "demo_control_paddle",
+              "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.6598967265474488
+            },
+            {
+              "doc_id": "demo_power_paddle",
+              "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.5588465725261388
+            },
+            {
+              "doc_id": "prod_020",
+              "chunk_text": "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+              "similarity_score": 0.4623868131767699
+            },
+            {
+              "doc_id": "prod_006",
+              "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+              "similarity_score": 0.45020229059522965
+            },
+            {
+              "doc_id": "prod_001",
+              "chunk_text": "Selkirk AMPED S2\n\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\n\nPrice: $129.99 USD\n\nSpecifications:\n  weight: 7.8 oz\n  grip_size: 4.25 in\n  face_material: FiberFlex fiberglass\n  core: X5 polypropylene honeycomb\n  shape: widebody\n  length: 15.75 in\n  width: 8.0 in\n\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.",
+              "similarity_score": 0.4409739971366433
+            }
+          ],
+          "confidence": 0.5144612799964461,
+          "model": "gpt-4o-mini",
+          "tokens": {
+            "prompt_tokens": 1060,
+            "completion_tokens": 12
+          },
+          "cost_usd": 0.0001662,
+          "cached": false,
+          "trace_id": null,
+          "blocked_by": null
+        }
+      },
+      {
+        "question": "How heavy is the baseline control paddle?",
+        "response": {
+          "answer": "The Baseline Control Paddle weighs 7.4 oz.",
+          "sources": [
+            {
+              "doc_id": "demo_control_paddle",
+              "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.6598967265474488
+            },
+            {
+              "doc_id": "demo_power_paddle",
+              "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.5588465725261388
+            },
+            {
+              "doc_id": "prod_020",
+              "chunk_text": "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+              "similarity_score": 0.4623868131767699
+            },
+            {
+              "doc_id": "prod_006",
+              "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+              "similarity_score": 0.45020229059522965
+            },
+            {
+              "doc_id": "prod_001",
+              "chunk_text": "Selkirk AMPED S2\n\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\n\nPrice: $129.99 USD\n\nSpecifications:\n  weight: 7.8 oz\n  grip_size: 4.25 in\n  face_material: FiberFlex fiberglass\n  core: X5 polypropylene honeycomb\n  shape: widebody\n  length: 15.75 in\n  width: 8.0 in\n\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.",
+              "similarity_score": 0.4409739971366433
+            }
+          ],
+          "confidence": 0.5144612799964461,
+          "model": "gpt-4o-mini",
+          "tokens": {
+            "prompt_tokens": 0,
+            "completion_tokens": 0
+          },
+          "cost_usd": 0.0,
+          "cached": true,
+          "trace_id": null,
+          "blocked_by": null
+        }
+      },
+      {
+        "question": "How much does the baseline control paddle weigh?",
+        "response": {
+          "answer": "The Baseline Control Paddle weighs 7.4 oz.",
+          "sources": [
+            {
+              "doc_id": "demo_control_paddle",
+              "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.6598967265474488
+            },
+            {
+              "doc_id": "demo_power_paddle",
+              "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.5588465725261388
+            },
+            {
+              "doc_id": "prod_020",
+              "chunk_text": "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+              "similarity_score": 0.4623868131767699
+            },
+            {
+              "doc_id": "prod_006",
+              "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+              "similarity_score": 0.45020229059522965
+            },
+            {
+              "doc_id": "prod_001",
+              "chunk_text": "Selkirk AMPED S2\n\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\n\nPrice: $129.99 USD\n\nSpecifications:\n  weight: 7.8 oz\n  grip_size: 4.25 in\n  face_material: FiberFlex fiberglass\n  core: X5 polypropylene honeycomb\n  shape: widebody\n  length: 15.75 in\n  width: 8.0 in\n\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.",
+              "similarity_score": 0.4409739971366433
+            }
+          ],
+          "confidence": 0.5144612799964461,
+          "model": "gpt-4o-mini",
+          "tokens": {
+            "prompt_tokens": 0,
+            "completion_tokens": 0
+          },
+          "cost_usd": 0.0,
+          "cached": true,
+          "trace_id": null,
+          "blocked_by": null
+        }
+      },
+      {
+        "question": "Tell me the weight of the baseline control paddle.",
+        "response": {
+          "answer": "The Baseline Control Paddle weighs 7.4 oz.",
+          "sources": [
+            {
+              "doc_id": "demo_control_paddle",
+              "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.6598967265474488
+            },
+            {
+              "doc_id": "demo_power_paddle",
+              "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.5588465725261388
+            },
+            {
+              "doc_id": "prod_020",
+              "chunk_text": "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+              "similarity_score": 0.4623868131767699
+            },
+            {
+              "doc_id": "prod_006",
+              "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+              "similarity_score": 0.45020229059522965
+            },
+            {
+              "doc_id": "prod_001",
+              "chunk_text": "Selkirk AMPED S2\n\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\n\nPrice: $129.99 USD\n\nSpecifications:\n  weight: 7.8 oz\n  grip_size: 4.25 in\n  face_material: FiberFlex fiberglass\n  core: X5 polypropylene honeycomb\n  shape: widebody\n  length: 15.75 in\n  width: 8.0 in\n\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.",
+              "similarity_score": 0.4409739971366433
+            }
+          ],
+          "confidence": 0.5144612799964461,
+          "model": "gpt-4o-mini",
+          "tokens": {
+            "prompt_tokens": 0,
+            "completion_tokens": 0
+          },
+          "cost_usd": 0.0,
+          "cached": true,
+          "trace_id": null,
+          "blocked_by": null
+        }
+      },
+      {
+        "question": "What does the baseline control paddle weigh in ounces?",
+        "response": {
+          "answer": "The Baseline Control Paddle weighs 7.4 oz.",
+          "sources": [
+            {
+              "doc_id": "demo_control_paddle",
+              "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.6598967265474488
+            },
+            {
+              "doc_id": "demo_power_paddle",
+              "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.5588465725261388
+            },
+            {
+              "doc_id": "prod_020",
+              "chunk_text": "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+              "similarity_score": 0.4623868131767699
+            },
+            {
+              "doc_id": "prod_006",
+              "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+              "similarity_score": 0.45020229059522965
+            },
+            {
+              "doc_id": "prod_001",
+              "chunk_text": "Selkirk AMPED S2\n\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\n\nPrice: $129.99 USD\n\nSpecifications:\n  weight: 7.8 oz\n  grip_size: 4.25 in\n  face_material: FiberFlex fiberglass\n  core: X5 polypropylene honeycomb\n  shape: widebody\n  length: 15.75 in\n  width: 8.0 in\n\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.",
+              "similarity_score": 0.4409739971366433
+            }
+          ],
+          "confidence": 0.5144612799964461,
+          "model": "gpt-4o-mini",
+          "tokens": {
+            "prompt_tokens": 0,
+            "completion_tokens": 0
+          },
+          "cost_usd": 0.0,
+          "cached": true,
+          "trace_id": null,
+          "blocked_by": null
+        }
+      },
+      {
+        "question": "Give the baseline control paddle weight in oz.",
+        "response": {
+          "answer": "The Baseline Control Paddle weighs 7.4 oz.",
+          "sources": [
+            {
+              "doc_id": "demo_control_paddle",
+              "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.6598967265474488
+            },
+            {
+              "doc_id": "demo_power_paddle",
+              "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.5588465725261388
+            },
+            {
+              "doc_id": "prod_020",
+              "chunk_text": "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+              "similarity_score": 0.4623868131767699
+            },
+            {
+              "doc_id": "prod_006",
+              "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+              "similarity_score": 0.45020229059522965
+            },
+            {
+              "doc_id": "prod_001",
+              "chunk_text": "Selkirk AMPED S2\n\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\n\nPrice: $129.99 USD\n\nSpecifications:\n  weight: 7.8 oz\n  grip_size: 4.25 in\n  face_material: FiberFlex fiberglass\n  core: X5 polypropylene honeycomb\n  shape: widebody\n  length: 15.75 in\n  width: 8.0 in\n\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.",
+              "similarity_score": 0.4409739971366433
+            }
+          ],
+          "confidence": 0.5144612799964461,
+          "model": "gpt-4o-mini",
+          "tokens": {
+            "prompt_tokens": 0,
+            "completion_tokens": 0
+          },
+          "cost_usd": 0.0,
+          "cached": true,
+          "trace_id": null,
+          "blocked_by": null
+        }
+      }
+    ],
+    "wrong_product_probe": {
+      "question": "How heavy is the baseline power paddle?",
+      "response": {
+        "answer": "The Baseline Control Paddle weighs 7.4 oz.",
+        "sources": [
+          {
+            "doc_id": "demo_control_paddle",
+            "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+            "similarity_score": 0.6598967265474488
+          },
+          {
+            "doc_id": "demo_power_paddle",
+            "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+            "similarity_score": 0.5588465725261388
+          },
+          {
+            "doc_id": "prod_020",
+            "chunk_text": "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+            "similarity_score": 0.4623868131767699
+          },
+          {
+            "doc_id": "prod_006",
+            "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+            "similarity_score": 0.45020229059522965
+          },
+          {
+            "doc_id": "prod_001",
+            "chunk_text": "Selkirk AMPED S2\n\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\n\nPrice: $129.99 USD\n\nSpecifications:\n  weight: 7.8 oz\n  grip_size: 4.25 in\n  face_material: FiberFlex fiberglass\n  core: X5 polypropylene honeycomb\n  shape: widebody\n  length: 15.75 in\n  width: 8.0 in\n\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.",
+            "similarity_score": 0.4409739971366433
+          }
+        ],
+        "confidence": 0.5144612799964461,
+        "model": "gpt-4o-mini",
+        "tokens": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0
+        },
+        "cost_usd": 0.0,
+        "cached": true,
+        "trace_id": null,
+        "blocked_by": null
+      },
+      "expected_weight": "8.3",
+      "false_positive": true
+    },
+    "cache_collection": {
+      "ids": [
+        "cache:31d6b04d7d354c2da214f87c4476dd1f"
+      ],
+      "embeddings": null,
+      "documents": [
+        "What is the weight of the baseline control paddle?"
+      ],
+      "uris": null,
+      "data": null,
+      "metadatas": [
+        {
+          "created_at": "2026-10-13T21:41:39.313080+00:00",
+          "namespace": "2f8664f9bee7041a1980e9e98a2b3d9f64c54178c39824f691d429c6d43856a9",
+          "question": "What is the weight of the baseline control paddle?",
+          "response": "{\"answer\":\"The Baseline Control Paddle weighs 7.4 oz.\",\"sources\":[{\"doc_id\":\"demo_control_paddle\",\"chunk_text\":\"Baseline Control Paddle\\n\\nA lightweight paddle for beginner control practice.\\n\\nPrice: $89.00 USD\\n\\nSpecifications:\\n  weight: 7.4 oz\\n  face_material: fiberglass\\n  core_material: polymer\\n  skill_level: beginner\\n\\nCare instructions: Wipe clean and air dry. Do not machine wash.\",\"similarity_score\":0.6598967265474488},{\"doc_id\":\"demo_power_paddle\",\"chunk_text\":\"Baseline Power Paddle\\n\\nA heavier paddle for experienced players seeking power.\\n\\nPrice: $149.00 USD\\n\\nSpecifications:\\n  weight: 8.3 oz\\n  face_material: carbon fiber\\n  core_material: polymer\\n  skill_level: advanced\\n\\nCare instructions: Wipe clean and air dry. Do not machine wash.\",\"similarity_score\":0.5588465725261388},{\"doc_id\":\"prod_020\",\"chunk_text\":\"Tourna Lead Tape Roll\\n\\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\\n\\nPrice: $6.99 USD\\n\\nSpecifications:\\n  material: Adhesive-backed lead alloy\\n  dimensions: 1/4 in x 72 in roll\\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\\n\\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.\",\"similarity_score\":0.4623868131767699},{\"doc_id\":\"prod_006\",\"chunk_text\":\"Paddletek Bantam TS-5\\n\\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\\n\\nPrice: $114.99 USD\\n\\nSpecifications:\\n  weight: 7.3 oz\\n  grip_size: 4.0 in\\n  face_material: Fiberglass composite\\n  core: Smart Response Technology polymer\\n  shape: widebody\\n  length: 15.5 in\\n  width: 8.0 in\\n\\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.\",\"similarity_score\":0.45020229059522965},{\"doc_id\":\"prod_001\",\"chunk_text\":\"Selkirk AMPED S2\\n\\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\\n\\nPrice: $129.99 USD\\n\\nSpecifications:\\n  weight: 7.8 oz\\n  grip_size: 4.25 in\\n  face_material: FiberFlex fiberglass\\n  core: X5 polypropylene honeycomb\\n  shape: widebody\\n  length: 15.75 in\\n  width: 8.0 in\\n\\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.\",\"similarity_score\":0.4409739971366433}],\"confidence\":0.5144612799964461,\"model\":\"gpt-4o-mini\",\"tokens\":{\"prompt_tokens\":1060,\"completion_tokens\":12},\"cost_usd\":0.0001662,\"cached\":false,\"trace_id\":null,\"blocked_by\":null}",
+          "ttl_s": 3600
+        }
+      ],
+      "included": [
+        "documents",
+        "metadatas"
+      ]
+    }
+  },
+  {
+    "threshold": 0.9,
+    "hits": 4,
+    "rows": [
+      {
+        "question": "What is the weight of the baseline control paddle?",
+        "response": {
+          "answer": "The weight of the Baseline Control Paddle is 7.4 oz.",
+          "sources": [
+            {
+              "doc_id": "demo_control_paddle",
+              "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.6598967265474488
+            },
+            {
+              "doc_id": "demo_power_paddle",
+              "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.5588465725261388
+            },
+            {
+              "doc_id": "prod_020",
+              "chunk_text": "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+              "similarity_score": 0.4623868131767699
+            },
+            {
+              "doc_id": "prod_006",
+              "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+              "similarity_score": 0.45020229059522965
+            },
+            {
+              "doc_id": "prod_001",
+              "chunk_text": "Selkirk AMPED S2\n\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\n\nPrice: $129.99 USD\n\nSpecifications:\n  weight: 7.8 oz\n  grip_size: 4.25 in\n  face_material: FiberFlex fiberglass\n  core: X5 polypropylene honeycomb\n  shape: widebody\n  length: 15.75 in\n  width: 8.0 in\n\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.",
+              "similarity_score": 0.4409739971366433
+            }
+          ],
+          "confidence": 0.5144612799964461,
+          "model": "gpt-4o-mini",
+          "tokens": {
+            "prompt_tokens": 1060,
+            "completion_tokens": 15
+          },
+          "cost_usd": 0.000168,
+          "cached": false,
+          "trace_id": null,
+          "blocked_by": null
+        }
+      },
+      {
+        "question": "How heavy is the baseline control paddle?",
+        "response": {
+          "answer": "The weight of the Baseline Control Paddle is 7.4 oz.",
+          "sources": [
+            {
+              "doc_id": "demo_control_paddle",
+              "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.6598967265474488
+            },
+            {
+              "doc_id": "demo_power_paddle",
+              "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.5588465725261388
+            },
+            {
+              "doc_id": "prod_020",
+              "chunk_text": "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+              "similarity_score": 0.4623868131767699
+            },
+            {
+              "doc_id": "prod_006",
+              "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+              "similarity_score": 0.45020229059522965
+            },
+            {
+              "doc_id": "prod_001",
+              "chunk_text": "Selkirk AMPED S2\n\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\n\nPrice: $129.99 USD\n\nSpecifications:\n  weight: 7.8 oz\n  grip_size: 4.25 in\n  face_material: FiberFlex fiberglass\n  core: X5 polypropylene honeycomb\n  shape: widebody\n  length: 15.75 in\n  width: 8.0 in\n\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.",
+              "similarity_score": 0.4409739971366433
+            }
+          ],
+          "confidence": 0.5144612799964461,
+          "model": "gpt-4o-mini",
+          "tokens": {
+            "prompt_tokens": 0,
+            "completion_tokens": 0
+          },
+          "cost_usd": 0.0,
+          "cached": true,
+          "trace_id": null,
+          "blocked_by": null
+        }
+      },
+      {
+        "question": "How much does the baseline control paddle weigh?",
+        "response": {
+          "answer": "The weight of the Baseline Control Paddle is 7.4 oz.",
+          "sources": [
+            {
+              "doc_id": "demo_control_paddle",
+              "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.6598967265474488
+            },
+            {
+              "doc_id": "demo_power_paddle",
+              "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.5588465725261388
+            },
+            {
+              "doc_id": "prod_020",
+              "chunk_text": "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+              "similarity_score": 0.4623868131767699
+            },
+            {
+              "doc_id": "prod_006",
+              "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+              "similarity_score": 0.45020229059522965
+            },
+            {
+              "doc_id": "prod_001",
+              "chunk_text": "Selkirk AMPED S2\n\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\n\nPrice: $129.99 USD\n\nSpecifications:\n  weight: 7.8 oz\n  grip_size: 4.25 in\n  face_material: FiberFlex fiberglass\n  core: X5 polypropylene honeycomb\n  shape: widebody\n  length: 15.75 in\n  width: 8.0 in\n\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.",
+              "similarity_score": 0.4409739971366433
+            }
+          ],
+          "confidence": 0.5144612799964461,
+          "model": "gpt-4o-mini",
+          "tokens": {
+            "prompt_tokens": 0,
+            "completion_tokens": 0
+          },
+          "cost_usd": 0.0,
+          "cached": true,
+          "trace_id": null,
+          "blocked_by": null
+        }
+      },
+      {
+        "question": "Tell me the weight of the baseline control paddle.",
+        "response": {
+          "answer": "The weight of the Baseline Control Paddle is 7.4 oz.",
+          "sources": [
+            {
+              "doc_id": "demo_control_paddle",
+              "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.6598967265474488
+            },
+            {
+              "doc_id": "demo_power_paddle",
+              "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.5588465725261388
+            },
+            {
+              "doc_id": "prod_020",
+              "chunk_text": "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+              "similarity_score": 0.4623868131767699
+            },
+            {
+              "doc_id": "prod_006",
+              "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+              "similarity_score": 0.45020229059522965
+            },
+            {
+              "doc_id": "prod_001",
+              "chunk_text": "Selkirk AMPED S2\n\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\n\nPrice: $129.99 USD\n\nSpecifications:\n  weight: 7.8 oz\n  grip_size: 4.25 in\n  face_material: FiberFlex fiberglass\n  core: X5 polypropylene honeycomb\n  shape: widebody\n  length: 15.75 in\n  width: 8.0 in\n\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.",
+              "similarity_score": 0.4409739971366433
+            }
+          ],
+          "confidence": 0.5144612799964461,
+          "model": "gpt-4o-mini",
+          "tokens": {
+            "prompt_tokens": 0,
+            "completion_tokens": 0
+          },
+          "cost_usd": 0.0,
+          "cached": true,
+          "trace_id": null,
+          "blocked_by": null
+        }
+      },
+      {
+        "question": "What does the baseline control paddle weigh in ounces?",
+        "response": {
+          "answer": "The Baseline Control Paddle weighs 7.4 oz.",
+          "sources": [
+            {
+              "doc_id": "demo_control_paddle",
+              "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.6223912598627195
+            },
+            {
+              "doc_id": "demo_power_paddle",
+              "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.5162361383374864
+            },
+            {
+              "doc_id": "prod_020",
+              "chunk_text": "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+              "similarity_score": 0.44021237498517274
+            },
+            {
+              "doc_id": "prod_004",
+              "chunk_text": "Franklin Ben Johns Signature\n\nDesigned in collaboration with pro player Ben Johns, the Franklin Signature paddle combines a MaxGrit textured surface with a polypropylene honeycomb core for exceptional spin generation and shot control. The elongated shape extends reach without adding excessive weight, ideal for singles play.\n\nPrice: $179.99 USD\n\nSpecifications:\n  weight: 8.0 oz\n  grip_size: 4.125 in\n  face_material: MaxGrit carbon fiber\n  core: Polypropylene honeycomb\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a damp microfiber cloth. The MaxGrit surface is durable but avoid scraping against rough surfaces. Replace the grip wrap every 3-6 months depending on play frequency.",
+              "similarity_score": 0.40338364113508296
+            },
+            {
+              "doc_id": "prod_007",
+              "chunk_text": "Selkirk Vanguard Power Air\n\nThe Selkirk Vanguard Power Air represents the pinnacle of paddle engineering. Featuring a proprietary air-injected polypropylene core and a carbon fiber face with QuadFlex 4-layer construction, it delivers unmatched power without sacrificing spin or control. Built for tournament-level play.\n\nPrice: $249.99 USD\n\nSpecifications:\n  weight: 8.4 oz\n  grip_size: 4.25 in\n  face_material: QuadFlex 4-layer carbon fiber\n  core: Air-injected polypropylene\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a microfiber cloth dampened with water. Avoid chemical cleaners that may degrade the carbon fiber surface. The edge guard is replaceable \u2014 contact Selkirk for parts.",
+              "similarity_score": 0.3971929241835934
+            }
+          ],
+          "confidence": 0.475883267700811,
+          "model": "gpt-4o-mini",
+          "tokens": {
+            "prompt_tokens": 1042,
+            "completion_tokens": 12
+          },
+          "cost_usd": 0.00016349999999999996,
+          "cached": false,
+          "trace_id": null,
+          "blocked_by": null
+        }
+      },
+      {
+        "question": "Give the baseline control paddle weight in oz.",
+        "response": {
+          "answer": "The Baseline Control Paddle weighs 7.4 oz.",
+          "sources": [
+            {
+              "doc_id": "demo_control_paddle",
+              "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.6223912598627195
+            },
+            {
+              "doc_id": "demo_power_paddle",
+              "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.5162361383374864
+            },
+            {
+              "doc_id": "prod_020",
+              "chunk_text": "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+              "similarity_score": 0.44021237498517274
+            },
+            {
+              "doc_id": "prod_004",
+              "chunk_text": "Franklin Ben Johns Signature\n\nDesigned in collaboration with pro player Ben Johns, the Franklin Signature paddle combines a MaxGrit textured surface with a polypropylene honeycomb core for exceptional spin generation and shot control. The elongated shape extends reach without adding excessive weight, ideal for singles play.\n\nPrice: $179.99 USD\n\nSpecifications:\n  weight: 8.0 oz\n  grip_size: 4.125 in\n  face_material: MaxGrit carbon fiber\n  core: Polypropylene honeycomb\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a damp microfiber cloth. The MaxGrit surface is durable but avoid scraping against rough surfaces. Replace the grip wrap every 3-6 months depending on play frequency.",
+              "similarity_score": 0.40338364113508296
+            },
+            {
+              "doc_id": "prod_007",
+              "chunk_text": "Selkirk Vanguard Power Air\n\nThe Selkirk Vanguard Power Air represents the pinnacle of paddle engineering. Featuring a proprietary air-injected polypropylene core and a carbon fiber face with QuadFlex 4-layer construction, it delivers unmatched power without sacrificing spin or control. Built for tournament-level play.\n\nPrice: $249.99 USD\n\nSpecifications:\n  weight: 8.4 oz\n  grip_size: 4.25 in\n  face_material: QuadFlex 4-layer carbon fiber\n  core: Air-injected polypropylene\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a microfiber cloth dampened with water. Avoid chemical cleaners that may degrade the carbon fiber surface. The edge guard is replaceable \u2014 contact Selkirk for parts.",
+              "similarity_score": 0.3971929241835934
+            }
+          ],
+          "confidence": 0.475883267700811,
+          "model": "gpt-4o-mini",
+          "tokens": {
+            "prompt_tokens": 0,
+            "completion_tokens": 0
+          },
+          "cost_usd": 0.0,
+          "cached": true,
+          "trace_id": null,
+          "blocked_by": null
+        }
+      }
+    ],
+    "wrong_product_probe": {
+      "question": "How heavy is the baseline power paddle?",
+      "response": {
+        "answer": "The Baseline Power Paddle weighs 8.3 oz.",
+        "sources": [
+          {
+            "doc_id": "demo_power_paddle",
+            "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+            "similarity_score": 0.6766416318313233
+          },
+          {
+            "doc_id": "demo_control_paddle",
+            "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+            "similarity_score": 0.5587975093012759
+          },
+          {
+            "doc_id": "prod_007",
+            "chunk_text": "Selkirk Vanguard Power Air\n\nThe Selkirk Vanguard Power Air represents the pinnacle of paddle engineering. Featuring a proprietary air-injected polypropylene core and a carbon fiber face with QuadFlex 4-layer construction, it delivers unmatched power without sacrificing spin or control. Built for tournament-level play.\n\nPrice: $249.99 USD\n\nSpecifications:\n  weight: 8.4 oz\n  grip_size: 4.25 in\n  face_material: QuadFlex 4-layer carbon fiber\n  core: Air-injected polypropylene\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a microfiber cloth dampened with water. Avoid chemical cleaners that may degrade the carbon fiber surface. The edge guard is replaceable \u2014 contact Selkirk for parts.",
+            "similarity_score": 0.4959319889749849
+          },
+          {
+            "doc_id": "prod_006",
+            "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+            "similarity_score": 0.47448186963602534
+          },
+          {
+            "doc_id": "prod_005",
+            "chunk_text": "HEAD Radical Tour\n\nThe HEAD Radical Tour brings tennis engineering expertise to the court. Featuring an Extreme Spin Texture (EST) face and an Optimized Tubular Construction (OTC) frame, this paddle delivers consistent power from edge to edge with a generous sweet spot suited to all-court players.\n\nPrice: $149.99 USD\n\nSpecifications:\n  weight: 8.1 oz\n  grip_size: 4.25 in\n  face_material: Extreme Spin Texture (EST) composite\n  core: Polypropylene honeycomb\n  shape: standard\n  length: 15.875 in\n  width: 7.875 in\n\nCare instructions: Wipe with a clean damp cloth. Inspect the edge guard periodically for cracks and replace if damaged to protect the core. Store away from moisture.",
+            "similarity_score": 0.4743395430987768
+          }
+        ],
+        "confidence": 0.5360385085684772,
+        "model": "gpt-4o-mini",
+        "tokens": {
+          "prompt_tokens": 1047,
+          "completion_tokens": 12
+        },
+        "cost_usd": 0.00016424999999999998,
+        "cached": false,
+        "trace_id": null,
+        "blocked_by": null
+      },
+      "expected_weight": "8.3",
+      "false_positive": false
+    },
+    "cache_collection": {
+      "ids": [
+        "cache:99578b2fe5434b778637fad8c4588e95",
+        "cache:ac3b0f402faf438db7f99df4030bb3fc",
+        "cache:ecb980599075407a82e51c490f25cb0b"
+      ],
+      "embeddings": null,
+      "documents": [
+        "What is the weight of the baseline control paddle?",
+        "What does the baseline control paddle weigh in ounces?",
+        "How heavy is the baseline power paddle?"
+      ],
+      "uris": null,
+      "data": null,
+      "metadatas": [
+        {
+          "created_at": "2026-10-13T21:41:51.014369+00:00",
+          "namespace": "2f8664f9bee7041a1980e9e98a2b3d9f64c54178c39824f691d429c6d43856a9",
+          "question": "What is the weight of the baseline control paddle?",
+          "response": "{\"answer\":\"The weight of the Baseline Control Paddle is 7.4 oz.\",\"sources\":[{\"doc_id\":\"demo_control_paddle\",\"chunk_text\":\"Baseline Control Paddle\\n\\nA lightweight paddle for beginner control practice.\\n\\nPrice: $89.00 USD\\n\\nSpecifications:\\n  weight: 7.4 oz\\n  face_material: fiberglass\\n  core_material: polymer\\n  skill_level: beginner\\n\\nCare instructions: Wipe clean and air dry. Do not machine wash.\",\"similarity_score\":0.6598967265474488},{\"doc_id\":\"demo_power_paddle\",\"chunk_text\":\"Baseline Power Paddle\\n\\nA heavier paddle for experienced players seeking power.\\n\\nPrice: $149.00 USD\\n\\nSpecifications:\\n  weight: 8.3 oz\\n  face_material: carbon fiber\\n  core_material: polymer\\n  skill_level: advanced\\n\\nCare instructions: Wipe clean and air dry. Do not machine wash.\",\"similarity_score\":0.5588465725261388},{\"doc_id\":\"prod_020\",\"chunk_text\":\"Tourna Lead Tape Roll\\n\\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\\n\\nPrice: $6.99 USD\\n\\nSpecifications:\\n  material: Adhesive-backed lead alloy\\n  dimensions: 1/4 in x 72 in roll\\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\\n\\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.\",\"similarity_score\":0.4623868131767699},{\"doc_id\":\"prod_006\",\"chunk_text\":\"Paddletek Bantam TS-5\\n\\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\\n\\nPrice: $114.99 USD\\n\\nSpecifications:\\n  weight: 7.3 oz\\n  grip_size: 4.0 in\\n  face_material: Fiberglass composite\\n  core: Smart Response Technology polymer\\n  shape: widebody\\n  length: 15.5 in\\n  width: 8.0 in\\n\\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.\",\"similarity_score\":0.45020229059522965},{\"doc_id\":\"prod_001\",\"chunk_text\":\"Selkirk AMPED S2\\n\\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\\n\\nPrice: $129.99 USD\\n\\nSpecifications:\\n  weight: 7.8 oz\\n  grip_size: 4.25 in\\n  face_material: FiberFlex fiberglass\\n  core: X5 polypropylene honeycomb\\n  shape: widebody\\n  length: 15.75 in\\n  width: 8.0 in\\n\\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.\",\"similarity_score\":0.4409739971366433}],\"confidence\":0.5144612799964461,\"model\":\"gpt-4o-mini\",\"tokens\":{\"prompt_tokens\":1060,\"completion_tokens\":15},\"cost_usd\":0.000168,\"cached\":false,\"trace_id\":null,\"blocked_by\":null}",
+          "ttl_s": 3600
+        },
+        {
+          "created_at": "2026-10-13T21:42:00.720551+00:00",
+          "namespace": "2f8664f9bee7041a1980e9e98a2b3d9f64c54178c39824f691d429c6d43856a9",
+          "question": "What does the baseline control paddle weigh in ounces?",
+          "response": "{\"answer\":\"The Baseline Control Paddle weighs 7.4 oz.\",\"sources\":[{\"doc_id\":\"demo_control_paddle\",\"chunk_text\":\"Baseline Control Paddle\\n\\nA lightweight paddle for beginner control practice.\\n\\nPrice: $89.00 USD\\n\\nSpecifications:\\n  weight: 7.4 oz\\n  face_material: fiberglass\\n  core_material: polymer\\n  skill_level: beginner\\n\\nCare instructions: Wipe clean and air dry. Do not machine wash.\",\"similarity_score\":0.6223912598627195},{\"doc_id\":\"demo_power_paddle\",\"chunk_text\":\"Baseline Power Paddle\\n\\nA heavier paddle for experienced players seeking power.\\n\\nPrice: $149.00 USD\\n\\nSpecifications:\\n  weight: 8.3 oz\\n  face_material: carbon fiber\\n  core_material: polymer\\n  skill_level: advanced\\n\\nCare instructions: Wipe clean and air dry. Do not machine wash.\",\"similarity_score\":0.5162361383374864},{\"doc_id\":\"prod_020\",\"chunk_text\":\"Tourna Lead Tape Roll\\n\\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\\n\\nPrice: $6.99 USD\\n\\nSpecifications:\\n  material: Adhesive-backed lead alloy\\n  dimensions: 1/4 in x 72 in roll\\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\\n\\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.\",\"similarity_score\":0.44021237498517274},{\"doc_id\":\"prod_004\",\"chunk_text\":\"Franklin Ben Johns Signature\\n\\nDesigned in collaboration with pro player Ben Johns, the Franklin Signature paddle combines a MaxGrit textured surface with a polypropylene honeycomb core for exceptional spin generation and shot control. The elongated shape extends reach without adding excessive weight, ideal for singles play.\\n\\nPrice: $179.99 USD\\n\\nSpecifications:\\n  weight: 8.0 oz\\n  grip_size: 4.125 in\\n  face_material: MaxGrit carbon fiber\\n  core: Polypropylene honeycomb\\n  shape: elongated\\n  length: 16.5 in\\n  width: 7.375 in\\n\\nCare instructions: Clean with a damp microfiber cloth. The MaxGrit surface is durable but avoid scraping against rough surfaces. Replace the grip wrap every 3-6 months depending on play frequency.\",\"similarity_score\":0.40338364113508296},{\"doc_id\":\"prod_007\",\"chunk_text\":\"Selkirk Vanguard Power Air\\n\\nThe Selkirk Vanguard Power Air represents the pinnacle of paddle engineering. Featuring a proprietary air-injected polypropylene core and a carbon fiber face with QuadFlex 4-layer construction, it delivers unmatched power without sacrificing spin or control. Built for tournament-level play.\\n\\nPrice: $249.99 USD\\n\\nSpecifications:\\n  weight: 8.4 oz\\n  grip_size: 4.25 in\\n  face_material: QuadFlex 4-layer carbon fiber\\n  core: Air-injected polypropylene\\n  shape: elongated\\n  length: 16.5 in\\n  width: 7.375 in\\n\\nCare instructions: Clean with a microfiber cloth dampened with water. Avoid chemical cleaners that may degrade the carbon fiber surface. The edge guard is replaceable \u2014 contact Selkirk for parts.\",\"similarity_score\":0.3971929241835934}],\"confidence\":0.475883267700811,\"model\":\"gpt-4o-mini\",\"tokens\":{\"prompt_tokens\":1042,\"completion_tokens\":12},\"cost_usd\":0.00016349999999999996,\"cached\":false,\"trace_id\":null,\"blocked_by\":null}",
+          "ttl_s": 3600
+        },
+        {
+          "created_at": "2026-10-13T21:44:10.627218+00:00",
+          "namespace": "2f8664f9bee7041a1980e9e98a2b3d9f64c54178c39824f691d429c6d43856a9",
+          "question": "How heavy is the baseline power paddle?",
+          "response": "{\"answer\":\"The Baseline Power Paddle weighs 8.3 oz.\",\"sources\":[{\"doc_id\":\"demo_power_paddle\",\"chunk_text\":\"Baseline Power Paddle\\n\\nA heavier paddle for experienced players seeking power.\\n\\nPrice: $149.00 USD\\n\\nSpecifications:\\n  weight: 8.3 oz\\n  face_material: carbon fiber\\n  core_material: polymer\\n  skill_level: advanced\\n\\nCare instructions: Wipe clean and air dry. Do not machine wash.\",\"similarity_score\":0.6766416318313233},{\"doc_id\":\"demo_control_paddle\",\"chunk_text\":\"Baseline Control Paddle\\n\\nA lightweight paddle for beginner control practice.\\n\\nPrice: $89.00 USD\\n\\nSpecifications:\\n  weight: 7.4 oz\\n  face_material: fiberglass\\n  core_material: polymer\\n  skill_level: beginner\\n\\nCare instructions: Wipe clean and air dry. Do not machine wash.\",\"similarity_score\":0.5587975093012759},{\"doc_id\":\"prod_007\",\"chunk_text\":\"Selkirk Vanguard Power Air\\n\\nThe Selkirk Vanguard Power Air represents the pinnacle of paddle engineering. Featuring a proprietary air-injected polypropylene core and a carbon fiber face with QuadFlex 4-layer construction, it delivers unmatched power without sacrificing spin or control. Built for tournament-level play.\\n\\nPrice: $249.99 USD\\n\\nSpecifications:\\n  weight: 8.4 oz\\n  grip_size: 4.25 in\\n  face_material: QuadFlex 4-layer carbon fiber\\n  core: Air-injected polypropylene\\n  shape: elongated\\n  length: 16.5 in\\n  width: 7.375 in\\n\\nCare instructions: Clean with a microfiber cloth dampened with water. Avoid chemical cleaners that may degrade the carbon fiber surface. The edge guard is replaceable \u2014 contact Selkirk for parts.\",\"similarity_score\":0.4959319889749849},{\"doc_id\":\"prod_006\",\"chunk_text\":\"Paddletek Bantam TS-5\\n\\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\\n\\nPrice: $114.99 USD\\n\\nSpecifications:\\n  weight: 7.3 oz\\n  grip_size: 4.0 in\\n  face_material: Fiberglass composite\\n  core: Smart Response Technology polymer\\n  shape: widebody\\n  length: 15.5 in\\n  width: 8.0 in\\n\\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.\",\"similarity_score\":0.47448186963602534},{\"doc_id\":\"prod_005\",\"chunk_text\":\"HEAD Radical Tour\\n\\nThe HEAD Radical Tour brings tennis engineering expertise to the court. Featuring an Extreme Spin Texture (EST) face and an Optimized Tubular Construction (OTC) frame, this paddle delivers consistent power from edge to edge with a generous sweet spot suited to all-court players.\\n\\nPrice: $149.99 USD\\n\\nSpecifications:\\n  weight: 8.1 oz\\n  grip_size: 4.25 in\\n  face_material: Extreme Spin Texture (EST) composite\\n  core: Polypropylene honeycomb\\n  shape: standard\\n  length: 15.875 in\\n  width: 7.875 in\\n\\nCare instructions: Wipe with a clean damp cloth. Inspect the edge guard periodically for cracks and replace if damaged to protect the core. Store away from moisture.\",\"similarity_score\":0.4743395430987768}],\"confidence\":0.5360385085684772,\"model\":\"gpt-4o-mini\",\"tokens\":{\"prompt_tokens\":1047,\"completion_tokens\":12},\"cost_usd\":0.00016424999999999998,\"cached\":false,\"trace_id\":null,\"blocked_by\":null}",
+          "ttl_s": 3600
+        }
+      ],
+      "included": [
+        "documents",
+        "metadatas"
+      ]
+    }
+  },
+  {
+    "threshold": 0.95,
+    "hits": 2,
+    "rows": [
+      {
+        "question": "What is the weight of the baseline control paddle?",
+        "response": {
+          "answer": "The Baseline Control Paddle weighs 7.4 oz.",
+          "sources": [
+            {
+              "doc_id": "demo_control_paddle",
+              "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.6598967265474488
+            },
+            {
+              "doc_id": "demo_power_paddle",
+              "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.5588465725261388
+            },
+            {
+              "doc_id": "prod_020",
+              "chunk_text": "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+              "similarity_score": 0.4623868131767699
+            },
+            {
+              "doc_id": "prod_006",
+              "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+              "similarity_score": 0.45020229059522965
+            },
+            {
+              "doc_id": "prod_001",
+              "chunk_text": "Selkirk AMPED S2\n\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\n\nPrice: $129.99 USD\n\nSpecifications:\n  weight: 7.8 oz\n  grip_size: 4.25 in\n  face_material: FiberFlex fiberglass\n  core: X5 polypropylene honeycomb\n  shape: widebody\n  length: 15.75 in\n  width: 8.0 in\n\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.",
+              "similarity_score": 0.4409739971366433
+            }
+          ],
+          "confidence": 0.5144612799964461,
+          "model": "gpt-4o-mini",
+          "tokens": {
+            "prompt_tokens": 1060,
+            "completion_tokens": 12
+          },
+          "cost_usd": 0.0001662,
+          "cached": false,
+          "trace_id": null,
+          "blocked_by": null
+        }
+      },
+      {
+        "question": "How heavy is the baseline control paddle?",
+        "response": {
+          "answer": "The Baseline Control Paddle weighs 7.4 oz.",
+          "sources": [
+            {
+              "doc_id": "demo_control_paddle",
+              "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.6554545260106831
+            },
+            {
+              "doc_id": "demo_power_paddle",
+              "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.5678084379399981
+            },
+            {
+              "doc_id": "prod_006",
+              "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+              "similarity_score": 0.45242313271452617
+            },
+            {
+              "doc_id": "prod_020",
+              "chunk_text": "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+              "similarity_score": 0.44657537761109745
+            },
+            {
+              "doc_id": "prod_005",
+              "chunk_text": "HEAD Radical Tour\n\nThe HEAD Radical Tour brings tennis engineering expertise to the court. Featuring an Extreme Spin Texture (EST) face and an Optimized Tubular Construction (OTC) frame, this paddle delivers consistent power from edge to edge with a generous sweet spot suited to all-court players.\n\nPrice: $149.99 USD\n\nSpecifications:\n  weight: 8.1 oz\n  grip_size: 4.25 in\n  face_material: Extreme Spin Texture (EST) composite\n  core: Polypropylene honeycomb\n  shape: standard\n  length: 15.875 in\n  width: 7.875 in\n\nCare instructions: Wipe with a clean damp cloth. Inspect the edge guard periodically for cracks and replace if damaged to protect the core. Store away from moisture.",
+              "similarity_score": 0.44457450106442453
+            }
+          ],
+          "confidence": 0.5133671950681459,
+          "model": "gpt-4o-mini",
+          "tokens": {
+            "prompt_tokens": 1036,
+            "completion_tokens": 12
+          },
+          "cost_usd": 0.0001626,
+          "cached": false,
+          "trace_id": null,
+          "blocked_by": null
+        }
+      },
+      {
+        "question": "How much does the baseline control paddle weigh?",
+        "response": {
+          "answer": "The Baseline Control Paddle weighs 7.4 oz.",
+          "sources": [
+            {
+              "doc_id": "demo_control_paddle",
+              "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.6598967265474488
+            },
+            {
+              "doc_id": "demo_power_paddle",
+              "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.5588465725261388
+            },
+            {
+              "doc_id": "prod_020",
+              "chunk_text": "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+              "similarity_score": 0.4623868131767699
+            },
+            {
+              "doc_id": "prod_006",
+              "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+              "similarity_score": 0.45020229059522965
+            },
+            {
+              "doc_id": "prod_001",
+              "chunk_text": "Selkirk AMPED S2\n\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\n\nPrice: $129.99 USD\n\nSpecifications:\n  weight: 7.8 oz\n  grip_size: 4.25 in\n  face_material: FiberFlex fiberglass\n  core: X5 polypropylene honeycomb\n  shape: widebody\n  length: 15.75 in\n  width: 8.0 in\n\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.",
+              "similarity_score": 0.4409739971366433
+            }
+          ],
+          "confidence": 0.5144612799964461,
+          "model": "gpt-4o-mini",
+          "tokens": {
+            "prompt_tokens": 0,
+            "completion_tokens": 0
+          },
+          "cost_usd": 0.0,
+          "cached": true,
+          "trace_id": null,
+          "blocked_by": null
+        }
+      },
+      {
+        "question": "Tell me the weight of the baseline control paddle.",
+        "response": {
+          "answer": "The Baseline Control Paddle weighs 7.4 oz.",
+          "sources": [
+            {
+              "doc_id": "demo_control_paddle",
+              "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.6598967265474488
+            },
+            {
+              "doc_id": "demo_power_paddle",
+              "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.5588465725261388
+            },
+            {
+              "doc_id": "prod_020",
+              "chunk_text": "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+              "similarity_score": 0.4623868131767699
+            },
+            {
+              "doc_id": "prod_006",
+              "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+              "similarity_score": 0.45020229059522965
+            },
+            {
+              "doc_id": "prod_001",
+              "chunk_text": "Selkirk AMPED S2\n\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\n\nPrice: $129.99 USD\n\nSpecifications:\n  weight: 7.8 oz\n  grip_size: 4.25 in\n  face_material: FiberFlex fiberglass\n  core: X5 polypropylene honeycomb\n  shape: widebody\n  length: 15.75 in\n  width: 8.0 in\n\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.",
+              "similarity_score": 0.4409739971366433
+            }
+          ],
+          "confidence": 0.5144612799964461,
+          "model": "gpt-4o-mini",
+          "tokens": {
+            "prompt_tokens": 0,
+            "completion_tokens": 0
+          },
+          "cost_usd": 0.0,
+          "cached": true,
+          "trace_id": null,
+          "blocked_by": null
+        }
+      },
+      {
+        "question": "What does the baseline control paddle weigh in ounces?",
+        "response": {
+          "answer": "The Baseline Control Paddle weighs 7.4 oz.",
+          "sources": [
+            {
+              "doc_id": "demo_control_paddle",
+              "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.6223912598627195
+            },
+            {
+              "doc_id": "demo_power_paddle",
+              "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.5162361383374864
+            },
+            {
+              "doc_id": "prod_020",
+              "chunk_text": "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+              "similarity_score": 0.44021237498517274
+            },
+            {
+              "doc_id": "prod_004",
+              "chunk_text": "Franklin Ben Johns Signature\n\nDesigned in collaboration with pro player Ben Johns, the Franklin Signature paddle combines a MaxGrit textured surface with a polypropylene honeycomb core for exceptional spin generation and shot control. The elongated shape extends reach without adding excessive weight, ideal for singles play.\n\nPrice: $179.99 USD\n\nSpecifications:\n  weight: 8.0 oz\n  grip_size: 4.125 in\n  face_material: MaxGrit carbon fiber\n  core: Polypropylene honeycomb\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a damp microfiber cloth. The MaxGrit surface is durable but avoid scraping against rough surfaces. Replace the grip wrap every 3-6 months depending on play frequency.",
+              "similarity_score": 0.40338364113508296
+            },
+            {
+              "doc_id": "prod_007",
+              "chunk_text": "Selkirk Vanguard Power Air\n\nThe Selkirk Vanguard Power Air represents the pinnacle of paddle engineering. Featuring a proprietary air-injected polypropylene core and a carbon fiber face with QuadFlex 4-layer construction, it delivers unmatched power without sacrificing spin or control. Built for tournament-level play.\n\nPrice: $249.99 USD\n\nSpecifications:\n  weight: 8.4 oz\n  grip_size: 4.25 in\n  face_material: QuadFlex 4-layer carbon fiber\n  core: Air-injected polypropylene\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a microfiber cloth dampened with water. Avoid chemical cleaners that may degrade the carbon fiber surface. The edge guard is replaceable \u2014 contact Selkirk for parts.",
+              "similarity_score": 0.3971929241835934
+            }
+          ],
+          "confidence": 0.475883267700811,
+          "model": "gpt-4o-mini",
+          "tokens": {
+            "prompt_tokens": 1042,
+            "completion_tokens": 12
+          },
+          "cost_usd": 0.00016349999999999996,
+          "cached": false,
+          "trace_id": null,
+          "blocked_by": null
+        }
+      },
+      {
+        "question": "Give the baseline control paddle weight in oz.",
+        "response": {
+          "answer": "The Baseline Control Paddle weighs 7.4 oz.",
+          "sources": [
+            {
+              "doc_id": "demo_control_paddle",
+              "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.611644294798101
+            },
+            {
+              "doc_id": "demo_power_paddle",
+              "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+              "similarity_score": 0.5237095115232197
+            },
+            {
+              "doc_id": "prod_020",
+              "chunk_text": "Tourna Lead Tape Roll\n\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\n\nPrice: $6.99 USD\n\nSpecifications:\n  material: Adhesive-backed lead alloy\n  dimensions: 1/4 in x 72 in roll\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\n\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.",
+              "similarity_score": 0.4497382436868762
+            },
+            {
+              "doc_id": "prod_003",
+              "chunk_text": "Engage Pursuit MX\n\nThe Engage Pursuit MX features a proprietary ControlPro polymer core that delivers unmatched touch and feel for dinking and soft game strategies. The textured fiberglass face adds spin capability without sacrificing control, making it a favorite among players who prioritize finesse over raw power.\n\nPrice: $159.99 USD\n\nSpecifications:\n  weight: 7.5 oz\n  grip_size: 4.25 in\n  face_material: Textured fiberglass\n  core: ControlPro polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.125 in\n\nCare instructions: Wipe down with a damp cloth after each session. The textured face can collect debris \u2014 use a soft brush for deeper cleaning. Avoid exposing the paddle to temperatures above 120\u00b0F.",
+              "similarity_score": 0.40192773465199716
+            },
+            {
+              "doc_id": "prod_007",
+              "chunk_text": "Selkirk Vanguard Power Air\n\nThe Selkirk Vanguard Power Air represents the pinnacle of paddle engineering. Featuring a proprietary air-injected polypropylene core and a carbon fiber face with QuadFlex 4-layer construction, it delivers unmatched power without sacrificing spin or control. Built for tournament-level play.\n\nPrice: $249.99 USD\n\nSpecifications:\n  weight: 8.4 oz\n  grip_size: 4.25 in\n  face_material: QuadFlex 4-layer carbon fiber\n  core: Air-injected polypropylene\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a microfiber cloth dampened with water. Avoid chemical cleaners that may degrade the carbon fiber surface. The edge guard is replaceable \u2014 contact Selkirk for parts.",
+              "similarity_score": 0.3962912487984305
+            }
+          ],
+          "confidence": 0.4766622066917249,
+          "model": "gpt-4o-mini",
+          "tokens": {
+            "prompt_tokens": 1041,
+            "completion_tokens": 12
+          },
+          "cost_usd": 0.00016334999999999999,
+          "cached": false,
+          "trace_id": null,
+          "blocked_by": null
+        }
+      }
+    ],
+    "wrong_product_probe": {
+      "question": "How heavy is the baseline power paddle?",
+      "response": {
+        "answer": "The Baseline Power Paddle weighs 8.3 oz.",
+        "sources": [
+          {
+            "doc_id": "demo_power_paddle",
+            "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+            "similarity_score": 0.676686598087681
+          },
+          {
+            "doc_id": "demo_control_paddle",
+            "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+            "similarity_score": 0.5588389392672541
+          },
+          {
+            "doc_id": "prod_007",
+            "chunk_text": "Selkirk Vanguard Power Air\n\nThe Selkirk Vanguard Power Air represents the pinnacle of paddle engineering. Featuring a proprietary air-injected polypropylene core and a carbon fiber face with QuadFlex 4-layer construction, it delivers unmatched power without sacrificing spin or control. Built for tournament-level play.\n\nPrice: $249.99 USD\n\nSpecifications:\n  weight: 8.4 oz\n  grip_size: 4.25 in\n  face_material: QuadFlex 4-layer carbon fiber\n  core: Air-injected polypropylene\n  shape: elongated\n  length: 16.5 in\n  width: 7.375 in\n\nCare instructions: Clean with a microfiber cloth dampened with water. Avoid chemical cleaners that may degrade the carbon fiber surface. The edge guard is replaceable \u2014 contact Selkirk for parts.",
+            "similarity_score": 0.49598824528019914
+          },
+          {
+            "doc_id": "prod_006",
+            "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+            "similarity_score": 0.4744834216290692
+          },
+          {
+            "doc_id": "prod_005",
+            "chunk_text": "HEAD Radical Tour\n\nThe HEAD Radical Tour brings tennis engineering expertise to the court. Featuring an Extreme Spin Texture (EST) face and an Optimized Tubular Construction (OTC) frame, this paddle delivers consistent power from edge to edge with a generous sweet spot suited to all-court players.\n\nPrice: $149.99 USD\n\nSpecifications:\n  weight: 8.1 oz\n  grip_size: 4.25 in\n  face_material: Extreme Spin Texture (EST) composite\n  core: Polypropylene honeycomb\n  shape: standard\n  length: 15.875 in\n  width: 7.875 in\n\nCare instructions: Wipe with a clean damp cloth. Inspect the edge guard periodically for cracks and replace if damaged to protect the core. Store away from moisture.",
+            "similarity_score": 0.47433814953582365
+          }
+        ],
+        "confidence": 0.5360670707600054,
+        "model": "gpt-4o-mini",
+        "tokens": {
+          "prompt_tokens": 1047,
+          "completion_tokens": 12
+        },
+        "cost_usd": 0.00016424999999999998,
+        "cached": false,
+        "trace_id": null,
+        "blocked_by": null
+      },
+      "expected_weight": "8.3",
+      "false_positive": false
+    },
+    "cache_collection": {
+      "ids": [
+        "cache:42307d1c70b0404aa316274cfdb68ddb",
+        "cache:b8b066d2f3ec40e0b019c7e746450c69",
+        "cache:8f3083197fe747bfa2d0ae66222014db",
+        "cache:9199e120d78f40d9803194eb12d5d1e3",
+        "cache:13c1794187cb484ab604f8d670eab432"
+      ],
+      "embeddings": null,
+      "documents": [
+        "What is the weight of the baseline control paddle?",
+        "How heavy is the baseline control paddle?",
+        "What does the baseline control paddle weigh in ounces?",
+        "Give the baseline control paddle weight in oz.",
+        "How heavy is the baseline power paddle?"
+      ],
+      "uris": null,
+      "data": null,
+      "metadatas": [
+        {
+          "created_at": "2026-10-13T21:44:17.425689+00:00",
+          "namespace": "2f8664f9bee7041a1980e9e98a2b3d9f64c54178c39824f691d429c6d43856a9",
+          "question": "What is the weight of the baseline control paddle?",
+          "response": "{\"answer\":\"The Baseline Control Paddle weighs 7.4 oz.\",\"sources\":[{\"doc_id\":\"demo_control_paddle\",\"chunk_text\":\"Baseline Control Paddle\\n\\nA lightweight paddle for beginner control practice.\\n\\nPrice: $89.00 USD\\n\\nSpecifications:\\n  weight: 7.4 oz\\n  face_material: fiberglass\\n  core_material: polymer\\n  skill_level: beginner\\n\\nCare instructions: Wipe clean and air dry. Do not machine wash.\",\"similarity_score\":0.6598967265474488},{\"doc_id\":\"demo_power_paddle\",\"chunk_text\":\"Baseline Power Paddle\\n\\nA heavier paddle for experienced players seeking power.\\n\\nPrice: $149.00 USD\\n\\nSpecifications:\\n  weight: 8.3 oz\\n  face_material: carbon fiber\\n  core_material: polymer\\n  skill_level: advanced\\n\\nCare instructions: Wipe clean and air dry. Do not machine wash.\",\"similarity_score\":0.5588465725261388},{\"doc_id\":\"prod_020\",\"chunk_text\":\"Tourna Lead Tape Roll\\n\\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\\n\\nPrice: $6.99 USD\\n\\nSpecifications:\\n  material: Adhesive-backed lead alloy\\n  dimensions: 1/4 in x 72 in roll\\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\\n\\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.\",\"similarity_score\":0.4623868131767699},{\"doc_id\":\"prod_006\",\"chunk_text\":\"Paddletek Bantam TS-5\\n\\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\\n\\nPrice: $114.99 USD\\n\\nSpecifications:\\n  weight: 7.3 oz\\n  grip_size: 4.0 in\\n  face_material: Fiberglass composite\\n  core: Smart Response Technology polymer\\n  shape: widebody\\n  length: 15.5 in\\n  width: 8.0 in\\n\\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.\",\"similarity_score\":0.45020229059522965},{\"doc_id\":\"prod_001\",\"chunk_text\":\"Selkirk AMPED S2\\n\\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\\n\\nPrice: $129.99 USD\\n\\nSpecifications:\\n  weight: 7.8 oz\\n  grip_size: 4.25 in\\n  face_material: FiberFlex fiberglass\\n  core: X5 polypropylene honeycomb\\n  shape: widebody\\n  length: 15.75 in\\n  width: 8.0 in\\n\\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.\",\"similarity_score\":0.4409739971366433}],\"confidence\":0.5144612799964461,\"model\":\"gpt-4o-mini\",\"tokens\":{\"prompt_tokens\":1060,\"completion_tokens\":12},\"cost_usd\":0.0001662,\"cached\":false,\"trace_id\":null,\"blocked_by\":null}",
+          "ttl_s": 3600
+        },
+        {
+          "created_at": "2026-10-13T21:44:24.706083+00:00",
+          "namespace": "2f8664f9bee7041a1980e9e98a2b3d9f64c54178c39824f691d429c6d43856a9",
+          "question": "How heavy is the baseline control paddle?",
+          "response": "{\"answer\":\"The Baseline Control Paddle weighs 7.4 oz.\",\"sources\":[{\"doc_id\":\"demo_control_paddle\",\"chunk_text\":\"Baseline Control Paddle\\n\\nA lightweight paddle for beginner control practice.\\n\\nPrice: $89.00 USD\\n\\nSpecifications:\\n  weight: 7.4 oz\\n  face_material: fiberglass\\n  core_material: polymer\\n  skill_level: beginner\\n\\nCare instructions: Wipe clean and air dry. Do not machine wash.\",\"similarity_score\":0.6554545260106831},{\"doc_id\":\"demo_power_paddle\",\"chunk_text\":\"Baseline Power Paddle\\n\\nA heavier paddle for experienced players seeking power.\\n\\nPrice: $149.00 USD\\n\\nSpecifications:\\n  weight: 8.3 oz\\n  face_material: carbon fiber\\n  core_material: polymer\\n  skill_level: advanced\\n\\nCare instructions: Wipe clean and air dry. Do not machine wash.\",\"similarity_score\":0.5678084379399981},{\"doc_id\":\"prod_006\",\"chunk_text\":\"Paddletek Bantam TS-5\\n\\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\\n\\nPrice: $114.99 USD\\n\\nSpecifications:\\n  weight: 7.3 oz\\n  grip_size: 4.0 in\\n  face_material: Fiberglass composite\\n  core: Smart Response Technology polymer\\n  shape: widebody\\n  length: 15.5 in\\n  width: 8.0 in\\n\\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.\",\"similarity_score\":0.45242313271452617},{\"doc_id\":\"prod_020\",\"chunk_text\":\"Tourna Lead Tape Roll\\n\\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\\n\\nPrice: $6.99 USD\\n\\nSpecifications:\\n  material: Adhesive-backed lead alloy\\n  dimensions: 1/4 in x 72 in roll\\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\\n\\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.\",\"similarity_score\":0.44657537761109745},{\"doc_id\":\"prod_005\",\"chunk_text\":\"HEAD Radical Tour\\n\\nThe HEAD Radical Tour brings tennis engineering expertise to the court. Featuring an Extreme Spin Texture (EST) face and an Optimized Tubular Construction (OTC) frame, this paddle delivers consistent power from edge to edge with a generous sweet spot suited to all-court players.\\n\\nPrice: $149.99 USD\\n\\nSpecifications:\\n  weight: 8.1 oz\\n  grip_size: 4.25 in\\n  face_material: Extreme Spin Texture (EST) composite\\n  core: Polypropylene honeycomb\\n  shape: standard\\n  length: 15.875 in\\n  width: 7.875 in\\n\\nCare instructions: Wipe with a clean damp cloth. Inspect the edge guard periodically for cracks and replace if damaged to protect the core. Store away from moisture.\",\"similarity_score\":0.44457450106442453}],\"confidence\":0.5133671950681459,\"model\":\"gpt-4o-mini\",\"tokens\":{\"prompt_tokens\":1036,\"completion_tokens\":12},\"cost_usd\":0.0001626,\"cached\":false,\"trace_id\":null,\"blocked_by\":null}",
+          "ttl_s": 3600
+        },
+        {
+          "created_at": "2026-10-13T21:44:34.902689+00:00",
+          "namespace": "2f8664f9bee7041a1980e9e98a2b3d9f64c54178c39824f691d429c6d43856a9",
+          "question": "What does the baseline control paddle weigh in ounces?",
+          "response": "{\"answer\":\"The Baseline Control Paddle weighs 7.4 oz.\",\"sources\":[{\"doc_id\":\"demo_control_paddle\",\"chunk_text\":\"Baseline Control Paddle\\n\\nA lightweight paddle for beginner control practice.\\n\\nPrice: $89.00 USD\\n\\nSpecifications:\\n  weight: 7.4 oz\\n  face_material: fiberglass\\n  core_material: polymer\\n  skill_level: beginner\\n\\nCare instructions: Wipe clean and air dry. Do not machine wash.\",\"similarity_score\":0.6223912598627195},{\"doc_id\":\"demo_power_paddle\",\"chunk_text\":\"Baseline Power Paddle\\n\\nA heavier paddle for experienced players seeking power.\\n\\nPrice: $149.00 USD\\n\\nSpecifications:\\n  weight: 8.3 oz\\n  face_material: carbon fiber\\n  core_material: polymer\\n  skill_level: advanced\\n\\nCare instructions: Wipe clean and air dry. Do not machine wash.\",\"similarity_score\":0.5162361383374864},{\"doc_id\":\"prod_020\",\"chunk_text\":\"Tourna Lead Tape Roll\\n\\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\\n\\nPrice: $6.99 USD\\n\\nSpecifications:\\n  material: Adhesive-backed lead alloy\\n  dimensions: 1/4 in x 72 in roll\\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\\n\\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.\",\"similarity_score\":0.44021237498517274},{\"doc_id\":\"prod_004\",\"chunk_text\":\"Franklin Ben Johns Signature\\n\\nDesigned in collaboration with pro player Ben Johns, the Franklin Signature paddle combines a MaxGrit textured surface with a polypropylene honeycomb core for exceptional spin generation and shot control. The elongated shape extends reach without adding excessive weight, ideal for singles play.\\n\\nPrice: $179.99 USD\\n\\nSpecifications:\\n  weight: 8.0 oz\\n  grip_size: 4.125 in\\n  face_material: MaxGrit carbon fiber\\n  core: Polypropylene honeycomb\\n  shape: elongated\\n  length: 16.5 in\\n  width: 7.375 in\\n\\nCare instructions: Clean with a damp microfiber cloth. The MaxGrit surface is durable but avoid scraping against rough surfaces. Replace the grip wrap every 3-6 months depending on play frequency.\",\"similarity_score\":0.40338364113508296},{\"doc_id\":\"prod_007\",\"chunk_text\":\"Selkirk Vanguard Power Air\\n\\nThe Selkirk Vanguard Power Air represents the pinnacle of paddle engineering. Featuring a proprietary air-injected polypropylene core and a carbon fiber face with QuadFlex 4-layer construction, it delivers unmatched power without sacrificing spin or control. Built for tournament-level play.\\n\\nPrice: $249.99 USD\\n\\nSpecifications:\\n  weight: 8.4 oz\\n  grip_size: 4.25 in\\n  face_material: QuadFlex 4-layer carbon fiber\\n  core: Air-injected polypropylene\\n  shape: elongated\\n  length: 16.5 in\\n  width: 7.375 in\\n\\nCare instructions: Clean with a microfiber cloth dampened with water. Avoid chemical cleaners that may degrade the carbon fiber surface. The edge guard is replaceable \u2014 contact Selkirk for parts.\",\"similarity_score\":0.3971929241835934}],\"confidence\":0.475883267700811,\"model\":\"gpt-4o-mini\",\"tokens\":{\"prompt_tokens\":1042,\"completion_tokens\":12},\"cost_usd\":0.00016349999999999996,\"cached\":false,\"trace_id\":null,\"blocked_by\":null}",
+          "ttl_s": 3600
+        },
+        {
+          "created_at": "2026-10-13T21:46:44.839710+00:00",
+          "namespace": "2f8664f9bee7041a1980e9e98a2b3d9f64c54178c39824f691d429c6d43856a9",
+          "question": "Give the baseline control paddle weight in oz.",
+          "response": "{\"answer\":\"The Baseline Control Paddle weighs 7.4 oz.\",\"sources\":[{\"doc_id\":\"demo_control_paddle\",\"chunk_text\":\"Baseline Control Paddle\\n\\nA lightweight paddle for beginner control practice.\\n\\nPrice: $89.00 USD\\n\\nSpecifications:\\n  weight: 7.4 oz\\n  face_material: fiberglass\\n  core_material: polymer\\n  skill_level: beginner\\n\\nCare instructions: Wipe clean and air dry. Do not machine wash.\",\"similarity_score\":0.611644294798101},{\"doc_id\":\"demo_power_paddle\",\"chunk_text\":\"Baseline Power Paddle\\n\\nA heavier paddle for experienced players seeking power.\\n\\nPrice: $149.00 USD\\n\\nSpecifications:\\n  weight: 8.3 oz\\n  face_material: carbon fiber\\n  core_material: polymer\\n  skill_level: advanced\\n\\nCare instructions: Wipe clean and air dry. Do not machine wash.\",\"similarity_score\":0.5237095115232197},{\"doc_id\":\"prod_020\",\"chunk_text\":\"Tourna Lead Tape Roll\\n\\nTourna Lead Tape lets you customize your paddle's weight and balance point. Apply strips to the head for more power or to the handle for better control. The adhesive backing sticks firmly and can be repositioned during experimentation. Each roll provides enough tape for 4-6 paddle applications.\\n\\nPrice: $6.99 USD\\n\\nSpecifications:\\n  material: Adhesive-backed lead alloy\\n  dimensions: 1/4 in x 72 in roll\\n  features: ['Repositionable adhesive', 'Easy to cut with scissors', '0.25 oz per 6-inch strip']\\n\\nCare instructions: Apply to a clean, dry paddle surface for best adhesion. Cover with electrical tape for a smoother feel and to prevent the lead tape from peeling during play.\",\"similarity_score\":0.4497382436868762},{\"doc_id\":\"prod_003\",\"chunk_text\":\"Engage Pursuit MX\\n\\nThe Engage Pursuit MX features a proprietary ControlPro polymer core that delivers unmatched touch and feel for dinking and soft game strategies. The textured fiberglass face adds spin capability without sacrificing control, making it a favorite among players who prioritize finesse over raw power.\\n\\nPrice: $159.99 USD\\n\\nSpecifications:\\n  weight: 7.5 oz\\n  grip_size: 4.25 in\\n  face_material: Textured fiberglass\\n  core: ControlPro polymer\\n  shape: widebody\\n  length: 15.5 in\\n  width: 8.125 in\\n\\nCare instructions: Wipe down with a damp cloth after each session. The textured face can collect debris \u2014 use a soft brush for deeper cleaning. Avoid exposing the paddle to temperatures above 120\u00b0F.\",\"similarity_score\":0.40192773465199716},{\"doc_id\":\"prod_007\",\"chunk_text\":\"Selkirk Vanguard Power Air\\n\\nThe Selkirk Vanguard Power Air represents the pinnacle of paddle engineering. Featuring a proprietary air-injected polypropylene core and a carbon fiber face with QuadFlex 4-layer construction, it delivers unmatched power without sacrificing spin or control. Built for tournament-level play.\\n\\nPrice: $249.99 USD\\n\\nSpecifications:\\n  weight: 8.4 oz\\n  grip_size: 4.25 in\\n  face_material: QuadFlex 4-layer carbon fiber\\n  core: Air-injected polypropylene\\n  shape: elongated\\n  length: 16.5 in\\n  width: 7.375 in\\n\\nCare instructions: Clean with a microfiber cloth dampened with water. Avoid chemical cleaners that may degrade the carbon fiber surface. The edge guard is replaceable \u2014 contact Selkirk for parts.\",\"similarity_score\":0.3962912487984305}],\"confidence\":0.4766622066917249,\"model\":\"gpt-4o-mini\",\"tokens\":{\"prompt_tokens\":1041,\"completion_tokens\":12},\"cost_usd\":0.00016334999999999999,\"cached\":false,\"trace_id\":null,\"blocked_by\":null}",
+          "ttl_s": 3600
+        },
+        {
+          "created_at": "2026-10-13T21:46:52.800084+00:00",
+          "namespace": "2f8664f9bee7041a1980e9e98a2b3d9f64c54178c39824f691d429c6d43856a9",
+          "question": "How heavy is the baseline power paddle?",
+          "response": "{\"answer\":\"The Baseline Power Paddle weighs 8.3 oz.\",\"sources\":[{\"doc_id\":\"demo_power_paddle\",\"chunk_text\":\"Baseline Power Paddle\\n\\nA heavier paddle for experienced players seeking power.\\n\\nPrice: $149.00 USD\\n\\nSpecifications:\\n  weight: 8.3 oz\\n  face_material: carbon fiber\\n  core_material: polymer\\n  skill_level: advanced\\n\\nCare instructions: Wipe clean and air dry. Do not machine wash.\",\"similarity_score\":0.676686598087681},{\"doc_id\":\"demo_control_paddle\",\"chunk_text\":\"Baseline Control Paddle\\n\\nA lightweight paddle for beginner control practice.\\n\\nPrice: $89.00 USD\\n\\nSpecifications:\\n  weight: 7.4 oz\\n  face_material: fiberglass\\n  core_material: polymer\\n  skill_level: beginner\\n\\nCare instructions: Wipe clean and air dry. Do not machine wash.\",\"similarity_score\":0.5588389392672541},{\"doc_id\":\"prod_007\",\"chunk_text\":\"Selkirk Vanguard Power Air\\n\\nThe Selkirk Vanguard Power Air represents the pinnacle of paddle engineering. Featuring a proprietary air-injected polypropylene core and a carbon fiber face with QuadFlex 4-layer construction, it delivers unmatched power without sacrificing spin or control. Built for tournament-level play.\\n\\nPrice: $249.99 USD\\n\\nSpecifications:\\n  weight: 8.4 oz\\n  grip_size: 4.25 in\\n  face_material: QuadFlex 4-layer carbon fiber\\n  core: Air-injected polypropylene\\n  shape: elongated\\n  length: 16.5 in\\n  width: 7.375 in\\n\\nCare instructions: Clean with a microfiber cloth dampened with water. Avoid chemical cleaners that may degrade the carbon fiber surface. The edge guard is replaceable \u2014 contact Selkirk for parts.\",\"similarity_score\":0.49598824528019914},{\"doc_id\":\"prod_006\",\"chunk_text\":\"Paddletek Bantam TS-5\\n\\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\\n\\nPrice: $114.99 USD\\n\\nSpecifications:\\n  weight: 7.3 oz\\n  grip_size: 4.0 in\\n  face_material: Fiberglass composite\\n  core: Smart Response Technology polymer\\n  shape: widebody\\n  length: 15.5 in\\n  width: 8.0 in\\n\\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.\",\"similarity_score\":0.4744834216290692},{\"doc_id\":\"prod_005\",\"chunk_text\":\"HEAD Radical Tour\\n\\nThe HEAD Radical Tour brings tennis engineering expertise to the court. Featuring an Extreme Spin Texture (EST) face and an Optimized Tubular Construction (OTC) frame, this paddle delivers consistent power from edge to edge with a generous sweet spot suited to all-court players.\\n\\nPrice: $149.99 USD\\n\\nSpecifications:\\n  weight: 8.1 oz\\n  grip_size: 4.25 in\\n  face_material: Extreme Spin Texture (EST) composite\\n  core: Polypropylene honeycomb\\n  shape: standard\\n  length: 15.875 in\\n  width: 7.875 in\\n\\nCare instructions: Wipe with a clean damp cloth. Inspect the edge guard periodically for cracks and replace if damaged to protect the core. Store away from moisture.\",\"similarity_score\":0.47433814953582365}],\"confidence\":0.5360670707600054,\"model\":\"gpt-4o-mini\",\"tokens\":{\"prompt_tokens\":1047,\"completion_tokens\":12},\"cost_usd\":0.00016424999999999998,\"cached\":false,\"trace_id\":null,\"blocked_by\":null}",
+          "ttl_s": 3600
+        }
+      ],
+      "included": [
+        "documents",
+        "metadatas"
+      ]
+    }
+  }
+]

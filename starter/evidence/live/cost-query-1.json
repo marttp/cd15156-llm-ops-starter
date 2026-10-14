@@ -1,0 +1,47 @@
+{
+  "question": "What is the price of the baseline control paddle?",
+  "method": "POST",
+  "url": "http://localhost:8080/query",
+  "response": {
+    "answer": "The price of the Baseline Control Paddle is $89.00 USD.",
+    "sources": [
+      {
+        "doc_id": "demo_control_paddle",
+        "chunk_text": "Baseline Control Paddle\n\nA lightweight paddle for beginner control practice.\n\nPrice: $89.00 USD\n\nSpecifications:\n  weight: 7.4 oz\n  face_material: fiberglass\n  core_material: polymer\n  skill_level: beginner\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "similarity_score": 0.6964985577651499
+      },
+      {
+        "doc_id": "demo_power_paddle",
+        "chunk_text": "Baseline Power Paddle\n\nA heavier paddle for experienced players seeking power.\n\nPrice: $149.00 USD\n\nSpecifications:\n  weight: 8.3 oz\n  face_material: carbon fiber\n  core_material: polymer\n  skill_level: advanced\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "similarity_score": 0.560019615466164
+      },
+      {
+        "doc_id": "prod_005",
+        "chunk_text": "HEAD Radical Tour\n\nThe HEAD Radical Tour brings tennis engineering expertise to the court. Featuring an Extreme Spin Texture (EST) face and an Optimized Tubular Construction (OTC) frame, this paddle delivers consistent power from edge to edge with a generous sweet spot suited to all-court players.\n\nPrice: $149.99 USD\n\nSpecifications:\n  weight: 8.1 oz\n  grip_size: 4.25 in\n  face_material: Extreme Spin Texture (EST) composite\n  core: Polypropylene honeycomb\n  shape: standard\n  length: 15.875 in\n  width: 7.875 in\n\nCare instructions: Wipe with a clean damp cloth. Inspect the edge guard periodically for cracks and replace if damaged to protect the core. Store away from moisture.",
+        "similarity_score": 0.4937011645876379
+      },
+      {
+        "doc_id": "prod_006",
+        "chunk_text": "Paddletek Bantam TS-5\n\nThe Paddletek Bantam TS-5 is the go-to paddle for beginners and recreational players seeking an affordable yet high-quality entry point. Its lightweight polymer core and fiberglass composite face offer a forgiving sweet spot and easy maneuverability, reducing arm fatigue during longer sessions.\n\nPrice: $114.99 USD\n\nSpecifications:\n  weight: 7.3 oz\n  grip_size: 4.0 in\n  face_material: Fiberglass composite\n  core: Smart Response Technology polymer\n  shape: widebody\n  length: 15.5 in\n  width: 8.0 in\n\nCare instructions: Clean with a damp cloth. The fiberglass face is durable for recreational use. Store indoors to protect the edge guard from cracking in cold weather.",
+        "similarity_score": 0.49211720001245196
+      },
+      {
+        "doc_id": "prod_001",
+        "chunk_text": "Selkirk AMPED S2\n\nThe Selkirk AMPED S2 delivers a balanced blend of power and control, making it an excellent choice for intermediate players looking to elevate their game. Its FiberFlex fiberglass face provides a responsive feel with consistent ball placement, while the X5 polypropylene honeycomb core absorbs vibration for comfortable extended play.\n\nPrice: $129.99 USD\n\nSpecifications:\n  weight: 7.8 oz\n  grip_size: 4.25 in\n  face_material: FiberFlex fiberglass\n  core: X5 polypropylene honeycomb\n  shape: widebody\n  length: 15.75 in\n  width: 8.0 in\n\nCare instructions: Wipe the paddle face with a damp cloth after play to remove ball residue. Avoid leaving the paddle in direct sunlight or extreme heat, as this can warp the core. Store in a paddle cover when not in use.",
+        "similarity_score": 0.4778861431610011
+      }
+    ],
+    "confidence": 0.5440445361984809,
+    "model": "gpt-4o-mini",
+    "tokens": {
+      "prompt_tokens": 1066,
+      "completion_tokens": 15
+    },
+    "cost_usd": 0.0001689,
+    "cached": false,
+    "trace_id": "b028666016292c82247ef05dcf9a43d8",
+    "blocked_by": null
+  },
+  "latency_ms": 5953.7,
+  "classification": "simple"
+}

@@ -1,0 +1,14 @@
+{
+  "observed_http_requests": 30,
+  "observed_billable_operations": 108,
+  "generation_tier_counts": {
+    "gpt-4o-mini": 25,
+    "gpt-4o": 2
+  },
+  "observed_api_cost_usd": 0.019251110000000002,
+  "cost_per_http_request_usd": 0.0006417036666666667,
+  "daily_requests": 10000,
+  "projected_daily_api_cost_usd": 6.417036666666667,
+  "projected_30_day_api_cost_usd": 192.51110000000003,
+  "assumptions": "Same traffic mix, model rates and token sizes; excludes evaluation, hosting and catalog bootstrap. Rejected requests are included in the HTTP denominator."
+}

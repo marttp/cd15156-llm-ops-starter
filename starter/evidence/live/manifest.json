@@ -1,0 +1,60 @@
+{
+  "commit": "49cb1f4de0fa243608551d17be963df9638a7774",
+  "captured_utc": "2026-10-13T21:34:34Z",
+  "files": {
+    "data/products/demo_control_paddle.json": "30923ec895187b037e8c82681d9eaf1e0785a8fe58ec5c97c5fdce78e438d2b2",
+    "data/products/demo_court_bag.json": "c881c3196d886c396b539606b5ffbfef19e0fc96cb4ce89dfdb37a121ced5105",
+    "data/products/demo_court_shoe.json": "9a384d993531d31b47c2d0f933faf03ec463059af8ff8fdf9fdc17ef87a930c8",
+    "data/products/demo_indoor_ball.json": "9b1af5b25b153ba4ad2cde5336e87a9f195b7cacd36481aa10bfbd30fb58f17a",
+    "data/products/demo_power_paddle.json": "e971f6c73212430b5dd42ec203fe72bd2aebe2f16919869689895e5281bf074e",
+    "data/products/prod_001_selkirk_amped.json": "b658470dc3605012a74b902f1842d073ded520f61f776ec8359ce4371621e9ea",
+    "data/products/prod_002_joola_hyperion.json": "124ab52da0ea71bb63e98b548dd9a741b45079f11d7267e85737613b584c3719",
+    "data/products/prod_003_engage_pursuit.json": "7cc025d848ef25ac5b1fa3be6918de4f67a2be6f2d1046216a7201fad0051260",
+    "data/products/prod_004_franklin_signature.json": "d50630f748bf7c084ce3b0b3e71cdddae47d4b926d39da185437fa1bef849f37",
+    "data/products/prod_005_head_radical.json": "8daaf20b9d915f365bb6b064712cb5272724692dd6550b33564cdf0a44c8b4ba",
+    "data/products/prod_006_paddletek_bantam.json": "8b5cd9c3e32f59425098ef2e37d159353a7c3a7cad400e7a3bccec2fa0d78094",
+    "data/products/prod_007_selkirk_vanguard.json": "8ce02d61d3e50af40984cb9804c620990bba0f34f0efb43db013e500563fb512",
+    "data/products/prod_008_franklin_x40.json": "42b95744bdabec12f71ee3f97d37b3c845eba47b0d97d28c34963c75df7b9528",
+    "data/products/prod_009_onix_pure2.json": "9711ce62bbd7738057da3e85c8a008c5463faf5f11d05abefed29c7d9dccbb4a",
+    "data/products/prod_010_dura_fast40.json": "7e30d5b056cd399dca08b3850faf7ed2d2c82373c0c121b03ad765894e8a0f3d",
+    "data/products/prod_011_franklin_tour.json": "404a540f63019a556279fc6be203ed01690cfa545d52c7ad1cad7ebd153cdd6f",
+    "data/products/prod_012_selkirk_team_bag.json": "5e254e052665bf11eb3590c835fb2d805b665c866b6789eb45b341bad6e075cf",
+    "data/products/prod_013_franklin_sling.json": "c9440d03f785124df1f5308711f114685c9036f114609743b83305abf3490917",
+    "data/products/prod_014_joola_tour_bag.json": "192c540354de95284138f72edb8eb321d12c5d486175cde444520f0a88ce88e5",
+    "data/products/prod_015_diadem_warrior_tee.json": "15a2080c1e6da99ec81c6061b825223461c249c418bf8e8020e5e059484c909b",
+    "data/products/prod_016_lija_skort.json": "20f19e334be257356055290cf8b79708008f8e5cfd906fe723d156a9d78af104",
+    "data/products/prod_017_head_performance_cap.json": "5570db348f1ef56685eac579600348254a38c0c0716e7e0f94f63f5e78873fba",
+    "data/products/prod_018_engage_shorts.json": "a9b0741412fb3915e1b8d44c21d1e8574075fc2e5192177a1c9b64d23cf45862",
+    "data/products/prod_019_gamma_grip_wrap.json": "a642052bc98d081809dd21a05e4f9bfd8f0b575a4c2740a9087540132ea9579c",
+    "data/products/prod_020_tourna_lead_tape.json": "db6c77f1b5f7dabc498892faeaab977284eb6c9266080177faff6c633c461fa8",
+    "data/products/prod_021_pbpro_net_system.json": "0050cb9f5a1d2c33d86a10128a4b72993ddbcc6cd63c51648ec8326e2352c316",
+    "data/products/prod_022_fila_volley_zone.json": "07a06bd4c56468e67aa39179e4a4004629bcc6c9ed167f6c6bd9e3feeb993d0f",
+    "data/products/prod_023_kswiss_express_light.json": "b5fccdd0623d1d102aa7472b964ffb92b0fe0dcbbf70faa6e21bef04c1659b62",
+    "data/products/prod_024_asics_gel_renma.json": "1ac774818c674a476fc1ef30dc30b916f0fb7f719a34878beb89bb83500904dc",
+    "data/products/prod_025_gamma_ball_hopper.json": "e0e0b7f7ef7f3cc64252d465dc680460c8b8b1d92589e71ad8f8213c34343081",
+    "prompts/classifier.j2": "3e12aae1be1fe51704659d61a05a7bef5bb649cae8849b8709850896f0e4aaaa",
+    "prompts/judge.j2": "d3c860d2cccb2ac936bda2297d88024fbed2358b9d6d0377d98479c4cfe73849",
+    "prompts/rag_system.j2": "a5898876ea8e6e74952aff4892d50857b983041e9474cf425b83c19ed523dd69",
+    "data/golden_test_set.csv": "92f23404cae67cd1119d4b0df7ccf0f4ba00296c420c2b190327b86756c0ebb6"
+  },
+  "billable_operations": 112,
+  "http_queries": 30,
+  "excluded_preexisting_test_records": 10,
+  "trace_refresh_http_queries": 10,
+  "literal_curl_http_queries": 2,
+  "cost_report_scope": "Complete controlled workload, including initial catalog bootstrap and three live ingestion embeddings; excludes evaluation/cache/latency experiments.",
+  "fixture_files": {
+    "data/ingestion-fixtures/valid_2.json": "63585b2528d86c4b5f79353544a9a8740766863396511fb27b5845e22aeeec5c",
+    "data/ingestion-fixtures/valid_3.json": "8e1fbad06ddcdd36e61641d194f559d69d53e9818fcb53f7f335e109e64af24f",
+    "data/ingestion-fixtures/valid_1.json": "7a541a5fd30b06c3a88dc12362cb26852e378d15cf5c7f9806578918f3e1a235",
+    "data/ingestion-fixtures/malformed.json": "db04d21a26baa1ec5cf2c616a7740ee3223fe3cc9ef20753ccd3da4384fb18f8"
+  },
+  "source_overlays": [
+    {
+      "file": "prompts/judge.j2",
+      "capture_sha256": "4e5dbf46fd61dfc9e12ad5607036137c9bc1021e96b6610066275f69c5e17072",
+      "submission_sha256": "d3c860d2cccb2ac936bda2297d88024fbed2358b9d6d0377d98479c4cfe73849",
+      "reason": "Reject definitive absent-feature claims based only on omitted documentation; treat source/answer as untrusted data. Recalibrated six positive and six negative cases and reran supplemental real-provider safety probes. Raw RAGAS generator unchanged."
+    }
+  ]
+}

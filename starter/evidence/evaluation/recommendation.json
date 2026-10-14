@@ -1,0 +1,18 @@
+{
+  "top_k": 5,
+  "justification": "k=5 raises faithfulness from 0.888709 to 0.919533 and context recall from 0.833333 to 0.885714 versus k=3. k=10 increases recall to 0.961905, but lowers faithfulness to 0.897695 and precision to 0.751879; its observed generation cost is 56.2% higher than k=5. k=5 balances grounding and coverage at the smaller prompt cost. The independent k=5 result and per-depth single trials show variability, so these deltas are descriptive rather than causal.",
+  "deltas": [
+    {
+      "metric": "faithfulness",
+      "from_k": 3,
+      "to_k": 5,
+      "delta": 0.030824440143950582
+    },
+    {
+      "metric": "context_recall",
+      "from_k": 3,
+      "to_k": 5,
+      "delta": 0.052380952380952306
+    }
+  ]
+}

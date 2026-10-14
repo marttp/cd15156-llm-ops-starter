@@ -1,0 +1,47 @@
+{
+  "question": "What are the dimensions of baseline rally towel 2?",
+  "method": "POST",
+  "url": "http://localhost:8080/query",
+  "response": {
+    "answer": "The dimensions of the Baseline Rally Towel 2 are 32 x 60 cm.",
+    "sources": [
+      {
+        "doc_id": "demo_inbox_towel_2",
+        "chunk_text": "Baseline Rally Towel 2\n\nA course demo towel with unique catalog code RALLY-2.\n\nPrice: $12.00 USD\n\nSpecifications:\n  material: microfiber\n  dimensions: 32 x 60 cm\n\nCare instructions: Machine wash cold and air dry.",
+        "similarity_score": 0.692215571022969
+      },
+      {
+        "doc_id": "demo_inbox_towel_1",
+        "chunk_text": "Baseline Rally Towel 1\n\nA course demo towel with unique catalog code RALLY-1.\n\nPrice: $11.00 USD\n\nSpecifications:\n  material: microfiber\n  dimensions: 31 x 60 cm\n\nCare instructions: Machine wash cold and air dry.",
+        "similarity_score": 0.6656219580136399
+      },
+      {
+        "doc_id": "demo_court_bag",
+        "chunk_text": "Baseline Court Bag\n\nA compact bag for paddles and pickleballs.\n\nPrice: $39.00 USD\n\nSpecifications:\n  capacity: 2 paddles and 6 balls\n  material: polyester\n\nCare instructions: Wipe clean and air dry. Do not machine wash.",
+        "similarity_score": 0.3937322196605819
+      },
+      {
+        "doc_id": "prod_016",
+        "chunk_text": "Lija Rally Skort\n\nThe Lija Rally Skort combines style and function with a flattering A-line silhouette and built-in compression shorts with a ball pocket. The UPF 50+ fabric provides sun protection during outdoor play, while the four-way stretch material moves with you through every shot.\n\nPrice: $68.99 USD\n\nSpecifications:\n  material: 86% polyester / 14% spandex, UPF 50+\n  sizes_available: ['XS', 'S', 'M', 'L', 'XL']\n  color_options: ['Black', 'White', 'Ocean Blue', 'Sunset Pink']\n\nCare instructions: Machine wash cold, gentle cycle. Do not bleach. Lay flat to dry to maintain shape and UPF protection. Do not iron.",
+        "similarity_score": 0.3928467898216421
+      },
+      {
+        "doc_id": "prod_015",
+        "chunk_text": "Diadem Warrior Performance Tee\n\nThe Diadem Warrior Performance Tee uses moisture-wicking polyester blend fabric to keep you cool and dry during intense rallies. Features flatlock seams to reduce chafing, a tagless collar for comfort, and a reflective logo for low-light visibility on evening courts.\n\nPrice: $34.99 USD\n\nSpecifications:\n  material: 92% polyester / 8% spandex\n  sizes_available: ['XS', 'S', 'M', 'L', 'XL', 'XXL']\n  color_options: ['Navy', 'Black', 'White', 'Coral']\n\nCare instructions: Machine wash cold with like colors. Do not use fabric softener as it reduces moisture-wicking performance. Hang dry or tumble dry low.",
+        "similarity_score": 0.3622634557075919
+      }
+    ],
+    "confidence": 0.501335998845285,
+    "model": "gpt-4o-mini",
+    "tokens": {
+      "prompt_tokens": 910,
+      "completion_tokens": 19
+    },
+    "cost_usd": 0.00014790000000000002,
+    "cached": false,
+    "trace_id": "b6b7db8fdbbe34cc8adeaf7747c8f024",
+    "blocked_by": null
+  },
+  "latency_ms": 5965.52,
+  "classification": "simple"
+}

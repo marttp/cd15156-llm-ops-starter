@@ -43,3 +43,13 @@ def test_unknown_judge_verdict_blocks_and_preserves_consumed_cost():
         client.chat.completions.create.return_value = response
         assert check_hallucination("Weight 7.4 oz", [source]) == "hallucination: invalid_judge_verdict"
     log.assert_called_once()
+
+
+@pytest.mark.parametrize('failed_operation', ['lookup', 'store'])
+def test_optional_cache_failure_preserves_a_checked_answer(failed_operation):
+    from src.models import QueryResponse, TokenUsage
+    response = QueryResponse(answer='7.4 oz', sources=[Source(doc_id='p1', chunk_text='7.4 oz', similarity_score=.9)], confidence=.9, model='gpt-4o-mini', tokens=TokenUsage(prompt_tokens=10, completion_tokens=3), cost_usd=.001)
+    with patch('src.gateway.routes.detect_prompt_injection', return_value=None), patch('src.gateway.routes.detect_pii', return_value=('clean', [])), patch('src.gateway.routes.cache_lookup', side_effect=RuntimeError('cache offline') if failed_operation=='lookup' else None, return_value=None), patch('src.gateway.routes.cache_store', side_effect=RuntimeError('cache offline') if failed_operation=='store' else None), patch('src.gateway.routes.route_query', return_value=response), patch('src.gateway.routes.check_hallucination', return_value=None), patch('src.gateway.routes.is_off_topic', return_value=None):
+        result=TestClient(create_app()).post('/query',json={'question':'question'})
+    assert result.status_code==200
+    assert result.json()['answer']=='7.4 oz'

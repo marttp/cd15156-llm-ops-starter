@@ -1,0 +1,80 @@
+{
+  "positive_count": 6,
+  "negative_count": 6,
+  "false_positive_rate": 0.0,
+  "true_positive_rate": 1.0,
+  "rows": [
+    {
+      "source": "Weight: 7.4 oz.",
+      "answer": "The paddle weighs 7.4 oz.",
+      "negative": false,
+      "blocked_by": null
+    },
+    {
+      "source": "Weight: 7.4 oz.",
+      "answer": "The paddle weighs 12 oz.",
+      "negative": true,
+      "blocked_by": "hallucination: The answer states a numeric value that contradicts the source."
+    },
+    {
+      "source": "Price: $39.00 USD.",
+      "answer": "The bag costs $39.00.",
+      "negative": false,
+      "blocked_by": null
+    },
+    {
+      "source": "Price: $39.00 USD.",
+      "answer": "The bag costs $99.00.",
+      "negative": true,
+      "blocked_by": "hallucination: The answer states a different price than what is in the source."
+    },
+    {
+      "source": "Hole count: 26.",
+      "answer": "This ball has 26 holes.",
+      "negative": false,
+      "blocked_by": null
+    },
+    {
+      "source": "Hole count: 26.",
+      "answer": "This ball has 40 holes.",
+      "negative": true,
+      "blocked_by": "hallucination: The answer states a numeric value that contradicts the source."
+    },
+    {
+      "source": "Outsole: non-marking rubber.",
+      "answer": "The outsole is non-marking rubber.",
+      "negative": false,
+      "blocked_by": null
+    },
+    {
+      "source": "Outsole: non-marking rubber.",
+      "answer": "The outsole is leather.",
+      "negative": true,
+      "blocked_by": "hallucination: The answer mentions a material (leather) not found in the source."
+    },
+    {
+      "source": "Capacity: 2 paddles and 6 balls.",
+      "answer": "The bag holds two paddles and six balls.",
+      "negative": false,
+      "blocked_by": null
+    },
+    {
+      "source": "Capacity: 2 paddles and 6 balls.",
+      "answer": "The bag holds five paddles and twenty balls.",
+      "negative": true,
+      "blocked_by": "hallucination: The answer mentions a capacity of five paddles and twenty balls, which contradicts the source."
+    },
+    {
+      "source": "Baseline Control Paddle. Weight: 7.4 oz.",
+      "answer": "The paddle does not include GPS tracking.",
+      "negative": true,
+      "blocked_by": "hallucination: The answer definitively says a product does not have a feature that is merely undocumented."
+    },
+    {
+      "source": "Baseline Control Paddle. Weight: 7.4 oz.",
+      "answer": "GPS tracking is not documented, so I cannot confirm whether it is included.",
+      "negative": false,
+      "blocked_by": null
+    }
+  ]
+}

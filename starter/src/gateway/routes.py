@@ -13,6 +13,7 @@ and for module-by-module exploration in the curriculum.
 """
 
 from fastapi import APIRouter, HTTPException
+import logging
 from functools import wraps
 from uuid import uuid4
 from opentelemetry import trace
@@ -34,6 +35,7 @@ from src.guardrails.wrapper import (
 from src.models import QueryResponse
 
 router = APIRouter()
+logger = logging.getLogger(__name__)
 
 
 class QueryRequest(BaseModel):
@@ -113,9 +115,15 @@ def query(request: QueryRequest) -> QueryResponse:
     if reason := detect_prompt_injection(request.question):
         return _safe_response(SAFE_BLOCKED_MESSAGE, blocked_by=reason)
     cleaned, pii_found = detect_pii(request.question)
+    trace.get_current_span().set_attribute("input.value", cleaned)
 
     if settings.semantic_cache_enabled:
-        if cached := cache_lookup(cleaned, top_k=request.top_k, threshold=settings.semantic_cache_threshold):
+        try:
+            cached = cache_lookup(cleaned, top_k=request.top_k, threshold=settings.semantic_cache_threshold)
+        except Exception:
+            logger.warning("Semantic cache lookup failed; continuing with retrieval")
+            cached = None
+        if cached:
             return _annotate_pii(cached, pii_found)
 
     try:
@@ -135,7 +143,10 @@ def query(request: QueryRequest) -> QueryResponse:
         return response.model_copy(update={"answer": SAFE_FILTERED_MESSAGE, "sources": [], "confidence": 0.0, "blocked_by": reason})
 
     if settings.semantic_cache_enabled:
-        cache_store(cleaned, response, top_k=request.top_k)
+        try:
+            cache_store(cleaned, response, top_k=request.top_k)
+        except Exception:
+            logger.warning("Semantic cache store failed; returning checked answer")
     return _annotate_pii(response, pii_found)
 
 

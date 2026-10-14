@@ -32,6 +32,8 @@ def test_query_stream_returns_sse_events():
          patch(
              "src.optimization.routes.stream_completion", return_value=_stream_pieces()
          ), \
+         patch("src.optimization.routes.check_hallucination", return_value=None), \
+         patch("src.optimization.routes.is_off_topic", return_value=None), \
          patch("src.optimization.routes.log_request") as log:
         client = TestClient(create_app())
         with client.stream(
@@ -81,6 +83,8 @@ def test_query_stream_blocks_prompt_injection_before_streaming():
     ), patch("src.optimization.routes.classify") as classify, \
          patch("src.optimization.routes.retrieve") as retrieve, \
          patch("src.optimization.routes.stream_completion") as stream, \
+         patch("src.optimization.routes.check_hallucination", return_value=None), \
+         patch("src.optimization.routes.is_off_topic", return_value=None), \
          patch("src.optimization.routes.log_request") as log:
         client = TestClient(create_app())
         with client.stream(
@@ -100,3 +104,14 @@ def test_query_stream_blocks_prompt_injection_before_streaming():
     retrieve.assert_not_called()
     stream.assert_not_called()
     log.assert_not_called()
+
+
+def test_streaming_hallucination_emits_no_unchecked_tokens():
+    with patch("src.optimization.routes.classify", return_value="simple"), patch("src.optimization.routes.retrieve", return_value=[_source()]), patch("src.optimization.routes.stream_completion", return_value=_stream_pieces()), patch("src.optimization.routes.check_hallucination", return_value="hallucination: fabricated feature"), patch("src.optimization.routes.log_request"):
+        response = TestClient(create_app()).post("/query/stream", json={"question": "How heavy is the paddle?"})
+    events = [json.loads(line[6:]) for line in response.text.splitlines() if line.startswith("data: ")]
+    assert len(events) == 1
+    assert events[0]["type"] == "done"
+    assert events[0]["response"]["blocked_by"].startswith("hallucination:")
+    assert "7.8 oz" not in response.text
+    assert events[0]["response"]["tokens"]["prompt_tokens"] == 120
